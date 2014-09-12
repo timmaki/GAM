@@ -9,10 +9,10 @@ GAM talks to Google's Servers via Google APIs (Application Programming Interface
 
 # Step 2: Download GAM
 ## Windows Users
-Head to the [Downloads page](http://code.google.com/p/google-apps-manager/downloads/list) and download the latest Windows version of GAM, do not download the Python Source version (unless you know what you're doing).
+Head to the [Releases page](https://github.com/jay0lee/GAM/releases) and download the latest Windows version of GAM, do not download the Python Source version (unless you know what you're doing).
 
 ## Mac and Linux Users
-Head to the [Downloads page](http://code.google.com/p/google-apps-manager/downloads/list) and download the latest Python source version of GAM, do not download the Windows version.
+Head to the [Downloads page](https://github.com/jay0lee/GAM/releases) and download the latest Python source version of GAM, do not download the Windows version.
 
 # Step 3: Extract GAM
 ## Windows Users
@@ -93,7 +93,7 @@ We can create a group for crash test dummy's friends:
 gam create group test-dummies-united name "Test Dummies United" description "Support Group Against Plastic Abuse"
 ```
 
-Crash test dummy like's Gmail but sometimes he prefers to use IMAP with his favorite email client, Thunderbird, let's enable IMAP for him:
+Crash test dummy likes Gmail but sometimes he prefers to use IMAP with his favorite email client, Thunderbird, let's enable IMAP for him:
 ```html
 
 gam user crashtestdummy imap on
@@ -105,6 +105,7 @@ these are just a few examples, more are available under the topics to the left. 
 GAM is made possible and maintained by the work of Dito. Who is Dito?
 
 Dito is solely focused on moving organizations to Google's cloud. After hundreds of successful deployments over the last 5 years, we have gained notoriety for our complete understanding of the platform, our change management & training ability, and our rock-star deployment engineers. We are known worldwide as the Google Apps Experts.
+
 <br><a href='http://www.ditoweb.com?s=gam'><img src='http://ditoweb.com/images/website/header-logo.png' /></a>
 <br>
 Need a Google Apps Expert? Contact Dito at <a href='http://www.ditoweb.com?s=gam'>ditoweb.com</a>
