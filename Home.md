@@ -5,7 +5,7 @@ Google Apps Manager (GAM) is a command line tool that allows administrators to m
 GAM requires Google Apps Business, Education, Partner or Government Edition.  Google Apps Free Edition has limited API support and not all GAM commands work.
 
 # Step 1: Enabling the APIs
-GAM talks to Google's Servers via Google APIs (Application Programming Interface). Google has more information on the APIs [here](http://www.google.com/support/a/bin/answer.py?hl=en&answer=60757). By default, APIs for working with Google Apps are disabled. You'll need to follow Google's instructions for [Enabling Administrative API Access](http://support.google.com/a/bin/answer.py?hl=en&answer=60757). API access must be enabled for GAM to function properly.
+GAM talks to Google's Servers via Google APIs (Application Programming Interface). By default, APIs for working with Google Apps are disabled. You'll need to follow Google's instructions for [Enabling Administrative API Access](http://support.google.com/a/bin/answer.py?hl=en&answer=60757). API access must be enabled for GAM to function properly.
 
 # Step 2: Download GAM
 ## Windows Users
