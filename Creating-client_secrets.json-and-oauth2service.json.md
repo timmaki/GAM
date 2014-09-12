@@ -33,8 +33,4 @@ you'll need to be logged in to your Google Account. The account does not need to
 
 1. Name your file "client_secrets.json" and put it in the exact same path as gam.py or gam.exe.
 
-1. You can confirm which Project your GAM authorization is using by running:
-
-gam oauth info
-
-<b>380063494358.apps.googleusercontent.com</b> is the Client ID for the client_secrets.json that comes with the GAM download. If you see it, you're not using your own project, run "gam oauth revoke" to delete the existing oauth2.txt authorization and then "gam info domain" to redo the authorization with your own project.
+1. You can confirm which Project your GAM authorization is using by running:<br><br>gam oauth info<br><br><b>380063494358.apps.googleusercontent.com</b> is the Client ID for the client_secrets.json that comes with the GAM download. If you see it, you're not using your own project, run "gam oauth revoke" to delete the existing oauth2.txt authorization and then "gam info domain" to redo the authorization with your own project.
