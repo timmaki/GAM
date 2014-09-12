@@ -106,6 +106,6 @@ GAM is made possible and maintained by the work of Dito. Who is Dito?
 
 Dito is solely focused on moving organizations to Google's cloud. After hundreds of successful deployments over the last 5 years, we have gained notoriety for our complete understanding of the platform, our change management & training ability, and our rock-star deployment engineers. We are known worldwide as the Google Apps Experts.
 
-<a href='http://www.ditoweb.com?s=gam'><img src='http://ditoweb.com/images/website/header-logo.png' /></a>
+<a href='http://ditoweb.com?s=gam'><img src='http://ditoweb.com/images/website/header-logo.png' /></a>
 
-Need a Google Apps Expert? Contact Dito at <a href='http://www.ditoweb.com?s=gam'>ditoweb.com</a>
+Need a Google Apps Expert? Contact Dito at <a href='http://ditoweb.com?s=gam'>ditoweb.com</a>
