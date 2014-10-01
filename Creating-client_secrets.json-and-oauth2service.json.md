@@ -21,6 +21,8 @@ you'll need to be logged in to your Google Account. The account does not need to
 
 1. Also enable Calendar API, Drive API, Drive SDK, Enterprise License Manager API and Group Settings API accepting terms of service whenever prompted. The services that were on by default (BigQuery API, etc) can be left alone or turned off, GAM does not use them.<br><br><img src='https://www.googledrive.com/host/0B8mlDZR33yTdcm12SGNnd3MzeDA/2014-01-31_1231.png'>
 
+1. Click "Consent screen to the left, enter a PRODUCT NAME and SAVE your changes.<br><br><img src='https://googledrive.com/host/0B16ur9NKHJwBd2o4ZDdudG5lWlk/consent_screen.png'>
+
 1. Click "Credentials to the left.<br><br><img src='https://www.googledrive.com/host/0B8mlDZR33yTdcm12SGNnd3MzeDA/2014-01-31_1231_001.png'>
 
 1. Click the "CREATE NEW CLIENT ID" red button.<br><br><img src='https://www.googledrive.com/host/0B8mlDZR33yTdcm12SGNnd3MzeDA/2014-01-31_1231_002.png'>
