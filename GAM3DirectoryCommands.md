@@ -174,9 +174,9 @@ gam update user david.jones@acme.com
 ## Get User Info
 ### Syntax
 ```
-gam info user <email address> [nogroups]
+gam info user <email address> [nogroups] [noaliases] [nolicenses] [noschemas] [schemas list,of,schemas] [userview]
 ```
-retrieve details about the given user. GAM will print out a summary of the user. By default, GAM will retrieve the user's group membership which results in an additional API call. If you do not require this information you can disable it by specifying nogroups.
+retrieve details about the given user. GAM will print out a summary of the user. By default, GAM will retrieve the user's group membership which results in an additional API call. If you do not require this information you can disable it by specifying nogroups. The optional noaliases paremeter prevents GAM from printing out user email aliases. The optional nolicenses parameter prevents GAM from retrieving and printing licenses for the user. The optional noschemas parameter prevents GAM from printing out custom schema information for the user. The optional schemas parameter accepts a list of schema names separated by commas and prints out only those schemas for the user. The optional userview parameter outputs only the information regular users are able to see about the given user, admin only fields are not returned. If you authenticate to GAM as a regular user, you can still run this command with the userview parameter and get back the GAL view of the user.
 
 ### Example
 This example will show information on the user
@@ -269,9 +269,25 @@ Non-Editable Aliases:
   ringo@acme-alias.org
   ringo.starr@acme-alias.org
 
+Custom Schemas:
+ Schema: schoolschema
+  id: 21760
+
+ Schema: studentdata
+  StudentNumber:
+   250593210
+  CreditCount: 4.0
+
+ Schema: labels
+  label:
+   abc
+
 Groups:
   2sv <2sv@acme.org>
   users <users@acme.org>
+Licenses:
+ Google-Apps-For-Business
+ Google-Vault
 ```
 ---
 
