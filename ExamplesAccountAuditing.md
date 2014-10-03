@@ -1,3 +1,49 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [About Google Apps Audits](#about-google-apps-audits)
+- [Audit Monitors](#audit-monitors)
+  - [Create a Audit Monitor](#create-a-audit-monitor)
+    - [Syntax](#syntax)
+    - [Example](#example)
+  - [](#)
+  - [List Audit Monitors](#list-audit-monitors)
+  - [](#-1)
+  - [Delete an Audit Monitor](#delete-an-audit-monitor)
+  - [](#-2)
+- [Managing the GPG Key](#managing-the-gpg-key)
+  - [Updating the GPG Key on Google's Servers](#updating-the-gpg-key-on-googles-servers)
+  - [](#-3)
+- [User Account Activity](#user-account-activity)
+  - [Request an Account's Activity](#request-an-accounts-activity)
+  - [](#-4)
+  - [Retrieving Current Status of Activity Request(s)](#retrieving-current-status-of-activity-requests)
+  - [](#-5)
+  - [Downloading the Results of a Completed Activity Request](#downloading-the-results-of-a-completed-activity-request)
+  - [](#-6)
+  - [Deleting a Completed Activity Request](#deleting-a-completed-activity-request)
+  - [](#-7)
+- [User Mailbox Exports](#user-mailbox-exports)
+  - [Request an Export of a User's Mailbox](#request-an-export-of-a-users-mailbox)
+  - [](#-8)
+  - [Retrieving Current Status of Export(s)](#retrieving-current-status-of-exports)
+  - [](#-9)
+  - [Downloading the Results of a Completed Export Request](#downloading-the-results-of-a-completed-export-request)
+  - [](#-10)
+  - [Deleting a Completed Export Request](#deleting-a-completed-export-request)
+- [Using GPG with Audits](#using-gpg-with-audits)
+  - [Creating/Uploading a GPG Key](#creatinguploading-a-gpg-key)
+    - [Downloading GPG](#downloading-gpg)
+      - [Windows Users](#windows-users)
+      - [Linux Users](#linux-users)
+      - [Mac Users](#mac-users)
+    - [Creating/Uploading the Key](#creatinguploading-the-key)
+    - [Uploading the GPG Key](#uploading-the-gpg-key)
+  - [Decrypting Downloaded Files with GPG](#decrypting-downloaded-files-with-gpg)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 (TODO: Add table of contents.)
 
 _**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_

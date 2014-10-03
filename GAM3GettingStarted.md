@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Introduction](#introduction)
+- [Step 1: Enabling the APIs](#step-1-enabling-the-apis)
+- [Step 2: Download GAM](#step-2-download-gam)
+  - [Windows Users](#windows-users)
+  - [Mac and Linux Users](#mac-and-linux-users)
+- [Step 3: Extract GAM](#step-3-extract-gam)
+  - [Windows Users](#windows-users-1)
+  - [Mac and Linux Users](#mac-and-linux-users-1)
+- [Step 4: Generating your own client\_secrets.json file](#step-4-generating-your-own-client\_secretsjson-file)
+- [Step 5: Running GAM for the First Time](#step-5-running-gam-for-the-first-time)
+  - [Windows Users](#windows-users-2)
+  - [Mac and Linux Users](#mac-and-linux-users-2)
+- [Step 6: More simple GAM commands](#step-6-more-simple-gam-commands)
+- [Step 7: Need a Google Apps Expert?](#step-7-need-a-google-apps-expert)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 (TODO: Add table of contents.)
 
 _**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_

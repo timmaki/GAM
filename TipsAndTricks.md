@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [How GAM Authenticates to Google](#how-gam-authenticates-to-google)
+- [Avoiding the Prompt for domain, admin user and password](#avoiding-the-prompt-for-domain-admin-user-and-password)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 _**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
 
 # How GAM Authenticates to Google

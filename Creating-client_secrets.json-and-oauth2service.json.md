@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Creating Your Own OAuth Console clients\_secrets.json](#creating-your-own-oauth-console-clients\_secretsjson)
+- [Steps](#steps)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Creating Your Own OAuth Console clients\_secrets.json
 In the past, all GAM installations shared the same client\_secrets.json file included with the GAM download. This file identifies the GAM project to Google but it does not provide any special access rights to your Google Apps domain (that's what the oauth2.txt file is for).
 

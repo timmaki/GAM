@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Introduction](#introduction)
+- [Rename User Accounts](#rename-user-accounts)
+- [Change a User's Email Address Completely](#change-a-users-email-address-completely)
+- [Delete and Recreate a User without Waiting 5 days](#delete-and-recreate-a-user-without-waiting-5-days)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 (TODO: Add table of contents.)
 
 _**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_

@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Introduction](#introduction)
+- [Steps](#steps)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Introduction
 
 In order to use some of the new GAM 3.0 Calendar, Drive and (coming soon Google+) commands, Google requires you to setup a service account. You can then authorize this service account to act on behalf of your Google Apps account and all users. This is the OAuth 2.0 equivalent of the (deprecated) Two-Legged OAuth 1.0a.

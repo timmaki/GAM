@@ -1,3 +1,35 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Printing All Users](#printing-all-users)
+    - [Syntax](#syntax)
+    - [Example](#example)
+  - [users.csv contains:](#userscsv-contains)
+  - [Smith, wsmith@example.com, William,](#smith-wsmith@examplecom-william)
+  - [](#)
+- [Printing All Groups](#printing-all-groups)
+    - [Syntax](#syntax-1)
+    - [Examples](#examples)
+  - [](#-1)
+- [Print All Aliases](#print-all-aliases)
+    - [Syntax](#syntax-2)
+    - [Example](#example-1)
+  - [](#-2)
+- [Print All Organizational Units](#print-all-organizational-units)
+    - [Syntax](#syntax-3)
+    - [Example](#example-2)
+  - [](#-3)
+- [Print All Resource Calendars](#print-all-resource-calendars)
+    - [Syntax](#syntax-4)
+    - [Example](#example-3)
+  - [](#-4)
+- [Print Reports](#print-reports)
+    - [Syntax](#syntax-5)
+    - [Example](#example-4)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 (TODO: Add table of contents.)
 
 _**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
