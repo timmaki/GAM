@@ -221,6 +221,7 @@ gam user bob@example.com vacation on subject "I am away" file bobs-away-message.
 
 ## Retrieving Vacation Settings
 ### Syntax
+```
 gam
  user <username> | group <groupname> |ou <ouname> | all users
  show vacation
