@@ -26,14 +26,14 @@ gam ou "Google Coordinate" add license coordinate
 # Updating a License for Users
 ## Syntax
 ```
-gam user <username>|group <groupname>|ou <ouname>|all users update license <sku>
+gam user <username>|group <groupname>|ou <ouname>|all users update license <sku> from <oldsku>
 ```
 Update the license for the given users. The SKU can be one of coordinate, drive20gb, drive50gb, drive200gb, drive400gb, drive1tb, drive2tb, drive4tb, drive8tb or drive16tb.
 
 ## Example
 This example updates the user who previously had 50gb of extra Drive storage licensed to 200gb of Drive space.
 ```
-gam user heavydriveuser@acme.org update license drive200gb
+gam user heavydriveuser@acme.org update license drive200gb from drive50gb
 ```
 
 ---
