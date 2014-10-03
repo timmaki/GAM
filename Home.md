@@ -11,7 +11,6 @@
   - [Windows Users](#windows-users-2)
   - [Mac and Linux Users](#mac-and-linux-users-2)
 - [Step 6: More simple GAM commands](#step-6-more-simple-gam-commands)
-- [Step 7: Need a Google Apps Expert?](#step-7-need-a-google-apps-expert)
 
 # Introduction
 
@@ -115,8 +114,3 @@ gam user crashtestdummy imap on
 ```
 
 these are just a few examples, more are available under the topics to the right. Have fun!
-
-# Step 7: Need a Google Apps Expert?
-GAM is made possible and maintained by the work of Dito. Who is Dito?
-
-Dito is solely focused on moving organizations to Google's cloud. After hundreds of successful deployments over the last 5 years, we have gained notoriety for our complete understanding of the platform, our change management & training ability, and our rock-star deployment engineers. We are known worldwide as the Google Apps Experts.
