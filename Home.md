@@ -114,7 +114,7 @@ Crash test dummy likes Gmail but sometimes he prefers to use IMAP with his favor
 gam user crashtestdummy imap on
 ```
 
-these are just a few examples, more are available under the topics to the left. Have fun!
+these are just a few examples, more are available under the topics to the right. Have fun!
 
 # Step 7: Need a Google Apps Expert?
 GAM is made possible and maintained by the work of Dito. Who is Dito?
