@@ -1,16 +1,16 @@
 - [Introduction](#introduction)
-- [Step 1: Enabling the APIs](#step-1-enabling-the-apis)
-- [Step 2: Download GAM](#step-2-download-gam)
+- [1) Enabling the APIs](#step-1-enabling-the-apis)
+- [2) Download GAM](#step-2-download-gam)
   - [Windows Users](#windows-users)
   - [Mac and Linux Users](#mac-and-linux-users)
-- [Step 3: Extract GAM](#step-3-extract-gam)
+- [3) Extract GAM](#step-3-extract-gam)
   - [Windows Users](#windows-users-1)
   - [Mac and Linux Users](#mac-and-linux-users-1)
-- [Step 4: Generating your own client\_secrets.json file](#step-4-generating-your-own-client\_secretsjson-file)
-- [Step 5: Running GAM for the First Time](#step-5-running-gam-for-the-first-time)
+- [4) Generating your own client\_secrets.json file](#step-4-generating-your-own-client\_secretsjson-file)
+- [5) Running GAM for the First Time](#step-5-running-gam-for-the-first-time)
   - [Windows Users](#windows-users-2)
   - [Mac and Linux Users](#mac-and-linux-users-2)
-- [Step 6: More simple GAM commands](#step-6-more-simple-gam-commands)
+- [6) More simple GAM commands](#step-6-more-simple-gam-commands)
 
 # Introduction
 
@@ -18,27 +18,27 @@ Google Apps Manager (GAM) is a command line tool that allows administrators to m
 
 GAM requires Google Apps Business, Education, Partner or Government Edition.  Google Apps Free Edition has limited API support and not all GAM commands work.
 
-# Step 1: Enabling the APIs
+# 1) Enabling the APIs
 GAM talks to Google's Servers via Google APIs (Application Programming Interface). By default, APIs for working with Google Apps are disabled. You'll need to follow Google's instructions for [Enabling Administrative API Access](http://support.google.com/a/bin/answer.py?hl=en&answer=60757). API access must be enabled for GAM to function properly.
 
-# Step 2: Download GAM
+# 2) Download GAM
 ## Windows Users
 Head to the [Releases page](https://github.com/jay0lee/GAM/releases) and download the latest Windows version of GAM, do not download the Python Source version (unless you know what you're doing).
 
 ## Mac and Linux Users
 Head to the [Releases page](https://github.com/jay0lee/GAM/releases) and download the latest Python source version of GAM, do not download the Windows version.
 
-# Step 3: Extract GAM
+# 3) Extract GAM
 ## Windows Users
 Use the archive extraction tool of your choice to extract the files from the GAM .zip you downloaded. Windows XP and higher have a built in tool that works just fine. When specifying where to extract GAM, I suggest extracting directly to C:\ so that the files will reside in C:\GAM. Once completed, you should have a folder with gam.exe and a few text files in it.
 
 ## Mac and Linux Users
 Use the archive extraction tool of your choice to extract the files from the GAM .zip you downloaded. I suggest first creating a sub-folder in your home directory (something like ~/gam/) and then extracting the GAM archive there.
 
-# Step 4: Generating your own client\_secrets.json file
+# 4) Generating your own client\_secrets.json file
 Google enforces quotas on the number of API operations a program can run. The client\_secrets.json file is used to register your GAM program with Google and provide you with your own API quota. Instructions for generating and downloading client\_secrets.json are [on this page](CreatingClientSecretsFile). Please note that despite the name, client\_secrets.json does not provide authorized access to Google Apps, it only identifies your GAM install to Google for quota management. It is perfectly safe to use one client\_secrets.json file with multiple Google Apps domains.
 
-# Step 5: Running GAM for the First Time
+# 5) Running GAM for the First Time
 ## Windows Users
 Open a command prompt on your computer. You can do this by going to Start -> Programs -> Accessories -> Command Prompt or by opening the Run... dialog on the start menu and typing CMD then enter. Now change to the directory where you extracted GAM. The command to change directories looks like:
 ```html
@@ -85,7 +85,7 @@ you'll need to type the alias command each time you open a Terminal to run GAM o
 
 Congratulations, you now have a working GAM install.
 
-# Step 6: More simple GAM commands
+# 6) More simple GAM commands
 
 Try the following GAM commands to get a feel for how the program works. I suggest creating a test user account for experimenting, or if you don't have a test account, use your account, we'll call our test user crashtestdummy in the examples below.
 
