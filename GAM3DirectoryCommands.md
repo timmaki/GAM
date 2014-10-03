@@ -1,7 +1,5 @@
 (TODO: Add table of contents.)
 
-_**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
-
 # Users
 ## Creating a User
 ### Syntax
