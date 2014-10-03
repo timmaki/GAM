@@ -27,7 +27,7 @@ GAM talks to Google's Servers via Google APIs (Application Programming Interface
 Head to the [Releases page](https://github.com/jay0lee/GAM/releases) and download the latest Windows version of GAM, do not download the Python Source version (unless you know what you're doing).
 
 ## Mac and Linux Users
-Head to the [Downloads page](https://github.com/jay0lee/GAM/releases) and download the latest Python source version of GAM, do not download the Windows version.
+Head to the [Releases page](https://github.com/jay0lee/GAM/releases) and download the latest Python source version of GAM, do not download the Windows version.
 
 # Step 3: Extract GAM
 ## Windows Users
