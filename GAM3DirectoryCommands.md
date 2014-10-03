@@ -38,7 +38,7 @@ At the same time a user account is created, rich profile information for the use
 Google makes the following recommendations when renaming a user account:
   * Before renaming a user, it is recommended that you logout the user from all browser sessions and services. For instance, you can get the user on your support desk telephone line during the rename process to ensure they have logged out. The process of renaming can take up to 10 minutes to propagate across all services.
   * Google Talk will lose all remembered chat invitations after renaming. The user must request permission to chat with friends again.
-  * When a user is renamed, the old username is retained as a alias to ensure continuous mail delivery in the case of email forwarding settings and will not be available as a new username. If you prefer not to have the alias in place after the rename, you'll need to [Delete the Alias](wiki/ExamplesProvisioning#Deleting_an_Alias)
+  * When a user is renamed, the old username is retained as a alias to ensure continuous mail delivery in the case of email forwarding settings and will not be available as a new username. If you prefer not to have the alias in place after the rename, you'll need to [Delete the Alias](ExamplesProvisioning#Deleting_an_Alias)
 
 ### Example
 This example updates a user account, setting the firstname, lastname and password and giving them admin access to the domain. Notice that the password is in single quotes to prevent the shell from acting on the !.
@@ -228,7 +228,7 @@ Undeletes a user account deleted in the last 5 days. In order to undelete a user
 ```
 gam create group <group email> [name <Group Name>] [description <Group Description>]
 ```
-create a group. Group Name and Description are optional and set the groups full name and description. Use quotes around them if they contain spaces. If the Google Groups for Business (user-managed groups) service is enabled for the Google Apps domain, additional groups security settings are available and can be set with the same GAM command as described on the [Groups Settings page](wiki/GAM3GroupSettings#Updating__Group_Settings).
+create a group. Group Name and Description are optional and set the groups full name and description. Use quotes around them if they contain spaces. If the Google Groups for Business (user-managed groups) service is enabled for the Google Apps domain, additional groups security settings are available and can be set with the same GAM command as described on the [Groups Settings page](GAM3GroupSettings#Updating__Group_Settings).
 
 ### Example
 This example creates a group:
@@ -236,7 +236,7 @@ This example creates a group:
 gam create group mygroup@example.com
 ```
 
-This example creates a group and [sets max message size](wiki/GAM3GroupSettings#Max_Message_Bytes) to 25mb
+This example creates a group and [sets max message size](GAM3GroupSettings#Max_Message_Bytes) to 25mb
 ```
 gam create group large_attachments@acme.org maxmessagebytes 25m
 ```
@@ -249,9 +249,9 @@ gam create group large_attachments@acme.org maxmessagebytes 25m
 ```
 gam update group <group email> [name <Group Name>] [description <Group Description>] [email <new email address>]
 ```
-modifying a groups name, description or email address. When changing a group's email address, the new address must not already be in use. Note that unlike renaming a user, the group's old address is NOT retained as an alias. If you'd like to keep the group's old address, you should immediately add it back via the [Create Alias](wiki/GAM3DirectoryCommands#Creating_an_Alias_for_a_User_or_Group) command.
+modifying a groups name, description or email address. When changing a group's email address, the new address must not already be in use. Note that unlike renaming a user, the group's old address is NOT retained as an alias. If you'd like to keep the group's old address, you should immediately add it back via the [Create Alias](GAM3DirectoryCommands#Creating_an_Alias_for_a_User_or_Group) command.
 
-If the Google Groups for Business (user-managed groups) service is enabled for the Google Apps domain, additional groups security settings are available and can be set with the same GAM command as described on the [Groups Settings page](wiki/GAM3GroupSettings#Updating__Group_Settings).
+If the Google Groups for Business (user-managed groups) service is enabled for the Google Apps domain, additional groups security settings are available and can be set with the same GAM command as described on the [Groups Settings page](GAM3GroupSettings#Updating__Group_Settings).
 
 ### Example
 This example modifies the group, changing it's name and description
@@ -259,7 +259,7 @@ This example modifies the group, changing it's name and description
 gam update group beatles name "The Beatles Rock Band" description "British Invasion Band"
 ```
 
-This example modifies the group, changing it's description and [allowing posters from other domains](wiki/GAM3GroupSettings#Allow_External_Members).
+This example modifies the group, changing it's description and [allowing posters from other domains](GAM3GroupSettings#Allow_External_Members).
 ```
 gam update group beatles name "The Beetles" allow_external_members true
 ```
@@ -581,7 +581,7 @@ gam delete mobile AFiQxQ8n8E7HjDsk13hHSoAIfF6NE78bUsfqjXkrLquNnBo5OyJrn7tR1bnKJm
 gam update cros <device id> [user <user info>] [location <location info>] [notes <notes info>] [ou <new org unit>]
 ```
 
-Updates information about the given Chrome OS device. <device id> can be determined using the [gam print cros](wiki/GAM3CSVListings#Print_Chrome_OS_Devices) command. user, location and notes information is optional. ou is optional and allows the Chrome device to be moved to a new Google organizational unit, changing the policies that will be applied to the device.
+Updates information about the given Chrome OS device. <device id> can be determined using the [gam print cros](GAM3CSVListings#Print_Chrome_OS_Devices) command. user, location and notes information is optional. ou is optional and allows the Chrome device to be moved to a new Google organizational unit, changing the policies that will be applied to the device.
 
 ### Example
 This example will update the user, location and notes for the given Chromebook.

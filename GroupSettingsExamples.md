@@ -3,7 +3,7 @@
 _**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
 
 # Special Requirements for the Group Settings API
-Google is currently granting access to the Group Settings API on a per-request basis. Instructions on how to request access and configure GAM properly can be found [here](wiki/GettingAnOAuthConsoleKey).
+Google is currently granting access to the Group Settings API on a per-request basis. Instructions on how to request access and configure GAM properly can be found [here](GettingAnOAuthConsoleKey).
 
 # Enabling Google Groups for Business
 In order to make use of the advanced Group Settings for your Google Apps domain, you need to have the Google Groups for Business service enabled for your domain. Please verify that you've enabled the service by [following Google's instructions](http://www.google.com/support/a/bin/answer.py?hl=en&answer=167096).
@@ -370,7 +370,7 @@ gam update group ascii-fun@acme.com settings message_display_font fixed_width_fo
 ```
 gam update group <group> settings description <group description>
 ```
-Change the group description. This is the same group description set by the [group provisioning GAM command](wiki/ExamplesProvisioning#Update_Group_Settings). This command exists only to allow changing the group description with the same API call while performing other Group Settings operations.
+Change the group description. This is the same group description set by the [group provisioning GAM command](ExamplesProvisioning#Update_Group_Settings). This command exists only to allow changing the group description with the same API call while performing other Group Settings operations.
 
 ### Example
 This example changes the party@acme.com group description to be "messages regarding upcoming parties"
@@ -386,7 +386,7 @@ gam update group party@acme.com settings description "messages regarding upcomin
 ```
 gam update group <group> settings name <new name>
 ```
-Change the group name. This is the same group name set by the [group provisioning GAM command](wiki/ExamplesProvisioning#Update_Group_Settings). This command exists only to allow changing the group name with the same API call while performing other Group Settings operations.
+Change the group name. This is the same group name set by the [group provisioning GAM command](ExamplesProvisioning#Update_Group_Settings). This command exists only to allow changing the group name with the same API call while performing other Group Settings operations.
 
 ### Example
 This example changes the group name to "Acme Employees"
@@ -418,9 +418,9 @@ gam update group info@acmewidgets.com settings spam_moderation_level allow
 ```
 gam update group <group> settings include_in_global_address_list true|false
 ```
-Include or remove this group's address from the Google Apps Global Address List (GAL). This setting is the group equivalent of the [Hide/Unhide user profile setting](wiki/ExamplesEmailSettings#Changing_a_users_profile_to_hidden/unhidden).  If a group is included (true), they'll show up in autocomplete and contact searches for addresses. If a group is not included (false), users will not be able to discover the groups's address and detailed contact info via autocomplete or contacts search.
+Include or remove this group's address from the Google Apps Global Address List (GAL). This setting is the group equivalent of the [Hide/Unhide user profile setting](ExamplesEmailSettings#Changing_a_users_profile_to_hidden/unhidden).  If a group is included (true), they'll show up in autocomplete and contact searches for addresses. If a group is not included (false), users will not be able to discover the groups's address and detailed contact info via autocomplete or contacts search.
 
-**Note:** this setting and the [Show in Groups Directory](wiki/GroupSettingsExamples#Show_In_Groups_Directory) setting are not the same. To hide a group completely you should set both to false.
+**Note:** this setting and the [Show in Groups Directory](GroupSettingsExamples#Show_In_Groups_Directory) setting are not the same. To hide a group completely you should set both to false.
 
 ### Example
 This example hides the group topsecret@newwidgets.com from the Global Address List.

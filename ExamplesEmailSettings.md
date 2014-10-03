@@ -351,7 +351,7 @@ Both the Gmail delegator and the delegate:<br>
 <ul><li>Must be active. A 500 error is returned if either user is suspended and disabled.<br>
 </li><li>Must not require a change of password on the next sign in. A 500 error is returned if either user has this flag enabled in the control panel, or, using the Provisioning API, the changePasswordAtNextLogin attribute is true.</li></ul>
 
-you can confirm these settings using the <a href='wiki/ExamplesProvisioning#Get_User_Info'>gam info user</a> command. Both "Account suspended" and "Must change password" should show false for both the delegate and the delegator.<br>
+you can confirm these settings using the <a href='ExamplesProvisioning#Get_User_Info'>gam info user</a> command. Both "Account suspended" and "Must change password" should show false for both the delegate and the delegator.<br>
 <br>
 <h3>Example</h3>
 This example gives jbezos access to the contacts and email of the sales account.<br>

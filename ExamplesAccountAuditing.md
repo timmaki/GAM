@@ -81,7 +81,7 @@ gam audit monitor delete jsmith fthomas
 ```
 gam audit uploadkey
 ```
-updates the public GPG key that Google's servers use to encrypt Audit Activity and Export files. The key should be provided on Standard Input. See [Using GPG with Audits](wiki/ExamplesAccountAuditing#Using_GPG_with_Audits) for more details on GPG keys.
+updates the public GPG key that Google's servers use to encrypt Audit Activity and Export files. The key should be provided on Standard Input. See [Using GPG with Audits](ExamplesAccountAuditing#Using_GPG_with_Audits) for more details on GPG keys.
 
 This example tells GPG to print the key on standard output and gam reads the key on standard input
 ```
@@ -96,7 +96,7 @@ gpg --export --armor | gam audit uploadkey
 ```
 gam audit activity request <user>
 ```
-request the account activity of the given user. Requests can take several hours/days to be completed by Google's servers. GAM will print out a request ID which can be used to monitor the progress of the request (see Retrieving Request Status below). Note that before requesting an account's activity, a GPG key should be uploaded to Google Servers. See [Using GPG with Audits](wiki/ExamplesAccountAuditing#Using_GPG_with_Audits) for more details on GPG keys. Failure to upload a key will result in the activity request always getting a status of ERROR.
+request the account activity of the given user. Requests can take several hours/days to be completed by Google's servers. GAM will print out a request ID which can be used to monitor the progress of the request (see Retrieving Request Status below). Note that before requesting an account's activity, a GPG key should be uploaded to Google Servers. See [Using GPG with Audits](ExamplesAccountAuditing#Using_GPG_with_Audits) for more details on GPG keys. Failure to upload a key will result in the activity request always getting a status of ERROR.
 
 This example creates a request for the user's activity
 ```
@@ -155,7 +155,7 @@ gam audit export request <user> [begin <Begin Date>] [end <End Date>] [search <S
 ```
 request an export of all mail in a user's mailbox. Optional parameters begin and end date specify the range of messages that should be included in the export and should be of the format "YYYY-MM-DD hh:mm". By default, export begins at account creation and ends at the time of the export request. Optional parameter search, specifies a search query defining what messages should be included in the export. The query parameters are the same as those used in the Gmail interface and described [here](http://mail.google.com/support/bin/answer.py?hl=en&answer=7190). Optional parameter headersonly specifies that only the message headers should be included in the export instead of the full message body. Optional parameter includedeleted specifies that deleted messages should also be included in the export.
 
-Note that before requesting an export of an account, a GPG key should be uploaded to Google's Server. See [Using GPG with Audits](wiki/ExamplesAccountAuditing#Using_GPG_with_Audits) for more details on GPG keys. Failure to upload a key will result in the export request always getting a status of ERROR.
+Note that before requesting an export of an account, a GPG key should be uploaded to Google's Server. See [Using GPG with Audits](ExamplesAccountAuditing#Using_GPG_with_Audits) for more details on GPG keys. Failure to upload a key will result in the export request always getting a status of ERROR.
 
 This example requests an export of all of a user's mail including deleted messages
 ```

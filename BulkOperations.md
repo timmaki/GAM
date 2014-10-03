@@ -195,7 +195,7 @@ Comments:
 ```
 OAUTHFILE=oauth.txt-admin$x python ~/bin/gam/gam.py create user "$email" firstname "$firstname" lastname "$lastname" password "$password"
 ```
-This line is the actual GAM command that is run. Notice that the [OAUTHFILE is set to something like oauth.txt-admin1](wiki/OAuthKeyManagement), oauth.txt-admin2, etc on each run. This isn't strictly necessary but I recommend it when doing more than 5,000 commands or so. If you attempt this many API calls with a single Google Apps account, Google's servers will start rate limiting you and the script will take much longer to run through. Using multiple Google Apps Admin accounts splits the API calls up and keeps you from hitting Google quota limits.
+This line is the actual GAM command that is run. Notice that the [OAUTHFILE is set to something like oauth.txt-admin1](OAuthKeyManagement), oauth.txt-admin2, etc on each run. This isn't strictly necessary but I recommend it when doing more than 5,000 commands or so. If you attempt this many API calls with a single Google Apps account, Google's servers will start rate limiting you and the script will take much longer to run through. Using multiple Google Apps Admin accounts splits the API calls up and keeps you from hitting Google quota limits.
 
 ```
 while read email firstname lastname password; do

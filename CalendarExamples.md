@@ -197,9 +197,9 @@ gam calendar <user email> wipe
 ```
 Wipe all data from a user's primary calendar. **WARNING: This will delete all user events and there is no way to recover them!** Email address must be a Google Apps user. It's not possible to wipe resource or secondary calendars.
 
-**Note:** You cannot use an anonymous OAuth client ID and secret with this command. You'll need to follow the [OAuth console key instructions](wiki/GettingAnOAuthConsoleKey) except that instead of turning on the Groups Settings API, the Google Calendar API should be turned on (which does not require a request and manual Google approval).
+**Note:** You cannot use an anonymous OAuth client ID and secret with this command. You'll need to follow the [OAuth console key instructions](GettingAnOAuthConsoleKey) except that instead of turning on the Groups Settings API, the Google Calendar API should be turned on (which does not require a request and manual Google approval).
 
-**Note:** If you used a version of GAM earlier than 2.51 to create the OAuth authorization you are using (oauth.txt), you'll need to re-authorize since the wipe command requires an additional scope. If you're seeing 403 Forbidden errors, this is probably the reason why. Just run [gam oauth revoke](wiki/OAuthKeyManagement#Revoking_an_OAuth_Token) and then re-run the wipe command to re-authorize.
+**Note:** If you used a version of GAM earlier than 2.51 to create the OAuth authorization you are using (oauth.txt), you'll need to re-authorize since the wipe command requires an additional scope. If you're seeing 403 Forbidden errors, this is probably the reason why. Just run [gam oauth revoke](OAuthKeyManagement#Revoking_an_OAuth_Token) and then re-run the wipe command to re-authorize.
 ### Example
 The following example deletes all data for Joe's Calendar.
 

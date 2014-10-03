@@ -30,7 +30,7 @@ Update a user account. firstname, lastname and password arguments are optional a
 Google makes the following recommendations when renaming a user account:
   * Before renaming a user, it is recommended that you logout the user from all browser sessions and services. For instance, you can get the user on your support desk telephone line during the rename process to ensure they have logged out. The process of renaming can take up to 10 minutes to propagate across all services.
   * Google Talk will lose all remembered chat invitations after renaming. The user must request permission to chat with friends again.
-  * When a user is renamed, the old username is retained as a alias to ensure continuous mail delivery in the case of email forwarding settings and will not be available as a new username. If you prefer not to have the alias in place after the rename, you'll need to [Delete the Alias](wiki/ExamplesProvisioning#Deleting_an_Alias)
+  * When a user is renamed, the old username is retained as a alias to ensure continuous mail delivery in the case of email forwarding settings and will not be available as a new username. If you prefer not to have the alias in place after the rename, you'll need to [Delete the Alias](ExamplesProvisioning#Deleting_an_Alias)
 
 ### Example
 This example updates a user account, setting the firstname, lastname and password and giving them admin access to the domain. Notice that the password is in single quotes to prevent the shell from acting on the !.
@@ -126,7 +126,7 @@ gam create group beatles name "The Beatles" description "Members of the Fab Four
 ```
 gam update group <group> [name <Group Name>] [description <Group Description>] [permission owner|member|domain|anyone]
 ```
-update a group's settings, modifying it's full name, description and/or permissions. Many more group settings can be modified using the [GAM Group Settings commands](wiki/GroupSettingsExamples).
+update a group's settings, modifying it's full name, description and/or permissions. Many more group settings can be modified using the [GAM Group Settings commands](GroupSettingsExamples).
 
 ### Example
 This example modifies the group, changing it's full name, description and permissions

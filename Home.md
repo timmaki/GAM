@@ -22,7 +22,7 @@ Use the archive extraction tool of your choice to extract the files from the GAM
 Use the archive extraction tool of your choice to extract the files from the GAM .zip you downloaded. I suggest first creating a sub-folder in your home directory (something like ~/gam/) and then extracting the GAM archive there.
 
 # Step 4: Generating your own client\_secrets.json file
-Google enforces quotas on the number of API operations a program can run. The client\_secrets.json file is used to register your GAM program with Google and provide you with your own API quota. Instructions for generating and downloading client\_secrets.json are [on this page](wiki/CreatingClientSecretsFile). Please note that despite the name, client\_secrets.json does not provide authorized access to Google Apps, it only identifies your GAM install to Google for quota management. It is perfectly safe to use one client\_secrets.json file with multiple Google Apps domains.
+Google enforces quotas on the number of API operations a program can run. The client\_secrets.json file is used to register your GAM program with Google and provide you with your own API quota. Instructions for generating and downloading client\_secrets.json are [on this page](CreatingClientSecretsFile). Please note that despite the name, client\_secrets.json does not provide authorized access to Google Apps, it only identifies your GAM install to Google for quota management. It is perfectly safe to use one client\_secrets.json file with multiple Google Apps domains.
 
 # Step 5: Running GAM for the First Time
 ## Windows Users
