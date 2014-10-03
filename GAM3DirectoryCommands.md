@@ -37,7 +37,12 @@
 ## Creating a User
 ### Syntax
 ```
-gam create user <email address> firstname <First Name> lastname <Last Name> password <Password> [suspended on|off] [changepassword on|off] [gal on|off] [admin on|off] [sha] [md5] [crypt] [nohash] [org <Org Name>]
+gam create user <email address> firstname <First Name>
+ lastname <Last Name> password <Password>
+ [suspended on|off] [changepassword on|off]
+ [gal on|off] [admin on|off]
+ [sha] [md5] [crypt] [nohash]
+ [org <Org Name>]
 ```
 Create a user account. firstname, lastname and password arguments are optional and should be single quoted if they contain spaces or special characters like ! or $ that the shell might try to interpret. If not set, firstname and lastname will default to "Unknown" and password will default to a random, 25-character string. Optional parameter "suspended on" creates the account but marks it as suspended (suspended off, AKA active is the default).  The optional parameter "changepassword on" will force the user to change their password after their first successful login (changepassword off is the default). The optional parameter "gal off" will hide the user from the Global Address List. This user will not be searchable in the Contacts Directory and will not autocomplete for other users composing emails unless they already have the user in their personal contacts (gal on is the default). The optional parameter "admin on" makes the user a Google Apps Super Admin (admin off is the default). The optional parameters sha, md5 and crypt indicate that the password is a hash of the given type. By default, if neither sha1, crypt or md5 are specified, GAM will do a sha1 hash of the provided password and send the hash instead of the plain text password for an additional layer of security. However, when hashes are sent, Google is unable to ensure password length and strength so it's possible to set passwords that do not conform to Google's length requirement this way. The optional parameter nohash disables GAM's automatic hashing of the password (password is still sent over encrypted HTTPS) so that Google can evaluate the length and strength of the password. Optional parameter org moves the user into the desired Organizational Unit. At the same time a user account is created, rich profile information for the user such as phone numbers, organizational information, address and IM can be set. For details on profile fields, see Setting User Profile Details at Create or Update.
 
