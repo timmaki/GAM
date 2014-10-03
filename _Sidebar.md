@@ -12,5 +12,5 @@
 	* [Managing Product Licenses](LicenseExamples)
 	* [Managing Organizations](ExamplesOrganizations)
 	* [OAuth Authentication Related Commands](OAuthKeyManagement)
-* [BulkOperations Bulk Operations](BulkOperations)
+* [Bulk Operations](BulkOperations)
 * [Questions? Visit the GAM Discussion Forum](https://groups.google.com/forum/#!forum/google-apps-manager)
