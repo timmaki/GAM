@@ -2,6 +2,7 @@
   - [Creating a User](#creating-a-user)
   - [Update and Rename a User](#update-and-rename-a-user)
   - [Setting User Profile Details at Create or Update](#setting-user-profile-details-at-create-or-update)
+  - [Setting Custom User Schema Fields at Create or Update](#setting-custom-user-schema-fields-at-create-or-update)
   - [Get User Info](#get-user-info)
   - [Delete a User](#delete-a-user)
   - [Undelete a User](#undelete-a-user)
@@ -61,9 +62,7 @@ This example creates a user who is hidden from the GAL, forced to change their p
 gam create user jsmith gal off changepassword on
  admin on
 ```
-
 ---
-
 
 ## Update and Rename a User
 ### Syntax
@@ -105,9 +104,7 @@ gam update user gotfired
  firstname Nate lastname Ewguy
  password HopeILastHere
 ```
-
 ---
-
 
 ## Setting User Profile Details at Create or Update
 ### Syntax
@@ -151,7 +148,27 @@ gam.py update user jsmith@acme.org
  im type work protocol gtalk primary jsmith@acme.org
  im type home protocol jabber jsmith@jabber.org
 ```
+---
 
+## Setting Custom User Schema Fields at Create or Update
+### Syntax
+```
+gam create|update user <email address>
+ [schemaname.fieldname <fieldvalue>]
+ [schemaname.multivaluefieldname multivalued <fieldvalue>]
+```
+Sets the given custom user schema field for a user. The schema must already be created. See the [create custom user schema command](Custom-Schemas#creating-a-custom-user-schema). If the schema field is multivalued, you must specify multivalued.
+
+### Example
+This example sets the id, grade and (multivalued) label fields of the StudentData custom schema for David Jones.
+```
+gam update user david.jones@acme.com
+ StudentData.id 3434380
+ StudentData.grade 7
+ StudentData.labels multivalued BASEBALL_TEAM
+ StudentData.labels multivalued SOCCER_TEAM
+ StudentData.labels multivalued HONOR_ROLL
+```
 ---
 
 ## Get User Info
@@ -256,9 +273,7 @@ Groups:
   2sv <2sv@acme.org>
   users <users@acme.org>
 ```
-
 ---
-
 
 ## Delete a User
 ### Syntax
@@ -272,9 +287,7 @@ This example deletes Pete Best's account
 ```
 gam delete user pbest
 ```
-
 ---
-
 
 ## Undelete a User
 ### Syntax
@@ -301,9 +314,7 @@ This example creates a group and [sets max message size](GAM3GroupSettings#Max_M
 ```
 gam create group large_attachments@acme.org maxmessagebytes 25m
 ```
-
 ---
-
 
 ## Update and Rename a Group
 ### Syntax
@@ -330,9 +341,7 @@ gam update group beatles
  name "The Beetles"
  allow_external_members true
 ```
-
 ---
-
 
 ## Add Members/Owners/Managers to a Group
 ### Syntax
@@ -353,9 +362,7 @@ This example adds all members in the Google Apps domain to a group
 ```
 gam update group everyone add member all users
 ```
-
 ---
-
 
 ## Update Members/Owners/Managers in a Group
 ### Syntax
@@ -371,9 +378,7 @@ This example makes a user who is currently a manager of a group an owner
 ```
 gam update group beatles update owner user rstarr@beatles.com
 ```
-
 ---
-
 
 ## Sync owners/members/managers to a Group
 ### Syntax
@@ -390,9 +395,7 @@ This example syncs the students@acme.edu group membership with the "Students" Or
 ```
 gam update group students@acme.edu sync member org "Students"
 ```
-
 ---
-
 
 ## Remove Users from a Group
 ### Syntax
@@ -413,9 +416,7 @@ this example removes all current members from a group
 ```
 gam update group membersclub@acme.org remove group membersclub@acme.org
 ```
-
 ---
-
 
 ## Get Group Info
 ### Syntax
@@ -466,9 +467,7 @@ Members:
  owner: jlennon@acme.org (user)
  owner: pmccartney@acme.org (user)
 ```
-
 ---
-
 
 ## Delete a Group
 ### Syntax
@@ -482,9 +481,7 @@ This example will delete the group
 ```
 gam delete group beatles
 ```
-
 ---
-
 
 # Email Aliases
 ## Creating an Alias for a User or Group
@@ -509,9 +506,7 @@ This example will create an alias for target jimmy-hendrix whether it's a user o
 ```
 gam create alias the-jimmy-hendrix target jimmy-hendrix
 ```
-
 ---
-
 
 ## Updating an Alias
 ### Syntax
@@ -525,9 +520,7 @@ This example will update an existing alias, pointing it at another user
 ```
 gam update alias ceo user sbalmer
 ```
-
 ---
-
 
 ## Retrieving Alias Information
 ### Syntax
@@ -544,9 +537,7 @@ gam info alias president
 Alias: president
 User: bobama
 ```
-
 ---
-
 
 ## Deleting an Alias
 ### Syntax
@@ -560,9 +551,7 @@ This example will remove the alias
 ```
 gam delete alias sales
 ```
-
 ---
-
 
 # Determine if an Email Address is a User, Alias or Group
 ### Syntax
@@ -581,9 +570,7 @@ info@acme.com is an alias
  Alias Email: info@acme.com
  User Email: jdoe@acme.com
 ```
-
 ---
-
 
 # Mobile Devices
 ## Perform Wipe, Approve and Other Actions on Mobile Devices
@@ -601,9 +588,7 @@ This example will wipe the given device.
 ```
 gam update mobile AFiQxQ8n8E7HjDsk13hHSoAIfF6NE78bUsfqjXkrLquNnBo5OyJrn7tR1bnKJmeaT7a_o_hElS1blK0nvNfxOCBnR-Wa5VE9VBbUOzEwK4w-Ik61wkrmtlo action wipe
 ```
-
 ---
-
 
 ## Get Info on a Mobile Device
 ### Syntax
@@ -630,9 +615,7 @@ gam info mobile AFiQxQ8n8E7HjDsk13hHSoAIfF6NE78bUsfqjXkrLquNnBo5OyJrn7tR1bnKJmea
  os: Unknown
  email: jsmith@acme.org
 ```
-
 ---
-
 
 ## Delete a Mobile Device
 ### Syntax
@@ -648,6 +631,7 @@ This example deletes the given mobile device.
 ```
 gam delete mobile AFiQxQ8n8E7HjDsk13hHSoAIfF6NE78bUsfqjXkrLquNnBo5OyJrn7tR1bnKJmeaT7a_o_hElS1blK0nvNfxOCBnR-Wa5VE9VBbUOzEwK4w-Ik61wkrmtlo
 ```
+---
 
 # Chrome OS Devices
 ## Updating Chrome OS Devices
@@ -671,9 +655,7 @@ This example moves the Chrome device into a OU configured for Kiosk / Public Ses
 ```
 gam update cros 647cf127-ab85-4c2b-b07e-63ad1b705c19 ou "Kiosk Chromebooks"
 ```
-
 ---
-
 
 ## Getting Info About a Chrome OS Device
 ### Syntax
@@ -701,9 +683,7 @@ gam info cros 647cf127-ab85-4c2b-b07e-63ad1b705c19
  osVersion: 26.0.1410.40
  firmwareVersion: Google_Snow.2695.117.0
 ```
-
 ---
-
 
 # Resource Calendars
 ## Creating a Resource Calendar
@@ -724,9 +704,7 @@ This example will create a calendar with optional attributes
 ```
 gam create resource ed101 "ED101 Conference Room" description "Conference Room containing conference phone, whiteboard and projector" type "Conference Room"
 ```
-
 ---
-
 
 ## Updating a Resource Calendar
 ### Syntax
@@ -741,9 +719,7 @@ This will update the calendar resource, changing the common name, description an
 ```
 gam update resource board-room name "Board Room 1" description "Board Room #1 with 25 seats and projector" type "Conference Room"
 ```
-
 ---
-
 
 ## Retrieving Resource Calendar Information
 ### Syntax
@@ -760,9 +736,7 @@ gam info resource ed101
  Email: jay.powerposters.org_6564313031@resource.calendar.google.com
  Type: Conference Room
 ```
-
 ---
-
 
 ## Deleting a Resource Calendar
 ### Syntax
