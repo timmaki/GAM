@@ -1,6 +1,6 @@
 - [Creating a Custom User Schema](#creating-a-custom-user-schema)
 - [Updating a Custom User Schema](#updating-a-custom-user-schema)
-- [Print All Custom User Schemas](#get-all-custom-user-schemas)
+- [Print All Custom User Schemas](#print-all-custom-user-schemas)
 - [Get One Custom User Schema](#get-one-custom-user-schema)
 - [Deleting a Custom User Schema](#deleting-a-custom-user-schema)
 
