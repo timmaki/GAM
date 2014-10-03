@@ -158,62 +158,82 @@ gam user <username>|group <groupname>|ou <ouname>|all users [signature <signatur
 sets a email signature for the given users. Use quotes around the signature text if it contains spaces (which it almost certainly will). New lines can be specified with \n. HTML can also be used. An empty string like "" will disable the signature. Use the optional file argument to specify a filename that contains the signature text. This is easier for long, complex signatures.
 
 ### Example
-This example sets all user's signatures to
-
-Acme Inc<br>
+This example sets all user's signatures to be:
+```
+Acme Inc
 1321 Main Ave<br>
-<a href='http://www.acme.com'>http://www.acme.com</a><br>
+http://www.acme.com
+```
 
-<pre><code>gam all users signature "Acme Inc&lt;br&gt;1321 Main Ave&lt;br&gt;http://www.acme.com"<br>
-</code></pre>
+```
+gam all users signature
+ "Acme Inc<br>1321 Main Ave<br>http://www.acme.com
+```
 
-This example reads the signature from a file:<br>
-<pre><code>gam user bob@example.com signature file bobs-html-sig.txt<br>
-</code></pre>
-<hr />
-<h2>Retrieving a Signature</h2>
-<h3>Syntax</h3>
-<pre><code>gam user &lt;username&gt;|group &lt;groupname&gt;|ou &lt;ouname&gt;|all users show signature<br>
-</code></pre>
-gets the email signature for the given users.<br>
-<br>
-<h3>Example</h3>
-This example shows all user's signature<br>
-<br>
-<pre><code>gam all users show signature<br>
-</code></pre>
-<hr />
-<h2>Enabling/Disabling and Setting a Vacation (Away) Message</h2>
-<h3>Syntax</h3>
-<pre><code>gam user &lt;username&gt;|group &lt;groupname&gt;|ou &lt;ouname&gt;|all users vacation on|off subject &lt;subject text&gt; [message &lt;message text&gt;] [file &lt;message file] startdate &lt;YYYY-MM-DD&gt; enddate &lt;YYYY-MM-DD&gt; [contactsonly] [domainonly]<br>
-</code></pre>
-enable or disable a vacation/away message for the given users. subject will be the away message subject. message will be the message text. Use quotes around subject and message text if they contain spaces (which they probably will). If file is specified instead of message, the message will be read from the given text file. In the message text, \n will be replaced with a new line. The optional startdate and enddate arguments set a start and end date for the vacation message to be enabld. The optional argument contactsonly will only send away messages to persons in the user's Contacts. The optional argument domainonly will prevent vacation messages from going to users outside the Google Apps domain.<br>
-<br>
-<h3>Example</h3>
-This example sets the away message for the user<br>
-<pre><code>gam user epresley vacation on subject "Elvis has left the building"<br>
-  message "I will be on Mars for the next 100 years. I'll get back to you when I return.\n\nElvis"<br>
-</code></pre>
+This example reads the signature from a file:
+```
+gam user bob@example.com signature file bobs-html-sig.txt
+```
+----
 
-This example reads the message from a text file:<br>
-<pre><code>gam user bob@example.com vacation on subject "I am away" file bobs-away-message.txt<br>
-</code></pre>
+## Retrieving a Signature
+### Syntax
+```
+gam
+ user <username> | group <groupname>| ou <ouname> | all users
+ show signature<br>
+```
+gets the email signature for the given users.
 
-<hr />
+### Example
+This example shows all user's signature
 
-<h2>Retrieving Vacation Settings</h2>
-<h3>Syntax</h3>
-<pre><code>gam user &lt;username&gt;|group &lt;groupname&gt;|ou &lt;ouname&gt;|all users show vacation<br>
-</code></pre>
-show the given user's vacation message and settings.<br>
-<br>
-<h3>Example</h3>
-This example shows the vacation settings for jsmith<br>
-<pre><code>gam user jsmith show vacation<br>
-</code></pre>
-<hr />
+```
+gam all users show signature
+```
+----
 
-<h1>Labels and Filters</h1>
+## Enabling/Disabling and Setting a Vacation (Away) Message
+### Syntax
+```
+gam
+ user <username> | group <groupname> | ou <ouname> | all users
+ vacation on|off subject <subject text>
+ [message <message text>]
+ [file <message file>]
+ startdate <YYYY-MM-DD> enddate <YYYY-MM-DD>
+ [contactsonly] [domainonly]
+```
+enable or disable a vacation/away message for the given users. subject will be the away message subject. message will be the message text. Use quotes around subject and message text if they contain spaces (which they probably will). If file is specified instead of message, the message will be read from the given text file. In the message text, \n will be replaced with a new line. The optional startdate and enddate arguments set a start and end date for the vacation message to be enabld. The optional argument contactsonly will only send away messages to persons in the user's Contacts. The optional argument domainonly will prevent vacation messages from going to users outside the Google Apps domain.
+
+### Example
+This example sets the away message for the user
+```
+gam user epresley vacation on subject "Elvis has left the building"
+ message "I will be on Mars for the next 100 years. I'll get back to you when I return.\n\nElvis"
+```
+
+This example reads the message from a text file:
+```
+gam user bob@example.com vacation on subject "I am away" file bobs-away-message.txt
+```
+----
+
+## Retrieving Vacation Settings
+### Syntax
+gam
+ user <username> | group <groupname> |ou <ouname> | all users
+ show vacation
+```
+show the given user's vacation message and settings.
+
+## Example
+This example shows the vacation settings for jsmith
+```
+gam user jsmith show vacation
+```
+
+## Labels and Filters
 <h2>Create a Label</h2>
 <h3>Syntax</h3>
 <pre><code>gam user &lt;username&gt;|group &lt;groupname&gt;|ou &lt;ouname&gt;|all users label &lt;label name&gt;<br>
