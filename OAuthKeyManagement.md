@@ -1,23 +1,7 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
 - [OAuth Key Management](#oauth-key-management)
   - [Selecting Which OAuth Key File to Use](#selecting-which-oauth-key-file-to-use)
-    - [Syntax](#syntax)
-    - [Example](#example)
   - [Display Info About the Current OAuth Token](#display-info-about-the-current-oauth-token)
-    - [Syntax](#syntax-1)
-    - [Example](#example-1)
   - [Revoking an OAuth Token](#revoking-an-oauth-token)
-    - [Syntax](#syntax-2)
-    - [Example](#example-2)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-(TODO: Add table of contents.)
-
-_**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
 
 # OAuth Key Management
 ## Selecting Which OAuth Key File to Use
