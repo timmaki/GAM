@@ -1,16 +1,16 @@
 - [Introduction](#introduction)
-- [1) Enabling the APIs](#step-1-enabling-the-apis)
-- [2) Download GAM](#step-2-download-gam)
+- [1) Enabling the APIs](#1-enabling-the-apis)
+- [2) Download GAM](#2-download-gam)
   - [Windows Users](#windows-users)
   - [Mac and Linux Users](#mac-and-linux-users)
-- [3) Extract GAM](#step-3-extract-gam)
+- [3) Extract GAM](#3-extract-gam)
   - [Windows Users](#windows-users-1)
   - [Mac and Linux Users](#mac-and-linux-users-1)
-- [4) Generating your own client\_secrets.json file](#step-4-generating-your-own-client\_secretsjson-file)
-- [5) Running GAM for the First Time](#step-5-running-gam-for-the-first-time)
+- [4) Generating your own client\_secrets.json file](#4-generating-your-own-client\_secretsjson-file)
+- [5) Running GAM for the First Time](#5-running-gam-for-the-first-time)
   - [Windows Users](#windows-users-2)
   - [Mac and Linux Users](#mac-and-linux-users-2)
-- [6) More simple GAM commands](#step-6-more-simple-gam-commands)
+- [6) More simple GAM commands](#6-more-simple-gam-commands)
 
 # Introduction
 
