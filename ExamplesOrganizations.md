@@ -1,29 +1,7 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
 - [Creating an Organization Unit](#creating-an-organization-unit)
-  - [Syntax](#syntax)
-  - [Example](#example)
-  - [](#)
 - [Updating (and adding users to) an Organization Unit](#updating-and-adding-users-to-an-organization-unit)
-  - [Syntax](#syntax-1)
-  - [Example](#example-1)
-  - [](#-1)
 - [Retrieving an Organization Unit's Information](#retrieving-an-organization-units-information)
-  - [Syntax](#syntax-2)
-  - [Example](#example-2)
-  - [](#-2)
 - [Deleting an Organization Unit](#deleting-an-organization-unit)
-  - [Syntax](#syntax-3)
-  - [Example](#example-3)
-  - [](#-3)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-(TODO: Add table of contents.)
-
-_**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
 
 # Creating an Organization Unit
 ## Syntax
