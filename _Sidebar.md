@@ -3,6 +3,7 @@
 	* [Managing Users, Groups, Aliases, Mobile and Chrome OS Devices, OUs and Resource Calendars](GAM3DirectoryCommands)
 	* [Group Settings](GAM3GroupSettings)
 	* [Print Users, Groups, Aliases, Mobile and Chrome OS devices, OUs and Licenses](GAM3CSVListings)
+        * [Managing Custom User Schemas](Custom-Schemas)
 	* [User Email Settings](ExamplesEmailSettings)
 	* [User Security Settings](SecurityExamples)
 	* [Calendar Settings](CalendarExamples)
