@@ -1,7 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
 - [Introduction](#introduction)
 - [Step 1: Enabling the APIs](#step-1-enabling-the-apis)
 - [Step 2: Download GAM](#step-2-download-gam)
@@ -16,8 +12,6 @@
   - [Mac and Linux Users](#mac-and-linux-users-2)
 - [Step 6: More simple GAM commands](#step-6-more-simple-gam-commands)
 - [Step 7: Need a Google Apps Expert?](#step-7-need-a-google-apps-expert)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Introduction
 
