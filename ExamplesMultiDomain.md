@@ -1,0 +1,1 @@
+# Multidomain commands have been deprecated and removed from GAM as all commands are now multidomain-aware. Simply specify the user's full email address when working with users in secondary or primary domains.

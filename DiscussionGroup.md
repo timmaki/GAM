@@ -1,0 +1,2 @@
+# GAM Discussion Group
+&lt;wiki:gadget url="http://6.gmodules.com/ig/ifr?mid=6&amp;synd=trogedit&amp;url=http%3A%2F%2Fwww.gstatic.com%2Fsites-gadgets%2Fforum%2Fforum\_content.xml&amp;up\_Forum=google-apps-manager&amp;up\_Domain=&amp;up\_ShowSearch=true&amp;up\_ShowPopout=true&amp;up\_Transparency=false&amp;h=600&amp;w=100%25" width="600" height="600" title="GAM Discussion Group" border="0" /&gt;
