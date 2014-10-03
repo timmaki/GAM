@@ -4,7 +4,7 @@
 - [Get One Custom User Schema](#get-one-custom-user-schema)
 - [Deleting a Custom User Schema](#deleting-a-custom-user-schema)
 
-# Adding a Custom User Schema
+# Creating a Custom User Schema
 ## Syntax
 ```
 gam create schema <schemaname>
