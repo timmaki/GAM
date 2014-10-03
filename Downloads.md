@@ -1,0 +1,1 @@
+# Official GAM downloads are now on [GitHub...](https://github.com/jay0lee/GAM/releases)
