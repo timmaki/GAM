@@ -80,7 +80,7 @@ gam update group coffeetalk@example.com message_moderation_level moderate_new_me
 ```
 gam update group <group> primary_language <language>
 ```
-Update the primary language used by the group. For a list of valid languages see [here](http://code.google.com/googleapps/domain/email_settings/developers_guide_protocol.html#GA_email_language_tags).
+Update the primary language used by the group. For a list of valid languages see [here](https://developers.google.com/admin-sdk/email-settings/?csw=1#language_tags).
 
 ### Example
 This command sets the primary language for the english majors group to US English.
