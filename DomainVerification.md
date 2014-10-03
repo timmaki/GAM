@@ -1,25 +1,6 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
 - [Getting Verification Codes For A Domain](#getting-verification-codes-for-a-domain)
-  - [Syntax](#syntax)
-  - [Example](#example)
-  - [](#)
 - [Performing Domain Verification](#performing-domain-verification)
-  - [Syntax](#syntax-1)
-  - [Example](#example-1)
-  - [](#-1)
 - [Getting info about existing successful domain verifications](#getting-info-about-existing-successful-domain-verifications)
-  - [Syntax](#syntax-2)
-  - [Example](#example-2)
-  - [](#-2)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-(TODO: Add table of contents.)
-
-_**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
 
 GAM 3.04 and later allows admins to generate the details for domain verification as well as attempt the actual verify and print out existing verifications.
 
