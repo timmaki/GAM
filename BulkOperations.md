@@ -1,7 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
 - [Bulk Operations](#bulk-operations)
 - [Bulk Operations With GAM 3.2 and Newer](#bulk-operations-with-gam-32-and-newer)
   - [Using CSV Files](#using-csv-files)
@@ -10,12 +6,6 @@
 - [Old OS-Specific Methods](#old-os-specific-methods)
   - [Bulk Operations on Windows](#bulk-operations-on-windows)
   - [Bulk Operations on Linux](#bulk-operations-on-linux)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-_**Comments have been turned off for these help pages, please post your questions and comments to the [Mailing List](http://groups.google.com/group/google-apps-manager)**_
-
-(TODO: Add table of contents.)
 
 # Bulk Operations
 
