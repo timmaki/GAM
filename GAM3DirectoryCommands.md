@@ -50,13 +50,16 @@ Create a user account. firstname, lastname and password arguments are optional a
 This example creates a user account. Note that the password is in single quotes to prevent the shell from acting on the special characters.
 
 ```
-gam create user droth firstname "David Lee" lastname Roth password 'MightAsWellJump!'
+gam create user droth
+ firstname "David Lee" lastname Roth
+ password 'MightAsWellJump!'
 ```
 
 This example creates a user who is hidden from the GAL, forced to change their password after first login and a super admin.
 
 ```
-gam create user jsmith gal off changepassword on admin on
+gam create user jsmith gal off changepassword on
+ admin on
 ```
 
 ---
@@ -65,7 +68,12 @@ gam create user jsmith gal off changepassword on admin on
 ## Update and Rename a User
 ### Syntax
 ```
-gam update user <email address> [firstname <First Name>] [lastname <Last Name>] [password <Password>] [email <New Email>] [gal on|off] [admin on|off] [suspended on|off] [sha] [md5] [crypt] [nohash] [changepassword on|off] [org <Org Name>]
+gam update user <email address>
+ [firstname <First Name>] [lastname <Last Name>]
+ [password <Password>] [email <New Email>]
+ [gal on|off] [admin on|off] [suspended on|off]
+ [sha] [md5] [crypt] [nohash]
+ [changepassword on|off] [org <Org Name>]
 ```
 Update a user account. firstname, lastname and password arguments are optional and should be single quoted if they contain spaces or special characters like $ or ! that may be interpreted by the shell. Username is optional and will rename the user's account name (and thus their email address). admin, gal and suspended are optional and can be turned on or off. sha, crypt and md5 arguments are optional and indicate that the password specified is a hash of the given type. By default, if neither sha, crypt or md5 are specified, GAM will do a sha hash of the provided password and send the hash instead of the plain text password for an additional layer of security. However, when hashes are sent, Google is unable to ensure password length and strength so it's possible to set passwords that do not conform to Google's length requirement this way. The optional parameter nohash disable's GAM's automatic hashing of the password (password is still sent over encrypted HTTPS) so that Google can evaluate the length and strength of the password. changepassword is optional and indicates whether the user should be forced to change their password on next login. Optional parameter org allows the user to be moved into the desired Organization.
 
@@ -79,7 +87,10 @@ Google makes the following recommendations when renaming a user account:
 ### Example
 This example updates a user account, setting the firstname, lastname and password and giving them admin access to the domain. Notice that the password is in single quotes to prevent the shell from acting on the !.
 ```
-gam update user pmcartney firstname Paul lastname McCartney password 'LetItBe!' admin on suspended off
+gam update user pmcartney
+ firstname Paul lastname McCartney
+ password 'LetItBe!' admin on
+ suspended off
 ```
 
 This example renames ljones to lsmith, also setting her last name to Smith (in the case of marriage)
@@ -89,7 +100,10 @@ gam update user ljones username lsmith lastname Smith
 
 In this example, George Otfired is no longer at the company and Nate Ewguy has taken his position, we'll change the username, first and last name and password all in one stroke thus retaining George's old Google Apps mail, documents, etc
 ```
-gam update user gotfired username newguy firstname Nate lastname Ewguy password HopeILastHere
+gam update user gotfired
+ username newguy
+ firstname Nate lastname Ewguy
+ password HopeILastHere
 ```
 
 ---
@@ -100,12 +114,21 @@ gam update user gotfired username newguy firstname Nate lastname Ewguy password 
 Line breaks are for readability, when run, command should be one long line.
 ```
 gam create|update user <email address>
-[relation <relation type> <relation value>]
-[externalid <id type> <id value>]
-[phone type <phone type> value <phone value> primary|notprimary]
-[organization name <org name> title <org title> type <org type> department <org dept> symbol <org symbol> costcenter <org cost center> location <org location> description <org desc> domain <org domain> primary|notprimary]
-[address type <address type> unstructured <unstructered address> pobox <address pobox> extendedaddress <address extended address> streetaddress <address street address> locality <address locality> region <address region> postalcode <address postal code> countrycode <address country code> primary|notprimary]
-[im type <im type> protocol <im protocol> primary <im value>]
+ [relation <relation type> <relation value>]
+ [externalid <id type> <id value>]
+ [phone type <phone type> value <phone value> primary|notprimary]
+ [organization name <org name> title <org title>
+  type <org type> department <org dept> symbol <org symbol>
+  costcenter <org cost center> location <org location>
+  description <org desc> domain <org domain>
+  primary|notprimary]
+ [address type <address type> unstructured <unstructered address>
+  pobox <address pobox> extendedaddress <address extended address>
+  streetaddress <address street address> locality <address locality>
+  region <address region> postalcode <address postal code>
+  countrycode <address country code>
+  primary|notprimary]
+ [im type <im type> protocol <im protocol> primary <im value>]
 ```
 
 Updates the rich profile information for a user at the same time the user is created or updated (single API call). These additional attributes can all be specified in one GAM command but are separated in the documentation for clarity. All attributes are optional and will show in the user's directory information assuming they have not been hidden from the Global Address List (gal off). The relation attribute allows you to set a relation of the user (e.g. manager). Relation value should be the relations email address in most cases. externalid allows you to specify other identification attributes or numbers for the user. Note that these are visible within the directory so private information like social security numbers or unique org identifiers should not be used. The phone attribute allows you to set phone numbers where the user can be reached. The organization attribute allows you to describe organizations which the member is a part of as well as their role and placement in the org, note that this is entirely unrelated to the Google Apps org setting. The address attribute allows you to set the addresses of a user. The address can be structured with each field separated or unstructured (one large address not broken into fields). The im attribute allows you to set instant messaging addresses for the user.
@@ -115,16 +138,18 @@ This example will set multiple organizations, addresses, relations, managers and
 
 ```
 gam.py update user jsmith@acme.org
-relation manager admin@acme.org
-relation spouse psmith@mymail.com
-externalid employeeID 1234567
-externalID "Frequent Flyer Number" ac321905
-phone type mobile value 321-654-0987 notprimary
-phone type work value 123-457-7890 primary
-organization name "Acme Inc." type "Work" title "Product Manager" department "Wafers Division" symbol "ACME" costcenter 1234 location "Richmond Office" domain acme.org primary
-organization name "ACME Softball Team" type unknown title "Pitcher" description "2.3 ERA" notprimary
-im type work protocol gtalk primary jsmith@acme.org
-im type home protocol jabber jsmith@jabber.org
+ relation manager admin@acme.org
+ relation spouse psmith@mymail.com
+ externalid employeeID 1234567
+ externalID "Frequent Flyer Number" ac321905
+ phone type mobile value 321-654-0987 notprimary
+ phone type work value 123-457-7890 primary
+ organization name "Acme Inc." type "Work" title "Product Manager" department "Wafers Division"
+  symbol  "ACME" costcenter 1234 location "Richmond Office" domain acme.org primary
+ organization name "ACME Softball Team" type unknown title "Pitcher"
+  description "2.3 ERA" notprimary
+ im type work protocol gtalk primary jsmith@acme.org
+ im type home protocol jabber jsmith@jabber.org
 ```
 
 ---
@@ -283,7 +308,9 @@ gam create group large_attachments@acme.org maxmessagebytes 25m
 ## Update and Rename a Group
 ### Syntax
 ```
-gam update group <group email> [name <Group Name>] [description <Group Description>] [email <new email address>]
+gam update group <group email> [name <Group Name>]
+ [description <Group Description>]
+ [email <new email address>]
 ```
 modifying a groups name, description or email address. When changing a group's email address, the new address must not already be in use. Note that unlike renaming a user, the group's old address is NOT retained as an alias. If you'd like to keep the group's old address, you should immediately add it back via the [Create Alias](GAM3DirectoryCommands#Creating_an_Alias_for_a_User_or_Group) command.
 
@@ -292,12 +319,16 @@ If the Google Groups for Business (user-managed groups) service is enabled for t
 ### Example
 This example modifies the group, changing it's name and description
 ```
-gam update group beatles name "The Beatles Rock Band" description "British Invasion Band"
+gam update group beatles
+ name "The Beatles Rock Band"
+ description "British Invasion Band"
 ```
 
 This example modifies the group, changing it's description and [allowing posters from other domains](GAM3GroupSettings#Allow_External_Members).
 ```
-gam update group beatles name "The Beetles" allow_external_members true
+gam update group beatles
+ name "The Beetles"
+ allow_external_members true
 ```
 
 ---
@@ -306,7 +337,9 @@ gam update group beatles name "The Beetles" allow_external_members true
 ## Add Members/Owners/Managers to a Group
 ### Syntax
 ```
-gam update group <group email> add owner|member|manager {user <email address> | group <group address> | org <org name> | file <file name> | all users}
+gam update group <group email>
+ add owner|member|manager
+  {user <email address> | group <group address> | org <org name> | file <file name> | all users}
 ```
 add members, owners or managers to a group. You can specify a single user, a group of users, an org of users, a file with users (one per line), or "all users" for all users in Google Apps.
 
@@ -327,7 +360,9 @@ gam update group everyone add member all users
 ## Update Members/Owners/Managers in a Group
 ### Syntax
 ```
-gam update group <group email> update owner|member|manager {user <email address> | group <group address> | org <org name> | file <file name> | all users}
+gam update group <group email>
+ update owner|member|manager
+  {user <email address> | group <group address> | org <org name> | file <file name> | all users}
 ```
 update members, owners or managers in a group. You can specify a single user, a group of users, an org of users, a file with users (one per line), or "all users" for all users in Google Apps. The specified users who are already a member of the group will have their membership type changed to the specified level.
 
@@ -343,7 +378,9 @@ gam update group beatles update owner user rstarr@beatles.com
 ## Sync owners/members/managers to a Group
 ### Syntax
 ```
-gam update group <group email> sync owner|member|manager {user <email address> | group <group address> | org <org name> | file <file name> | all users}
+gam update group <group email>
+ sync owner|member|manager
+  {user <email address> | group <group address> | org <org name> | file <file name> | all users}
 ```
 
 Adds/removes users from the specified group in order to sync membership with the specified entity. The sync operation should result in a minimal amount of API calls when some of the specified users are already in the group. When adding users, their membership type (member, manager, owner) will be set as specified in the command but existing members not being removed will not see their membership type change.
@@ -360,7 +397,8 @@ gam update group students@acme.edu sync member org "Students"
 ## Remove Users from a Group
 ### Syntax
 ```
-gam update group <group email> remove {user <email address> | group <group address> | org <org name> | file <file name> | all users}
+gam update group <group email>
+ remove {user <email address> | group <group address> | org <org name> | file <file name> | all users}
 ```
 Remove users from the given group. The users are completely removed from the group whether they were a member, owner or manager.
 
@@ -551,7 +589,8 @@ info@acme.com is an alias
 ## Perform Wipe, Approve and Other Actions on Mobile Devices
 ### Syntax
 ```
-gam update mobile <mobile id> action wipe|approve|block|cancel_remote_wipe_then_activate|cancel_remote_wipe_then_block
+gam update mobile <mobile id>
+ action wipe|approve|block|cancel_remote_wipe_then_activate|cancel_remote_wipe_then_block
 ```
 
 Perform the given action on a mobile device. The mobile id must be specified and can be found by listing all mobile devices. wipe will tell the mobile device to perform a full data reset on next sync. approve will allow the device to sync with Google Apps. block will block sync attempts from the device. cancel\_remote\_wipe\_then\_activate and cancel\_remote\_wipe\_then\_block will cancel a remote wipe and then set the status to approved or blocked accordingly.
@@ -614,7 +653,9 @@ gam delete mobile AFiQxQ8n8E7HjDsk13hHSoAIfF6NE78bUsfqjXkrLquNnBo5OyJrn7tR1bnKJm
 ## Updating Chrome OS Devices
 ### Syntax
 ```
-gam update cros <device id> [user <user info>] [location <location info>] [notes <notes info>] [ou <new org unit>]
+gam update cros <device id>
+ [user <user info>] [location <location info>]
+ [notes <notes info>] [ou <new org unit>]
 ```
 
 Updates information about the given Chrome OS device. <device id> can be determined using the [gam print cros](GAM3CSVListings#Print_Chrome_OS_Devices) command. user, location and notes information is optional. ou is optional and allows the Chrome device to be moved to a new Google organizational unit, changing the policies that will be applied to the device.
@@ -668,7 +709,8 @@ gam info cros 647cf127-ab85-4c2b-b07e-63ad1b705c19
 ## Creating a Resource Calendar
 ### Syntax
 ```
-gam create resource <id> <Common Name> [description <description>] [type <type>]
+gam create resource <id> <Common Name>
+ [description <description>] [type <type>]
 ```
 create a calendar resource. id is the short name of the calendar and is used to identify it. Common Name is a longer more detailed name, use quotes around the common name if it contains spaces. The optional argument description allows you enter further details about the calendar resource. The optional argument type allows you to classify the resource. For details on using the type argument to organize your resource calendars, see Google's [guidance on organizing resource calendars](https://developers.google.com/google-apps/calendar-resource/#developing_a_naming_strategy_for_your_calendar_resources).
 
@@ -689,7 +731,8 @@ gam create resource ed101 "ED101 Conference Room" description "Conference Room c
 ## Updating a Resource Calendar
 ### Syntax
 ```
-gam update resource <id> [name <Name>] [description <Description>] [type <Type>]
+gam update resource <id> [name <Name>]
+ [description <Description>] [type <Type>]
 ```
 update a calendar resource. Required argument id is the short name of the calendar and is used to identify it. Optional argument name is the resources Common Name and allows you to change the resource calendar name that users see. The optional argument description allows you enter further details about the calendar resource. The optional argument type allows you to classify the resource. For details on using the type argument to organize your resource calendars, see Google's [guidance on organizing resource calendars](http://code.google.com/googleapps/domain/calendar_resource/docs/1.0/calendar_resource_developers_guide_protocol.html#naming_strategy).
 
