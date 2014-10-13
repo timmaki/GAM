@@ -165,11 +165,11 @@ gam user joe@acme.com delete calendar bob@acme.com
 ## Adding a Calendar to a User(s) List of Calendars
 ### Syntax
 ```
-gam user <user>|group <group>|ou <ou>|all users add calendar <calendar email> [selected true|false] [hidden true|false] [color #XXXXXX]
+gam user <user>|group <group>|ou <ou>|all users add calendar <calendar email> [selected true|false] [hidden true|false] [reminder email|sms|popup (minutes)] [summary <summary>] [colorindex (1-24)] [backgroundcolor <htmlcolor>] [foregroundcolor <htmlcolor>]
 ```
 Adds the given calendar to each of the users' list of calendars. Adding a calendar to a user's calendar list does not give them any rights to the calendar that they didn't have before. If the user does not have rights to the calendar, use the ACL command above to both grant them rights and add the calendar to their list of calendars.
 
-The optional argument selected determines if the calendar is selected in the user's list of subscribed calendars by default. The optional argument hidden determines if the calendar is hidden from the user's list of subscribed calendars. The optional argument color determine's the HTML color of the calendar. Color must be one of the HTML codes listed  [in the Google Calendar API reference page](http://code.google.com/apis/calendar/data/2.0/reference.html#gcal_reference).
+The optional argument selected determines if the calendar is selected in the user's list of subscribed calendars by default. The optional argument hidden determines if the calendar is hidden from the user's list of subscribed calendars. The optional argument reminder sets the default reminder type and time for calendar events and can be repeated. The optional argument summary overrides the calendar's default name. The optional argument colorindex sets the calendar entries colors. Index colors can be viewed [here](http://calendar-colors.appspot.com/). The optional arguments backgroundcolor nad foreground color manually set the calendars colors.
 
 ### Example
 The following example adds Bob's calendar to Joe's list of calendars without it being selected in Joe's calendar display.
@@ -184,15 +184,15 @@ gam user joe@acme.com add calendar bob@acme.com selected false
 ## Updating a Calendar in a User(s) List of Calendars
 ### Syntax
 ```
-gam user <user>|group <group>|ou <ou>|all users update calendar <calendar email> [selected true|false] [hidden true|false] [color #XXXXXX]
+gam user <user>|group <group>|ou <ou>|all users update calendar <calendar email> [selected true|false] [hidden true|false] [reminder email|sms|popup (minutes)] [summary <summary>] [colorindex (1-24)] [backgroundcolor <htmlcolor>] [foregroundcolor <htmlcolor>]
 ```
-Update how a given calendar is displayed in a user's list of calendars. The optional argument selected determines if the calendar is selected in the user's list of subscribed calendars by default. The optional argument hidden determines if the calendar is hidden from the user's list of subscribed calendars. The optional argument color determine's the HTML color of the calendar. Color must be one of the HTML codes listed  [in the Google Calendar API reference page](http://code.google.com/apis/calendar/data/2.0/reference.html#gcal_reference).
+Update how a given calendar is displayed in a user's list of calendars. The optional argument selected determines if the calendar is selected in the user's list of subscribed calendars by default. The optional argument hidden determines if the calendar is hidden from the user's list of subscribed calendars. The optional argument reminder sets the default reminder type and time for calendar events and can be repeated. The optional argument summary overrides the calendar's default name. The optional argument colorindex sets the calendar entries colors. Index colors can be viewed [here](http://calendar-colors.appspot.com/). The optional arguments backgroundcolor nad foreground color manually set the calendars colors.
 
 ### Example
 The following example updates Bob's view of Joe's calendars, changing the color to green.
 
 ```
-gam user bob@acme.com update calendar joe@acme.com color #0D7813
+gam user bob@acme.com update calendar joe@acme.com colorindex 9
 ```
 
 ---
@@ -205,9 +205,6 @@ gam calendar <user email> wipe
 ```
 Wipe all data from a user's primary calendar. **WARNING: This will delete all user events and there is no way to recover them!** Email address must be a Google Apps user. It's not possible to wipe resource or secondary calendars.
 
-**Note:** You cannot use an anonymous OAuth client ID and secret with this command. You'll need to follow the [OAuth console key instructions](GettingAnOAuthConsoleKey) except that instead of turning on the Groups Settings API, the Google Calendar API should be turned on (which does not require a request and manual Google approval).
-
-**Note:** If you used a version of GAM earlier than 2.51 to create the OAuth authorization you are using (oauth.txt), you'll need to re-authorize since the wipe command requires an additional scope. If you're seeing 403 Forbidden errors, this is probably the reason why. Just run [gam oauth revoke](OAuthKeyManagement#Revoking_an_OAuth_Token) and then re-run the wipe command to re-authorize.
 ### Example
 The following example deletes all data for Joe's Calendar.
 
