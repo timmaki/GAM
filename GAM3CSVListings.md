@@ -7,6 +7,7 @@
 - [Print Chrome OS Devices](#print-chrome-os-devices)
 - [Print Licenses](#print-licenses)
 - [Reports](#reports)
+  - [User Report](#users-report)
   - [Domain Report](#domain-report)
   - [Docs Report](#docs-report)
   - [Admin Actions Report](#admin-actions-report)
