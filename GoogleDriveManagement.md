@@ -61,10 +61,10 @@ gam user jsmith@acme.com add drivefile localfile sillycat.mp4
 This example creates a new folder called TPS Reports for all users and then creates a new, empty Google Doc, Spreadsheet, Presentation and Drawing under each user's folder.
 ```
 gam all users add drivefile drivefilename "TPS Reports" mimetype gfolder
-gam all users add drivefile drivefilename "TPS Doc" mimetype gdoc parentname "TPS Reports"
-gam all users add drivefile drivefilename "TPS Sheet" mimetype gsheet parentname "TPS Reports"
-gam all users add drivefile drivefilename "TPS Presentation" mimetype gpresentation parentname "TPS Reports"
-gam all users add drivefile drivefilename "TPS Drawing" mimetype gdrawing parentname "TPS Reports"
+gam all users add drivefile drivefilename "TPS Doc" mimetype gdoc parentname 'TPS Reports'
+gam all users add drivefile drivefilename "TPS Sheet" mimetype gsheet parentname 'TPS Reports'
+gam all users add drivefile drivefilename "TPS Presentation" mimetype gpresentation parentname 'TPS Reports'
+gam all users add drivefile drivefilename "TPS Drawing" mimetype gdrawing parentname 'TPS Reports'
 ```
 
 This example uploads the MyRamblings.docx file to Google Drive and converts it to Google Doc native format. It also renames the file to a nicer looking "My Ramblings".
@@ -85,7 +85,7 @@ Update a Drive file's metadata and/or content. In order to determine which file(
 ### Examples
 This example updates the "My Ramblings" file to be starred and placed under a folder called "Brilliant things I've said" (assumes a folder by that name already exists for the user)
 ```
-gam user bsmith@acme.com update drivefile drivefilename "My Ramblings" starred true parentname "Brilliant things I've said"
+gam user bsmith@acme.com update drivefile drivefilename "My Ramblings" starred true parentname 'Brilliant things I've said'
 ```
 
 This example updates the Drive file DailyReport.pdf with the contents of the local file Report-3-28-2014.pdf.
