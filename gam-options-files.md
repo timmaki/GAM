@@ -1,4 +1,4 @@
-If you add some specific files to the same folder as GAM.exe, you can alter the behavior of GAM.  Each file has to exist to do its job - there is no specific content required in the file.
+If you add some specific files to the same folder as GAM.exe (or gam.py), you can alter the behavior of GAM.  Each file has to exist to do its job - there is no specific content required in the file.
 
 ` nocache.txt `
 The cache will be disabled at the cost of some performance.
