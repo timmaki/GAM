@@ -30,7 +30,6 @@ With GAM versions 3.02 and higher, you need to create your own client\_secrets.j
 
 1. On the next screen select Application type: Service account
 1. Click Create Client ID <br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam14.png'>
-1. Click Download private key then save this file as oauth2service.p12 and save it in the same folder as your GAM installation, same place that you saved your client_secrets.json file then close the dialog window. <br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam16.png'>
 1. Navigate to the section of the page for the Service Account, and then click on Download JSON, save the file to the same folder as your GAM installation and rename it to oauth2service.json
 1. In the section for the Service Account, copy your Client ID to the clipboard <br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam17.png'>
 1. In a new browser window, go to the Google Apps Admin dashboard (admin.google.com) and navigate to the Security Icon, click Show More then Advanced settings, and under the Authentication section click on Manage API client access.  <br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam18.png'>
