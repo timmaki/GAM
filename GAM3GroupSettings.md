@@ -180,14 +180,14 @@ gam update group deals@acme.com  who_can_join anyone_can_join
 ## Who Can Post Message
 ### Syntax
 ```
-gam update group <group> settings who_can_post_message all_in_domain_can_post|all_managers_can_post|all_members_can_post|anyone_can_post|none_can_post
+gam update group <group> who_can_post_message all_in_domain_can_post|all_managers_can_post|all_members_can_post|anyone_can_post|none_can_post
 ```
 Determine who is allowed to send messages to the group. all\_in\_domain\_can\_post allows any Google Apps user in the domain to send messages (even if they're not a group member). all\_managers\_can\_post limits sending rights to owners and managers. all\_members\_can\_post allows anyone who has joined the group to send messages. anyone\_can\_post allows anyone on the Internet to send email to the group address. none\_can\_post is not normally directly set on a group, it will show as the return value for who\_can\_post if archive\_only is true.
 
 ### Example
 This example locks the announcements@acme.com group down to only accept posts from managers and owners.
 ```
-gam update group announcements@acme.com settings who_can_post_message all_managers_can_post
+gam update group announcements@acme.com who_can_post_message all_managers_can_post
 ```
 
 ---
@@ -196,14 +196,14 @@ gam update group announcements@acme.com settings who_can_post_message all_manage
 ## Who Can View Group
 ### Syntax
 ```
-gam update group <group> settings who_can_view_group all_in_domain_can_view|all_managers_can_view|all_members_can_view|anyone_can_view
+gam update group <group> who_can_view_group all_in_domain_can_view|all_managers_can_view|all_members_can_view|anyone_can_view
 ```
 Determine who can view this group including past messages sent to the group if is\_archived is enabled. all\_in\_domain\_can\_view allows any Google Apps users in the domain to view the group. all\_managers\_can\_view limits viewing the group to owners and managers only. all\_members\_can\_view allows anyone who is a member of the group to view it. anyone\_can\_view allows anyone on the Internet to view the group.
 
 ### Example
 This example sets membersonly@acme.com to only be viewable by members.
 ```
-gam update group <group> settings who_can_view_group all_members_can_view
+gam update group <group> who_can_view_group all_members_can_view
 ```
 
 ---
