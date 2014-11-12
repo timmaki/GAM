@@ -14,7 +14,7 @@ gam create schema <schemaname>
  [maxvalue <number>]
  endfield
 ```
-Create a new custom user schema. schemaname is the name of the schema to create. You can have up to 100 schemas in your Google Apps instance and each schema can have up to 100 fields defined. fieldname is the name of the field. type is required and specifies the type of the field. bool, double, email, int64, phone and string are the allowed types. The optional parameter indexed specifies that searching will be performed on this field. The optional parameter restricted specifies that only super administrators and the user themself can read the field value(s), other users will not have access. The optional parameter multivalued specifies that the field can contain multiple values per-user. The endfield parameter is necessary to end the given field.
+Create a new custom user schema. schemaname is the name of the schema to create. You can have up to 100 schemas in your Google Apps instance and each schema can have up to 100 fields defined. fieldname is the name of the field. type is required and specifies the type of the field. bool, double, email, int64, phone and string are the allowed types. The optional parameter indexed specifies that searching will be performed on this field. The optional parameter restricted specifies that only super administrators and the user can read the field value(s), other users will not have access. The optional parameter multivalued specifies that the field can contain multiple values per-user. The endfield parameter is necessary to end the given field. Once a schema is created, schema values can be set for users with [gam user create and update commands](https://github.com/jay0lee/GAM/wiki/GAM3DirectoryCommands#setting-custom-user-schema-fields-at-create-or-update).
 
 ## Example
 This example creates a StudentData schema with the fields id, grade and labels. The id field will be hidden from regular users (restricted) and indexed. The labels field will be multivalue. This example also shows how you would set this schema for an existing user.
@@ -41,7 +41,7 @@ gam update schema <schemaname>
   [maxvalue <number>]
   endfield
 ```
-Update a custom user schema. Note that many schema update operations aren't possible in order to preserve existing user data. As a rule of thumb, schemas should be well thought out when first created as after-the-fact changes can prove challenging. schemaname is the name of the schema to create. You can have up to 100 schemas in your Google Apps instance and each schema can have up to 100 fields defined. fieldname is the name of the field. type is required and specifies the type of the field. bool, double, email, int64, phone and string are the allowed types. The optional parameter indexed specifies that searching will be performed on this field. The optional parameter restricted specifies that only super administrators and the user themself can read the field value(s), other users will not have access. The optional parameter multivalued specifies that the field can contain multiple values per-user. The endfield parameter is necessary to end the given field.
+Update a custom user schema. Note that many schema update operations aren't possible in order to preserve existing user data. As a rule of thumb, schemas should be well thought out when first created as after-the-fact changes can prove challenging. schemaname is the name of the schema to create. You can have up to 100 schemas in your Google Apps instance and each schema can have up to 100 fields defined. fieldname is the name of the field. type is required and specifies the type of the field. bool, double, email, int64, phone and string are the allowed types. The optional parameter indexed specifies that searching will be performed on this field. The optional parameter restricted specifies that only super administrators and the user themself can read the field value(s), other users will not have access. The optional parameter multivalued specifies that the field can contain multiple values per-user. The endfield parameter is necessary to end the given field. Schema values can be set for users with [gam user create and update commands](https://github.com/jay0lee/GAM/wiki/GAM3DirectoryCommands#setting-custom-user-schema-fields-at-create-or-update).
 
 # Print All Custom User Schemas
 ## Syntax
@@ -50,12 +50,12 @@ gam print schemas
 ```
 Print all custom user schemas. Output displays all schema fields and attributes such as restricted, indexed, multivalue, etc.
 
-# Get One Custom User Schema
+# Get Info On One Custom User Schema
 ## Syntax
 ```
-gam get schema <schemaname>
+gam info schema <schemaname>
 ```
-Get info about one custom user schema. Output displays the schemas fields and attributes such as restricted, indexed, multivalue, etc.
+Get info about one custom user schema. Output displays the schemas fields and attributes such as restricted, indexed, multivalue, etc. Schema values can be set for users with [gam user create and update commands](https://github.com/jay0lee/GAM/wiki/GAM3DirectoryCommands#setting-custom-user-schema-fields-at-create-or-update).
 
 # Deleting a Custom User Schema
 ## Syntax
