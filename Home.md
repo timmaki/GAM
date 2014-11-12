@@ -14,7 +14,7 @@
 
 # Introduction
 
-Dito GAM is a command line tool that allows administrators to manage many aspects of their Google Apps Account. This page provides simple instructions for downloading, installing and starting to use GAM.
+GAM is a command line tool that allows administrators to manage many aspects of their Google Apps Account. This page provides simple instructions for downloading, installing and starting to use GAM.
 
 GAM requires Google Apps Business, Education, Partner or Government Edition.  Google Apps Free Edition has limited API support and not all GAM commands work.
 
