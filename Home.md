@@ -65,6 +65,8 @@ this will work if you extracted the gam files to a subfolder named gam in your h
 
 python gam.py info domain
 ```
+Be aware that Python 3.x is not supported, use Python 2.7.x.
+
 If you get an error about python not being a valid program, make sure you have the Python interpreter installed on your machine. All Macs and most Linux installs should include Python but if not, you may need to research how to install it on your OS/Distribution. If everything works, you'll be asked to specify which "scopes" you'd like the OAuth token to support. For now, just select the last option to continue, all scopes will be selected.
 
 Next GAM will open up a web page in order for you to grant GAM access to retrieve data and make changes to your Google Apps account. Make sure you are logged in to a Google Apps Administrator account before granting access. Once you've granted access, switch back to the command prompt window and hit enter. If no errors are printed, you should see details about your Google Apps domain if everything is working.
