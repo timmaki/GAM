@@ -7,6 +7,7 @@
   - [UTF-8 (Unicode) for outgoing mail](#utf-8-unicode-for-outgoing-mail)
   - [Enable/Disable Webclips](#enabledisable-webclips)
 - [Signatures and Away Messages](#signatures-and-away-messages)
+  - [Setting a Signature](#setting-a-signature)
   - [Retrieving a Signature](#retrieving-a-signature)
   - [Enabling/Disabling and Setting a Vacation (Away) Message](#enablingdisabling-and-setting-a-vacation-away-message)
   - [Retrieving Vacation Settings](#retrieving-vacation-settings)
