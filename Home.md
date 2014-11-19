@@ -71,7 +71,7 @@ If you get an error about python not being a valid program, make sure you have t
 
 Next GAM will open up a web page in order for you to grant GAM access to retrieve data and make changes to your Google Apps account. Make sure you are logged in to a Google Apps Administrator account before granting access. Once you've granted access, switch back to the command prompt window and hit enter. If no errors are printed, you should see details about your Google user if everything is working.
 
-If you're running GAM on a machine that doesn't have a browser installed (for example, a headless Linux box), you won't be able to open a browser on the machine running GAM in order to authorize. In this case, you should first create a file called ` nobrowser.txt ` in the same location as gam.py ( [[other option files|gam options files]].) Then, after running ` gam info domain `, GAM will simply display a link which you can copy and open from a computer running a browser in order to manually authorize.
+If you're running GAM on a machine that doesn't have a browser installed (for example, a headless Linux box), you won't be able to open a browser on the machine running GAM in order to authorize. In this case, you should first create a file called ` nobrowser.txt ` in the same location as gam.py ( [[other option files|gam options files]].) Then, after running ` gam info user `, GAM will simply display a link which you can copy and open from a computer running a browser in order to manually authorize.
 
 Instead of needing to type "python gam.py for every command, we can use the alias command to shorten it to just "gam":
 ```html
@@ -81,7 +81,7 @@ alias gam="python ~/gam/gam.py"
 Now when we can just type commands like:
 ```html
 
-gam info domain
+gam info user
 ```
 you'll need to type the alias command each time you open a Terminal to run GAM or add it to your .bashrc file.
 
