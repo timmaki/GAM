@@ -48,9 +48,9 @@ cd \gam
 this works if you extracted GAM to c:\gam. If you extracted it elsewhere, specify that location instead. Now type:
 ```html
 
-gam info domain
+gam info user
 ```
-After seeing some information about Dito (press Enter), you'll be asked to specify which "scopes" you'd like the OAuth token to support. For now, select the last option to continue, all scopes will be selected. Next GAM will open up a web page in order for you to grant access to retrieve data and make changes to your Google Apps account. Make sure you are logged in to a Google Apps Administrator account before granting access. Once you've granted access, switch back to the command prompt window, GAM should already be working to display information about your Google Apps domain.
+You'll be asked to specify which "scopes" you'd like the OAuth token to support. For now, select the last option to continue, all scopes will be selected. Next GAM will open up a web page in order for you to grant access to retrieve data and make changes to your Google Apps account. Make sure you are logged in to a Google Apps Administrator account before granting access. Once you've granted access, switch back to the command prompt window, GAM should already be working to display information about your user account.
 
 Congrats, you're up and running with GAM.
 
@@ -63,13 +63,13 @@ cd ~/gam
 this will work if you extracted the gam files to a subfolder named gam in your home directory. If you extracted them elsewhere, replace ~/gam with the full path to them. Now run:
 ```html
 
-python gam.py info domain
+python gam.py info user
 ```
 Be aware that Python 3.x is not supported, use Python 2.7.x.
 
 If you get an error about python not being a valid program, make sure you have the Python interpreter installed on your machine. All Macs and most Linux installs should include Python but if not, you may need to research how to install it on your OS/Distribution. If everything works, you'll be asked to specify which "scopes" you'd like the OAuth token to support. For now, just select the last option to continue, all scopes will be selected.
 
-Next GAM will open up a web page in order for you to grant GAM access to retrieve data and make changes to your Google Apps account. Make sure you are logged in to a Google Apps Administrator account before granting access. Once you've granted access, switch back to the command prompt window and hit enter. If no errors are printed, you should see details about your Google Apps domain if everything is working.
+Next GAM will open up a web page in order for you to grant GAM access to retrieve data and make changes to your Google Apps account. Make sure you are logged in to a Google Apps Administrator account before granting access. Once you've granted access, switch back to the command prompt window and hit enter. If no errors are printed, you should see details about your Google user if everything is working.
 
 If you're running GAM on a machine that doesn't have a browser installed (for example, a headless Linux box), you won't be able to open a browser on the machine running GAM in order to authorize. In this case, you should first create a file called ` nobrowser.txt ` in the same location as gam.py ( [[other option files|gam options files]].) Then, after running ` gam info domain `, GAM will simply display a link which you can copy and open from a computer running a browser in order to manually authorize.
 
