@@ -339,7 +339,10 @@ gam update group <group email> [name <Group Name>]
  [description <Group Description>]
  [email <new email address>]
 ```
-modifying a groups name, description or email address. When changing a group's email address, the new address must not already be in use. Note that unlike renaming a user, the group's old address is NOT retained as an alias. If you'd like to keep the group's old address, you should immediately add it back via the [Create Alias](GAM3DirectoryCommands#Creating_an_Alias_for_a_User_or_Group) command.
+modifying a groups name, description or email address. When changing a group's email address, the new address must not already be in use.
+
+When renaming a group, the group's old address is retained as an alias to ensure continuous mail delivery. (Note: verified on 2015-01-10.) If you prefer not to have the alias in place after the rename, you'll need to [Delete the Alias](ExamplesProvisioning#deleting-an-alias).
+
 
 If the Google Groups for Business (user-managed groups) service is enabled for the Google Apps domain, additional groups security settings are available and can be set with the same GAM command as described on the [Groups Settings page](GAM3GroupSettings#Updating__Group_Settings).
 
