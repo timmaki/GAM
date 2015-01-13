@@ -566,9 +566,9 @@ gam delete alias <alias>
 removes an alias.
 
 ### Example
-This example will remove the alias
+This example will remove the alias *salesteam*
 ```
-gam delete alias sales
+gam delete alias salesteam
 ```
 ---
 
