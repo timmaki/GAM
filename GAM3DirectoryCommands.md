@@ -414,6 +414,10 @@ This example syncs the students@acme.edu group membership with the "Students" Or
 ```
 gam update group students@acme.edu sync member org "Students"
 ```
+This example syncs the faculty@acme.edu group membership with the "Faculty" Org Unit and sub orgs in Google.
+```
+gam update group faculty@acme.edu sync member ou_and_children "Faculty"
+```
 ---
 
 ## Remove Users from a Group
