@@ -83,7 +83,7 @@ Now when we can just type commands like:
 
 gam info user
 ```
-you'll need to type the alias command each time you open a Terminal to run GAM or add it to your .bashrc file.
+you'll need to type the alias command each time you open a Terminal to run GAM or add it to your .bashrc (or .bash_profile on OS X) file.
 
 Congratulations, you now have a working GAM install.
 
