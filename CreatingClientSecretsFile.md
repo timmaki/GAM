@@ -35,5 +35,5 @@ With GAM versions 3.02 and higher, you need to create your own client\_secrets.j
 1. In a new browser window, go to the Google Apps Admin dashboard (admin.google.com) and navigate to the Security Icon, click Show More then Advanced settings, and under the Authentication section click on Manage API client access.  <br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam18.png'>
 1. Click in the Client Name field at the top left and paste in the OAuth2 Client ID that you copied to the clipboard previously <br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam19.png'>
 1. Next paste the following text into the One or More API Scopes field and click Authorize:
-`https://www.googleapis.com/auth/calendar,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/activity,https://mail.google.com/`<br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam20.png'>
+`https://www.googleapis.com/auth/calendar,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/activity,https://mail.google.com/,https://www.googleapis.com/auth/siteverification`<br><br><img src='https://googledrive.com/host/0B9ltla5VOI4-bWZHWXljbHVwNDA/gam20.png'>
 1. You should now be set up with your `OAuth2service.json` and be able to access the Drive and Calendar Commands.
