@@ -156,7 +156,7 @@ Removes the given calendar from each of the users' list of calendars. Deleting a
 ### Example
 This example removes Joe's calendar from Bob's display of calendars.
 ```
-gam user joe@acme.com delete calendar bob@acme.com
+gam user bob@acme.com delete calendar joe@acme.com
 ```
 
 ---
