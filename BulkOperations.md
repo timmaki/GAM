@@ -52,7 +52,7 @@ gam print users | gam csv - gam update user ~primaryEmail changepassword on
 
 or if you wanted to prevent regular member users from leaving any of your Google Groups:
 ```
-gam print groups | gam update group ~Email who_can_leave_group ALL_MANAGERS_CAN_LEAVE
+gam print groups | gam csv - gam update group ~Email who_can_leave_group ALL_MANAGERS_CAN_LEAVE
 ```
 
 ## Using A Text File to Batch Run GAM Commands
