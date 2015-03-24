@@ -6,7 +6,7 @@
 - [Old OS-Specific Methods](#old-os-specific-methods)
   - [Bulk Operations on Windows](#bulk-operations-on-windows)
   - [Bulk Operations on Linux](#bulk-operations-on-linux)
-- [Avoid prompts to update GAM](#Avoid prompts to update GAM)
+- [Avoid prompts to update GAM](#avoid-prompts-to-update-gam)
 
 # Bulk Operations
 
