@@ -208,14 +208,20 @@ gam user tim@acme.org add drivefileacl 0B8aCWH-xLi2NckxXOEp5REUtNEE anyone role 
 ## Updating permissions to a file/folder for a user
 ### Syntax
 ```
-gam user <user email> update drivefileacl <file id> <permission id> [withlink] [role <reader|commenter|writer|owner>]
+gam user <user email> update drivefileacl <file id> <permission id> [withlink] [role <reader|commenter|writer|owner>] [transferownership <true|false>]
 ```
-Changes a user or groups permissions to the given Drive file/folder. The permisson id parameter can be an email address or a numeric id as shown when listing a file's permissions. If an email address is used, GAM must first look up the permission id of that email address before updating (2 API calls instead of 1). The role parameter determines the level of access the given user(s) have to the file and can be one of reader, commenter, writer or owner. Specifying owner will change ownership of the file/folder and only works when the source and target accounts are in the same Google Apps instance. The optional withlink parameter specifies that the file is not "discoverable" or indexed. It is only available if the accessing user knows the exact URL.
+Changes a user or groups permissions to the given Drive file/folder. The permisson id parameter can be an email address or a numeric id as shown when listing a file's permissions. If an email address is used, GAM must first look up the permission id of that email address before updating (2 API calls instead of 1). The role parameter determines the level of access the given user(s) have to the file and can be one of reader, commenter, writer or owner. Specifying owner will change ownership of the file/folder and only works when the source and target accounts are in the same Google Apps instance. The optional withlink parameter specifies that the file is not "discoverable" or indexed. It is only available if the accessing user knows the exact URL. The optional transferownership parameter indicates whether changing a role to 'owner' downgrades the current owners to writers. 
 
 ### Example
 This example changes Sally from a reader to a writer for the file.
 ```
 gam user tim@acme.org update drivefileacl 0B8aCWH-xLi2NckxXOEp5REUtNEE sally@acme.org role writer withlink
+```
+
+### Example
+This example makes Sally the owner for the file and changes Tim from owner to writer for the file.
+```
+gam user tim@acme.org update drivefileacl 0B8aCWH-xLi2NckxXOEp5REUtNEE sally@acme.org role owner transferownership true
 ```
 
 ---
