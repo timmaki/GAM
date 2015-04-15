@@ -72,9 +72,9 @@ gam print aliases > aliases.csv
 # Print All Organizational Units
 ### Syntax
 ```
-gam print orgs [name] [description] [parent] [inherit] [todrive]
+gam print orgs [name] [description] [parent] [inherit] [allfields] [todrive]
 ```
-prints a CSV file of all organizational units in the Google Apps account. The CSV output can be redirected to a file using the operating system's pipe command (such as "> orgs.csv") see examples below. By default, the only column output is "Path" (OUs full path). The optional arguments name, description, parent and inherit add the respective additonal column to the CSV output. Only 1 call to Google's servers is done no matter which arguments are specified so the optional arguments should not significantly increase the time it takes for the command to complete. The optional todrive argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
+prints a CSV file of all organizational units in the Google Apps account. The CSV output can be redirected to a file using the operating system's pipe command (such as "> orgs.csv") see examples below. By default, the only column output is "Path" (OUs full path). The optional argument allfields will include all possible fields in the CSV. The optional arguments name, description, parent and inherit add the respective additonal column to the CSV output. Only 1 call to Google's servers is done no matter which arguments are specified so the optional arguments should not significantly increase the time it takes for the command to complete. The optional todrive argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
 
 ### Example
 this example will output all organizations to the file orgs.csv including all optional columns
