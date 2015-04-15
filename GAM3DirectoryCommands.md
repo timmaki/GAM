@@ -662,16 +662,16 @@ gam delete mobile AFiQxQ8n8E7HjDsk13hHSoAIfF6NE78bUsfqjXkrLquNnBo5OyJrn7tR1bnKJm
 ```
 gam update cros <device id>
  [user <user info>] [location <location info>]
- [notes <notes info>] [ou <new org unit>]
+ [notes <notes info>] [ou <new org unit>] [assetid <asset id>]
 ```
 
-Updates information about the given Chrome OS device. <device id> can be determined using the [gam print cros](GAM3CSVListings#Print_Chrome_OS_Devices) command. user, location and notes information is optional. ou is optional and allows the Chrome device to be moved to a new Google organizational unit, changing the policies that will be applied to the device.
+Updates information about the given Chrome OS device. <device id> can be determined using the [gam print cros](GAM3CSVListings#Print_Chrome_OS_Devices) command. user, location, notes and assetid information is optional. ou is optional and allows the Chrome device to be moved to a new Google organizational unit, changing the policies that will be applied to the device.
 
 ### Example
-This example will update the user, location and notes for the given Chromebook.
+This example will update the user, location, notes and asset id for the given Chromebook.
 
 ```
-gam update cros 647cf127-ab85-4c2b-b07e-63ad1b705c19 user jsmith@acme.org location "Richmond Office" notes "tracking ID #329234"
+gam update cros 647cf127-ab85-4c2b-b07e-63ad1b705c19 user jsmith@acme.org location "Richmond Office" notes "tracking ID #329234" assetid 1234567890
 ```
 
 This example moves the Chrome device into a OU configured for Kiosk / Public Session mode.
