@@ -1,4 +1,4 @@
-# Creating Your Own OAuth Console clients\_secrets.json
+# Creating Your Own OAuth Console client\_secrets.json
 In the past, all GAM installations shared the same client\_secrets.json file included with the GAM download. This file identifies the GAM project to Google but it does not provide any special access rights to your Google Apps domain (that's what the oauth2.txt file is for).
 
 Also have created steps below to create the OAuth2services.json file as well which enables commands for Drive and Calendar
