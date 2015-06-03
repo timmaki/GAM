@@ -9,7 +9,7 @@
 - [Reports](#reports)
   - [User Report](#users-report)
   - [Domain Report](#domain-report)
-  - [Docs Report](#docs-report)
+  - [Drive Report](#drive-report)
   - [Admin Actions Report](#admin-actions-report)
   - [Login Audit Report](#login-audit-report)
 
@@ -198,23 +198,23 @@ This example uploads to Google Drive the most recent domain report
 gam report domain todrive
 ```
 
-## Docs Report
+## Drive Report
 ### Syntax
 ```
-gam report docs [todrive] [user <user email> [ip <ip address>] [start <start time>] [end <end time>] [event view|edit]
+gam report drive [todrive] [user <user email> [ip <ip address>] [start <start time>] [end <end time>] [event view|edit]
 ```
 Display or upload to Google Drive a CSV report of Google Drive activities by users. The optional todrive parameter specifies that the results should be uploaded to Google Drive rather than being displayed on screen or piped to a CSV text file. The optional user parameter narrows the results down to documents viewed or edited by the given user. The optional ip address parameter narrows results down to activities performed from the given IPv4 or IPv6 address. The optional start and end parameters narrow the results down to actions performed during the given period. The optional event parameter narrows the results down to just views or just edits.
 
 ### Example
 This example uploads to Drive a CSV of all doc actions.
 ```
-gam report docs todrive
+gam report drive todrive
 ```
 
 This example narrows the results down to actions performed by john@acme.com on Christmas Day (GMT).
 
 ```
-gam report docs user john@acme.com start 12-25-2013T00:00:00.000Z end 12-25-2013T23:59:59.999Z
+gam report drive user john@acme.com start 12-25-2013T00:00:00.000Z end 12-25-2013T23:59:59.999Z
 ```
 
 ## Admin Actions Report
