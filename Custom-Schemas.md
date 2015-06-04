@@ -27,8 +27,8 @@ gam create schema StudentData
 gam update user tommy.jones
  StudentData.id 839342028
  StudentData.grade 1
- StudentData.labels multivalued TRANSFER_STUDENT
- StudentData.labels multivalued HONOR_ROLL 
+ StudentData.labels multivalue TRANSFER_STUDENT
+ StudentData.labels multivalue HONOR_ROLL 
 ```
 
 # Updating a Custom User Schema
@@ -36,7 +36,7 @@ gam update user tommy.jones
 ```
 gam update schema <schemaname>
  field <fieldname> type <bool|double|email|int64|phone|string>
-  [indexed] [restricted] [multivalued]
+  [indexed] [restricted] [multivalue]
   [minvalue <number>]
   [maxvalue <number>]
   endfield
