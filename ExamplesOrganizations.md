@@ -67,9 +67,9 @@ gam update org Faculty add group inventors
 # Retrieving an Organization Unit's Information
 ## Syntax
 ```
-gam info org <name>
+gam info org <name> [nousers|child]
 ```
-retrieve details about the given organization unit. GAM will print a summary of the organization unit.
+retrieve details about the given organization unit. GAM will print a summary of the organization unit. If the nousers argument is selected, the users in the org won't be listed. The child argument prints users in the sub-orgs along with the string "(child") next to their email address.
 
 ## Example
 This example will print a summary detailing the given organization unit
