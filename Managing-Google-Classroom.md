@@ -7,6 +7,9 @@
   - [Adding Students And Teachers To A Course](#adding-students-and-teachers-to-a-course)
   - [Syncing Students And Teachers To A Course](#syncing-students-and-teachers-to-a-course)
   - [Removing Students And Teachers From A Course](#removing-students-and-teachers-from-a-course)
+- [Course And Course Participant Reports](#course-and-course-participant-reports)
+  - [Printing Courses](#printing-courses)
+  - [Printing Course Participants](#printing-course-participants)
 
 # Managing Courses
 ## Creating A Course
@@ -129,5 +132,42 @@ removes the given email address from the course as a student or teacher.
 This example removes John from the course.
 ```
 gam update course the-republic-s01 remove student john@athens.edu
+```
+----
+
+# Course And Course Participant Reports
+## Printing Courses
+### Syntax
+```
+gam print courses [teacher <email>] [student <email>] [todrive]
+```
+Output CSV format details of courses. By default, all courses in the organization will be returned. The optional teacher and student parameters limit the results to courses where the given user is a participant in the course of the given type. The optional todrive argument creates a Google Drive spreadsheet of the results rather than outputting the information to the console.
+
+### Examples
+This example creates a CSV file of all courses
+```
+gam print courses
+```
+this example creates a Google Spreadsheet of all the courses Mr. Smith is teaching
+```
+gam print courses teacher mrsmith@acme.edu todrive
+```
+----
+
+## Printing Course Participants
+### Syntax
+```
+gam print course-participants [course <id or alias>] [student <email>] [teacher <email>] [todrive]
+```
+Output CSV format details of course participants. The optional course parameter limits results to the given course. Multiple course parameters can be included to pull participants for a subset of courses. If no course parameter is specified then participants will be retrieved for all courses. The optional student and teacher parameters limit the courses returned to those where the given user is a teacher or student. The optional todrive argument creates a Google Drive spreadsheet of the results rather than outputting the information to the console.
+
+### Examples
+This example prints all course participants in all courses.
+```
+gam print course-participants
+```
+this example creates a spreadsheet of the course participants in all three sections of Chemistry.
+```
+gam print course-participants course chemistry-101-s01 course chemistry-101-s02 course chemestry-101-s03 todrive
 ```
 ----
