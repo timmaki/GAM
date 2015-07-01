@@ -188,7 +188,6 @@ gam print printjobs status QUEUED older_than 1h | gam csv - gam printjob ~id can
 gam printjob <id> delete
 ```
 Deletes the given print job. The print job will no longer be printed (if it hasn't been already) and no data or metadata for the print job should remain.
-```
 
 ### Example
 This example deletes the print job.
