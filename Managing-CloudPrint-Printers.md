@@ -90,3 +90,92 @@ gam print printers query HP
 ```
 ----
 
+# Sharing CloudPrint Printers
+## Sharing A Printer
+### Syntax
+```
+gam printer <id> add USER|MANAGER <group or user email>
+```
+Share the given printer with the given Google user or group. A USER is able to print to the printer. A MANAGER is able to print to the printer as well as share the printer with additional users/groups. If the printer owner is not an owner of the Google Group, an owner of the group will need to manually accept the printer on the group's behalf.
+
+Note, to make a printer public, use the update printer command above.
+
+### Examples
+This example shares the printer with the group students@acme.edu.
+```
+gam printer 86bee4bb-c43e-8fd4-f06e-e7b8564a1c53 add USER students@acme.edu
+```
+this example gives helpdesk@acme.edu manager access to the printer.
+```
+gam printer 86bee4bb-c43e-8fd4-f06e-e7b8564a1c53 add MANAGER helpdesk@acme.edu
+```
+----
+
+## Unsharing CloudPrint Printers
+### Syntax
+```
+gam printer <id> remove <group or user email>
+```
+Remove access to the given printer for the given user or group.
+
+### Example
+This example revokes student access to the printer.
+```
+gam printer 86bee4bb-c43e-8fd4-f06e-e7b8564a1c53 remove students@acme.edu
+```
+----
+
+## Showing Printer ACLs
+### Syntax
+```
+gam printer <id> showacl
+```
+Shows the current ACLs of the given printer. If the printer is shared publicly, then a URL will be returned by which any user can access the printer.
+
+### Example
+This example prints the ACLs for the printer.
+```
+gam printer 86bee4bb-c43e-8fd4-f06e-e7b8564a1c53 showacl
+```
+----
+
+# Managing CloudPrint Print Jobs
+## Submitting A Print Job
+### Syntax
+```
+gam printjob <printer id> submit <file or url>
+```
+Submits a file or URL to be sent to the given CloudPrint printer. If the value begins with http:// or https:// it is assumed to be a web URL and the page is retrieved for printing, otherwise it's assumed to be a local file. Generally PDF, JPG and GIF images print successfully but other formats like Microsoft Office may also work (with somewhat limited conversion success).
+
+Please be aware that this command is primarily meant for testing and troubleshooting of CloudPrint. GAM does not currently support setting print options like color/bw, copies, pages, etc.
+
+### Examples
+This example prints the current homepage for Google.
+```
+gam printjob 86bee4bb-c43e-8fd4-f06e-e7b8564a1c53 submit http://www.google.com
+```
+this example prints a PDF file.
+```
+gam printjob 86bee4bb-c43e-8fd4-f06e-e7b8564a1c53 submit c:\docs\findings.pdf
+```
+----
+
+## Cancelling A Print Job
+### Syntax
+```
+gam printjob <id> cancel
+```
+Cancels the given print job. Note that the job remains visible in the CloudPrint UI with a cancelled status but the printer should not try to print the job.
+
+### Examples
+This example cancels a print job.
+```
+gam printjob 21fc3546-8fbc-f185-acea-2b28e3ffaba3 cancel
+```
+This complex example retrieves all print jobs that are either owned by the GAM admin or are sent to printers owned by the GAM admin and have remained in a QUEUED status for more than hour. It then cancels all of the jobs.
+
+This example could be run on a regular basis to make sure that print jobs older than an hour are cancelled while a printer or printer proxy is down / backed up.
+```
+gam print printjobs status QUEUED older_than 1h | gam csv - gam printjob ~id cancel
+```
+----
