@@ -22,7 +22,7 @@
   - [Deleting an Alias](#deleting-an-alias)
 - [Determine if an Email Address is a User, Alias or Group](#determine-if-an-email-address-is-a-user-alias-or-group)
 - [Mobile Devices](#mobile-devices)
-  - [Perform Wipe, Approve and Other Actions on Mobile Devices](#perform-wipe-approve-and-other-actions-on-mobile-devices)
+  - [Perform Wipe, Account Wipe, Approve and Other Actions on Mobile Devices](#perform-wipe-approve-and-other-actions-on-mobile-devices)
   - [Get Info on a Mobile Device](#get-info-on-a-mobile-device)
   - [Delete a Mobile Device](#delete-a-mobile-device)
 - [Chrome OS Devices](#chrome-os-devices)
@@ -600,10 +600,10 @@ info@acme.com is an alias
 ### Syntax
 ```
 gam update mobile <mobile id>
- action wipe|approve|block|cancel_remote_wipe_then_activate|cancel_remote_wipe_then_block
+ action wipe|account_wipe|approve|block|cancel_remote_wipe_then_activate|cancel_remote_wipe_then_block
 ```
 
-Perform the given action on a mobile device. The mobile id must be specified and can be found by listing all mobile devices. wipe will tell the mobile device to perform a full data reset on next sync. approve will allow the device to sync with Google Apps. block will block sync attempts from the device. cancel\_remote\_wipe\_then\_activate and cancel\_remote\_wipe\_then\_block will cancel a remote wipe and then set the status to approved or blocked accordingly.
+Perform the given action on a mobile device. The mobile id must be specified and can be found by listing all mobile devices. wipe will tell the mobile device to perform a full data reset on next sync. account_wipe will only remove the user's Google account and associated data from the device. approve will allow the device to sync with Google Apps. block will block sync attempts from the device. cancel\_remote\_wipe\_then\_activate and cancel\_remote\_wipe\_then\_block will cancel a remote wipe and then set the status to approved or blocked accordingly.
 
 ### Example
 This example will wipe the given device.
