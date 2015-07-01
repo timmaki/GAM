@@ -167,6 +167,8 @@ gam printjob <id> cancel
 ```
 Cancels the given print job. Note that the job remains visible in the CloudPrint UI with a cancelled status but the printer should not try to print the job.
 
+Note: While cancelled print jobs will not be printed by the CloudPrint printer, the print job data may remain on Google's servers for up to 30 days before expiring.
+
 ### Examples
 This example cancels a print job.
 ```
@@ -177,5 +179,42 @@ This complex example retrieves all print jobs that are either owned by the GAM a
 This example could be run on a regular basis to make sure that print jobs older than an hour are cancelled while a printer or printer proxy is down / backed up.
 ```
 gam print printjobs status QUEUED older_than 1h | gam csv - gam printjob ~id cancel
+```
+----
+
+## Deleting A Print Job
+### Syntax
+```
+gam printjob <id> delete
+```
+Deletes the given print job. The print job will no longer be printed (if it hasn't been already) and no data or metadata for the print job should remain.
+```
+
+### Example
+This example deletes the print job.
+```
+gam printjob 21fc3546-8fbc-f185-acea-2b28e3ffaba3 delete
+```
+----
+
+## Reporting Print Jobs
+### Syntax
+```
+gam print printjobs [older_than <number><m|h|d>] [newer_than <number><m|h|d>] [query <query>] [status <status>] [printer <printer id>]  [owner <user email>] [todrive]
+```
+provides a CSV output of all print jobs. The optional parameters older_than and newer_than limit results to print jobs created in the given time. The optional query parameter limits results to jobs whose title or tags match the given query. The optional status parameter limits the results to jobs whose status is provided. The optional printer parameter limits results to jobs sent to the given printer id. The optional owner parameter limits results to jobs sent by the given user. The optional todrive parameter creates a Google Drive Spreadsheet of the results rather than sending CSV output to the console.
+
+### Examples
+This example prints all print jobs owned by the GAM admin or sent to a printer owned by the GAM admin.
+```
+gam print printjobs
+```
+this example creates a Google Drive Spreadsheet of all print jobs with status DONE.
+```
+gam print printjobs status DONE todrive
+```
+this complex example deletes print jobs still in a QUEUED status after 1 day.
+```
+gam print printjobs status QUEUED older_than 1d | gam csv - gam printjob ~id delete
 ```
 ----
