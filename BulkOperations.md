@@ -41,7 +41,7 @@ gam update user rsmith@acme.com password LukeSkywalker
 ```
 ~ substitutions are case-sensitive so make sure you enter them exactly as they are in the CSV header.
 
-Note also that you can use [pipes](https://en.wikipedia.org/wiki/Pipeline_(Unix)) and a special CSV file called - to dynamically create CSVs from one GAM command and take action on the results in another GAM command. Let's say for instance that you wanted to turn IMAP off for all accounts in and under the /Students OU. Try:
+Note also that you can use [shell pipes](https://en.wikipedia.org/wiki/Pipeline_(Unix)) and a special CSV file called - to dynamically create CSVs from one GAM command and take action on the results in another GAM command. Let's say for instance that you wanted to turn IMAP off for all accounts in and under the /Students OU. Try:
 ```
 gam print users query 'orgUnitPath="/Students"' | gam csv - gam update user ~primaryEmail imap off
 ```
