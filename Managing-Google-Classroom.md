@@ -1,3 +1,4 @@
+- [About Classroom API](#about-classroom-api)
 - [Managing Courses](#managing-courses)
   - [Creating A Course](#creating-a-course)
   - [Updating A Course](#updating-a-course)
@@ -10,6 +11,13 @@
 - [Course And Course Participant Reports](#course-and-course-participant-reports)
   - [Printing Courses](#printing-courses)
   - [Printing Course Participants](#printing-course-participants)
+
+# About Classroom API
+Google Classroom API is currently a developer preview. [Special Access](https://developers.google.com/classroom/access) must be granted in order to use GAM with Google Classroom API and perform the below calls. To use GAM with Classroom API you must:
+* [Apply for Early Access](https://docs.google.com/forms/d/1hY4Lk3imYBSOanQHZSqw1AYt9AswVGiltV-Jp7_5QpI/viewform) as a developer to the Google Classroom API.
+* [Request Whitelisting](https://support.google.com/code/contact/classroom_api_admin_preview) of your Google Apps EDU instance for Classroom API.
+
+If you have questions or difficulty with these steps, please post to the [GAM discussion group](https://groups.google.com/forum/#!forum/google-apps-manager) for help.
 
 # Managing Courses
 ## Creating A Course
