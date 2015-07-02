@@ -1,15 +1,15 @@
 - [Introduction](#introduction)
-- [Download GAM](#2-download-gam)
+- [Download GAM](#download-gam)
   - [Windows Users](#windows-users)
   - [Mac and Linux Users](#mac-and-linux-users)
-- [Extract GAM](#3-extract-gam)
+- [Extract GAM](#extract-gam)
   - [Windows Users](#windows-users-1)
   - [Mac and Linux Users](#mac-and-linux-users-1)
-- [Generating your own client\_secrets.json file](#4-generating-your-own-client\_secretsjson-file)
-- [Running GAM for the First Time](#5-running-gam-for-the-first-time)
+- [Generating your own client\_secrets.json file](#generating-your-own-client\_secretsjson-file)
+- [Running GAM for the First Time](#running-gam-for-the-first-time)
   - [Windows Users](#windows-users-2)
   - [Mac and Linux Users](#mac-and-linux-users-2)
-- [More simple GAM commands](#6-more-simple-gam-commands)
+- [More simple GAM commands](#more-simple-gam-commands)
 
 # Introduction
 
