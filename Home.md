@@ -1,5 +1,4 @@
 - [Introduction](#introduction)
-- [1) Enabling the APIs](#1-enabling-the-apis)
 - [2) Download GAM](#2-download-gam)
   - [Windows Users](#windows-users)
   - [Mac and Linux Users](#mac-and-linux-users)
@@ -17,9 +16,6 @@
 GAM is a command line tool that allows administrators to manage many aspects of their Google Apps Account. This page provides simple instructions for downloading, installing and starting to use GAM.
 
 GAM requires Google Apps Business, Education, Partner or Government Edition.  Google Apps Free Edition has limited API support and not all GAM commands work.
-
-# 1) Enabling the APIs
-GAM talks to Google's Servers via Google APIs (Application Programming Interface). By default, APIs for working with Google Apps are disabled. You'll need to follow Google's instructions for [Enabling Administrative API Access](http://support.google.com/a/bin/answer.py?hl=en&answer=60757). API access must be enabled for GAM to function properly.
 
 # 2) Download GAM
 ## Windows Users
