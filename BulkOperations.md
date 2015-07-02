@@ -264,7 +264,7 @@ this will use GAM to create the 20 admins and then walk you through setting up G
 for i in {1..20}; do gam delete user admin$i; done
 ```
 
-Need help with a custom GAM script like this or other Google Apps scripting? Contact us at [info@ditoweb.com](mailto:info@ditoweb.com) so we can provide our expertise!
+Need help with a custom GAM script like this or other Google Apps scripting? Try sending an email to the [GAM Discussion List](https://groups.google.com/forum/#!forum/google-apps-manager)
 
 # Avoid prompts to update GAM
 If you are running batch commands and want to avoid GAM checking for updates, create a blank text file called "noupdatecheck.txt" in the same folder as gam.exe or gam.py. This disables all update checks.
