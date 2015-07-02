@@ -6,6 +6,8 @@
  * [Managing Custom User Schemas](Custom-Schemas)
  * [User Email Settings](ExamplesEmailSettings)
  * [User Security Settings](SecurityExamples)
+ * [Managing CloudPrint](Managing-CloudPrint-Printers)
+ * [Managing Classroom](Managing-Google-Classroom)
  * [Calendar Settings](CalendarExamples)
  * [Google Drive Management](GoogleDriveManagement)
  * [Domain Settings](DomainSettingsExamples)
