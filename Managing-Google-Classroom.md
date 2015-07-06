@@ -27,6 +27,7 @@ gam create course [alias <alias>] [name <name>] [section <section>] [heading <he
 ```
 Provision a new course. The optional alias parameter provides a unique id which can be used to reference the course. If a course already exists with this alias, an error will be thrown. If no alias is supplied, the course must be managed by the id that is assigned to it by Google when created. The optional name, section, heading, description and room parameters provide additional details for the course. The optional teacher parameter provides the email address of the owner / primary teacher of the course. If no teacher is provided then the admin user running GAM will be the owner / primary teacher of the course. The optional status parameter provides the initial status of the course when created. If no status is provided, courses default to PROVISIONED status.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Example
 This example creates a course.
 ```
@@ -41,6 +42,7 @@ gam update course <id or alias> [name <name>] [section <section>] [heading <head
 ```
 Updates an existing course. The id or alias of the course is needed to identify the exact course to be updated. The optional name, section, heading, description and room parameters provide additional details for the course. The optional status parameter sets the status of the course.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Example
 This example updates an existing course to make it active
 ```
@@ -54,6 +56,7 @@ gam info course <id or alias>
 ```
 Prints detailed information about a course.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Example
 This example prints information about the course
 ```
@@ -85,6 +88,7 @@ gam delete course <id or alias>
 ```
 Deletes the given course.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Example
 This example deletes the course
 ```
@@ -100,6 +104,7 @@ gam course <id or alias> add student|teacher <email address>
 ```
 Add the given user email address to the course as a student or teacher.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Example
 This example adds Aristotle as a student in the course
 ```
@@ -114,6 +119,7 @@ gam course <id or alias> sync students|teachers group <group email> | ou <orguni
 ```
 Syncs the students or teachers for the given course against another list of users. Students/Teachers not in the other list will be removed from the given course. Students/Teachers in the other list but not the course will be added.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Examples
 This example adds all users in the Google Org Unit /schools/sunnybrook/K-1 into the course. If there are students in the course that are not in this OU, they will be removed.
 ```
@@ -136,6 +142,7 @@ gam course <id or alias> remove student|teacher <email address>
 ```
 removes the given email address from the course as a student or teacher.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Example
 This example removes John from the course.
 ```
@@ -151,6 +158,7 @@ gam print courses [teacher <email>] [student <email>] [todrive]
 ```
 Output CSV format details of courses. By default, all courses in the organization will be returned. The optional teacher and student parameters limit the results to courses where the given user is a participant in the course of the given type. The optional todrive argument creates a Google Drive spreadsheet of the results rather than outputting the information to the console.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Examples
 This example creates a CSV file of all courses
 ```
@@ -169,6 +177,7 @@ gam print course-participants [course <id or alias>] [student <email>] [teacher 
 ```
 Output CSV format details of course participants. The optional course parameter limits results to the given course. Multiple course parameters can be included to pull participants for a subset of courses. If no course parameter is specified then participants will be retrieved for all courses. The optional student and teacher parameters limit the courses returned to those where the given user is a teacher or student. The optional todrive argument creates a Google Drive spreadsheet of the results rather than outputting the information to the console.
 
+**Note:** Classroom API is a limited preview right now. In order for this command to work you must [request Classroom API access](#about-classroom-api).
 ### Examples
 This example prints all course participants in all courses.
 ```
