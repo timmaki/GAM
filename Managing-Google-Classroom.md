@@ -17,7 +17,7 @@ Google Classroom API is currently a developer preview. [Special Access](https://
 * [Apply for Early Access](https://docs.google.com/forms/d/1hY4Lk3imYBSOanQHZSqw1AYt9AswVGiltV-Jp7_5QpI/viewform) as a developer to the Google Classroom API.
 * [Request Whitelisting](https://support.google.com/code/contact/classroom_api_admin_preview) of your Google Apps EDU instance for Classroom API.
 
-If you have questions or difficulty with these steps, please post to the [GAM discussion group](https://groups.google.com/forum/#!forum/google-apps-manager) for help.
+**You must complete both forms and get email verification that Google has whitelisted your project and domain in order for the below GAM commands to work.** If you have questions or difficulty with these steps, please post to the [GAM discussion group](https://groups.google.com/forum/#!forum/google-apps-manager) for help.
 
 # Managing Courses
 ## Creating A Course
