@@ -538,7 +538,7 @@ This example will delete the message that has this exact RFC822 Message ID for a
 gam all users delete messages query rfc822msgid:CAGoYzwvzepSfbHB8mBoOx4VqsiotTmRjvBSFjz8NMg2VXeHTrA@mail.gmail.com doit
 ```
 
-This example will delete all messages older than 7 years for members of the group. **BE CAREFUL!** There is no undo button. This command could be run on a regular basis (once a day or so) in order to ensure messages older than 7 years are removed from the user.
+This example will trash all messages older than 7 years for members of the group. **BE CAREFUL!** There is no undo button. This command could be run on a regular basis (once a day or so) in order to ensure messages older than 7 years are trashed for the user.
 ```
-gam group purge7@acme.org delete messages query older_than:7y doit max_to_delete 999999999
+gam group purge7@acme.org trash messages query older_than:7y doit max_to_delete 999999999
 ```
