@@ -36,6 +36,8 @@
   - [Updating Profile Photos](#updating-profile-photos)
   - [Getting Profile Photos](#getting-profile-photos)
   - [Deleting Profile Photos](#deleting-profile-photos)
+- [Managing User Email](#managing-user-email)
+  - [Deleting or Trashing User Emails](#deleting-or-trashing-user-emails)
 
 # General Settings
 ## Set User Language
@@ -515,4 +517,28 @@ This example will delete the profile photo for all members of the group named ab
 <br>
 <pre><code>gam group abused-the-system delete photo<br>
 </code></pre>
----
+----
+
+# Managing User Email
+## Deleting Or Trashing User Email
+### Syntax
+```
+gam user <username>|group <groupname>|ou <ouname>|all users delete|trash messages query <gmail search> [doit] [max_to_delete <number>]
+```
+Delete or move to trash messages for a user or group of users. The query parameter is required and uses Gmail search syntax. See the [Advanced Gmail Search help article](https://support.google.com/mail/answer/7190?hl=en) for some tips on complex searches. By default, GAM will not delete/trash any messages for users, it only shows what messages will be deleted. The doit parameter is needed to tell GAM to actually perform the delete/trash operation. By default, GAM will only delete one matching message per a user. If more than one message matches the search query, GAM will refuse to delete ANY messages. The max_to_delete parameter sets the maximum number of messages that GAM should delete per-user. If the search matches more messages than max_to_delete, NO messages will be deleted for that user.
+
+### Examples
+This example gets a count of how many messages a user has with PDF attachments but doesn't actually do anything to them.
+```
+gam user joe@acme.org delete messages query filename:pdf
+```
+
+This example will delete the message that has this exact RFC822 Message ID for all users. Only one message at most will be deleted for all users (they should have only one copy).
+```
+gam all users delete messages query rfc822msgid:CAGoYzwvzepSfbHB8mBoOx4VqsiotTmRjvBSFjz8NMg2VXeHTrA@mail.gmail.com doit
+```
+
+This example will delete all messages older than 7 years for members of the group. **BE CAREFUL!** There is no undo button. This command could be run on a regular basis (once a day or so) in order to ensure messages older than 7 years are removed from the user.
+```
+gam group purge7@acme.org delete messages query older_than:7y doit max_to_delete 999999999
+```
