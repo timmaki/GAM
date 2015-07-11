@@ -4,6 +4,9 @@
   - [Updating A Course](#updating-a-course)
   - [Getting Course Info](#getting-course-info)
   - [Deleting A Course](#deleting-a-course)
+- [Managing Course Aliases](#managing-course-aliases)
+  - [Creating An Alias](#creating-an-alias)
+  - [Deleting An Alias](#deleting-an-alias)
 - [Managing Course Participants](#managing-course-participants)
   - [Adding Students And Teachers To A Course](#adding-students-and-teachers-to-a-course)
   - [Syncing Students And Teachers To A Course](#syncing-students-and-teachers-to-a-course)
@@ -93,6 +96,35 @@ Deletes the given course.
 This example deletes the course
 ```
 gam delete course the-republic-s01
+```
+----
+
+# Managing Course Aliases
+## Creating An Alias
+### Syntax
+```
+gam course <id or alias> add alias <alias>
+```
+Create a new alias for an existing course.
+
+### Example
+This example creates an alias for a course which already has one alias.
+```
+gam course this-is-an-alias add alias this-is-another-alias
+```
+----
+
+## Deleting An Alias
+### Syntax
+```
+gam course <id or alias> delete alias <alias>
+```
+Delete an alias from an existing course.
+
+### Example
+This example deletes the alias from the add alias example above.
+```
+gam course this-is-an-alias delete alias this-is-another-alias
 ```
 ----
 
