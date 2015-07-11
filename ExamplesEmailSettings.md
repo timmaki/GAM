@@ -533,7 +533,7 @@ This example gets a count of how many messages a user has with PDF attachments b
 gam user joe@acme.org delete messages query filename:pdf
 ```
 
-This example will delete the message that has this exact RFC822 Message ID for all users. Only one message at most will be deleted for all users (they should have only one copy).
+This example will delete the message that has this exact [RFC822 Message ID header](https://support.google.com/groups/answer/75960?hl=en) for all users. Only one message at most will be deleted for all users (they should have only one copy). This example is useful if an email is sent to a large number of people and you wish to remove it from their mailbox quickly.
 ```
 gam all users delete messages query rfc822msgid:CAGoYzwvzepSfbHB8mBoOx4VqsiotTmRjvBSFjz8NMg2VXeHTrA@mail.gmail.com doit
 ```
