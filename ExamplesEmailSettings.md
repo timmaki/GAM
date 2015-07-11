@@ -37,7 +37,7 @@
   - [Getting Profile Photos](#getting-profile-photos)
   - [Deleting Profile Photos](#deleting-profile-photos)
 - [Managing User Email](#managing-user-email)
-  - [Deleting or Trashing User Emails](#deleting-or-trashing-user-emails)
+  - [Deleting or Trashing User Emails](#deleting-or-trashing-user-email)
 
 # General Settings
 ## Set User Language
