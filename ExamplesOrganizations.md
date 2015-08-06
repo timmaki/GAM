@@ -14,7 +14,7 @@ create an organizational unit. The required argument name is the organization un
 This example creates an Organization Unit with all optional arguments
 
 ```
-gam create org "Mail Enabled Faculty" description "Faculty with access to Gmail" parent Employees noinherit
+gam create org "Mail Enabled Faculty" description "Faculty with access to Gmail" parent /Employees noinherit
 ```
 
 ---
