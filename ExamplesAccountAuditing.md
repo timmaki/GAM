@@ -253,7 +253,7 @@ gpg --version
 if you get an error, visit your Linux Distributions website and search for instructions on installing GPG.
 
 #### Mac Users
-You can download a version of GPG for Macs [here](http://macgpg.sourceforge.net/).
+You can download a version of GPG for Macs [here](https://gpgtools.org/). Download the GPG Suite and run the package installer. The GUI suite will open. You can quit it and continue as below or use the GUI to generate your key.
 
 ### Creating/Uploading the Key
 Run the command:
