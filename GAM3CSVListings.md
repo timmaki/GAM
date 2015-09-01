@@ -166,7 +166,7 @@ gam print licenses todrive
 ## Users Report
 ### Syntax
 ```
-gam report users [todrive] [date <yyyy-dd-mm>] [user <email>] [filter <filter terms>] [fields <included fields>]
+gam report users [todrive] [date <yyyy-mm-dd>] [user <email>] [filter <filter terms>] [fields <included fields>]
 ```
 
 Display or upload to Google Drive a CSV report of current users. The optional todrive parameter specifies that the results should be uploaded to Google Drive rather than being displayed on screen or piped to a CSV text file. The optional date parameter specifies when the report should be pulled for, when not specified, GAM pulls the most recently available report from Google. The optional user parameter specifies the email address of a single user whose data should be returned, by default all users in the Google Apps instance are pulled. The optional filter parameter specifies search terms as described in [Google's API documentation](https://developers.google.com/admin-sdk/reports/v1/reference/userUsageReport/get). The optional fields parameter specifies a comma-separated list of fields (columns) to be included in the output, if not specified all columns are returned.
