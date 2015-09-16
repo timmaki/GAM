@@ -1,4 +1,4 @@
-- [License Types]
+- [License Types](#license-types)
 - [Adding a License for Users](#adding-a-license-for-users)
 - [Updating a License for Users](#updating-a-license-for-users)
 - [Deleting a License for Users](#deleting-a-license-for-users)
