@@ -6,17 +6,13 @@
 # License Types
 GAM supports the licenses listed in the "Product SKU ID" column of [Google's Documentation](https://developers.google.com/admin-sdk/licensing/v1/how-tos/products). Additionally, GAM supports abbreviations for some of the SKU names:
 
-abbreviation  -->  SKU
-
-gafw  -->  Google-Apps-For-Business
-
-gau   -->  Google-Apps-Unlimited
-
-gams  -->  Google-Apps-For-Postini
-
-vault -->  Google-Vault
-
-vfe   -->  Google-Vault-Former-Employee
+| license                  | abbreviation  |
+|--------------------------|---------------|
+| Google-Apps-For-Business |  gafw or apps |
+| Google-Apps-Unlimited    | gau           |
+| Google-Apps-For-Postini  | gams          |
+| Google-Vault             | vault         |
+| Google-Vault-Former-Employee | vfe       |
 
 # Adding a License for Users
 ## Syntax
