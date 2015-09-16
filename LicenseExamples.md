@@ -23,17 +23,16 @@ vfe   -->  Google-Vault-Former-Employee
 ```
 gam user <username>|group <groupname>|ou <ouname>|all users add license <sku>
 ```
-Assign a license for the given SKU to a user or number of users. The SKU can be one of coordinate, drive20gb, drive50gb, drive200gb, drive400gb, drive1tb, drive2tb, drive4tb, drive8tb or drive16tb.
-
+Assign a license for the given SKU to a user or number of users.
 ## Example
-This example gives members of the sales team an extra 50gb of Drive space
+This example gives members of the sales team a Vault license
 ```
-gam group sales add license drive50gb
+gam group sales add license vault
 ```
 
 This example gives users in the "Google Coordinate" OU a license for Google Coordinate
 ```
-gam ou "Google Coordinate" add license coordinate
+gam ou "Google Coordinate" add license Google-Coordinate
 ```
 
 ---
@@ -44,12 +43,12 @@ gam ou "Google Coordinate" add license coordinate
 ```
 gam user <username>|group <groupname>|ou <ouname>|all users update license <sku> from <oldsku>
 ```
-Update the license for the given users. The SKU can be one of coordinate, drive20gb, drive50gb, drive200gb, drive400gb, drive1tb, drive2tb, drive4tb, drive8tb or drive16tb.
+Update the license for the given users.
 
 ## Example
-This example updates the user who previously had 50gb of extra Drive storage licensed to 200gb of Drive space.
+This example switches a user from Google Apps Message Security to Google Apps for Work licensing.
 ```
-gam user heavydriveuser@acme.org update license drive200gb from drive50gb
+gam user heavydriveuser@acme.org update license gafw from gams
 ```
 
 ---
