@@ -1,7 +1,7 @@
 * [Getting Started with GAM](../wiki)
 * [Creating client_secrets.json and oauth2service.json](CreatingClientSecretsFile)
 * GAM Command Reference
- * [Managing Users, Groups, Aliases, Mobile and Chrome OS Devices, OUs and Resource Calendars](GAM3DirectoryCommands)
+ * [Managing Users, Groups, Aliases, Domains, Mobile and Chrome Devices, OUs and Resource Calendars](GAM3DirectoryCommands)
  * [Group Settings](GAM3GroupSettings)
  * [Print Users, Groups, Aliases, Mobile and Chrome OS devices, OUs and Licenses](GAM3CSVListings)
  * [Managing Custom User Schemas](Custom-Schemas)
