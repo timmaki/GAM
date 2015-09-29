@@ -98,15 +98,15 @@ this example will output all resource calendars to the file resources.csv includ
 ```
 gam print resources id description email > resources.csv
 ```
+---
 
 # Print All Domains and Domain Aliases
-## Syntax
+### Syntax
 ```
 gam print domains [todrive]
 ```
 Outputs CSV of all domains. The todrive parameter causes GAM to create a Google Spreadsheet of results rather than outputting a CSV.
 ---
-
 
 # Print Mobile Devices
 ### Syntax
