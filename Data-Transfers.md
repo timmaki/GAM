@@ -31,11 +31,11 @@ gam create datatransfer sarah@acme.com google+ announce@acme.com
 gam info datatransfer <id>
 ```
 Get information about an existing data transfer including the status.
-```
 
 ## Example
 This example shows the status of a given data transfer.
 ```
+
 gam info datatransfer AKrEtIYIysvNvudwY69gEtJNb85tK87Py2SJl8uwq78BxSMMRgn46rWtuKPIxmkWehZ_YJguKbSs
 Old Owner: sarah@acme.com
 New Owner: announce@acme.com
