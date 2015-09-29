@@ -1,5 +1,5 @@
 - [Request a Data Transfer](#request-a-data-transfer)
-- [Get Information About a Data Transfer](#get-information-about-a-data-transfer]
+- [Get Information About a Data Transfer](#get-information-about-a-data-transfer)
 - [Print All Data Transfers](#print-all-data-transfers)
 - [Print Information About Apps That Support Data Transfer](#print-information-about-apps-that-support-data-transfer)
 
