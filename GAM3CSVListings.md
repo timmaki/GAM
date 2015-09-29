@@ -3,6 +3,7 @@
 - [Print All Aliases](#print-all-aliases)
 - [Print All Organizational Units](#print-all-organizational-units)
 - [Print All Resource Calendars](#print-all-resource-calendars)
+- [Print All Domains and Domain Aliases](#print-all-domains-and-domain-aliases)
 - [Print Mobile Devices](#print-mobile-devices)
 - [Print Chrome OS Devices](#print-chrome-os-devices)
 - [Print Licenses](#print-licenses)
@@ -98,6 +99,12 @@ this example will output all resource calendars to the file resources.csv includ
 gam print resources id description email > resources.csv
 ```
 
+# Print All Domains and Domain Aliases
+## Syntax
+```
+gam print domains [todrive]
+```
+Outputs CSV of all domains. The todrive parameter causes GAM to create a Google Spreadsheet of results rather than outputting a CSV.
 ---
 
 
