@@ -105,6 +105,7 @@ gam print resources id description email > resources.csv
 ```
 gam print domains [todrive]
 ```
+
 Outputs CSV of all domains. The todrive parameter causes GAM to create a Google Spreadsheet of results rather than outputting a CSV.
 ---
 
