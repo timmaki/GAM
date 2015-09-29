@@ -21,6 +21,14 @@
   - [Retrieving Alias Information](#retrieving-alias-information)
   - [Deleting an Alias](#deleting-an-alias)
 - [Determine if an Email Address is a User, Alias or Group](#determine-if-an-email-address-is-a-user-alias-or-group)
+- [Domains](#domains)
+  - [Add a Domain](#add-a-domain)
+  - [Add a Domain Alias](#add-a-domain-alias)
+  - [Changing the Primary Domain](#changing-the-primary-domain)
+  - [Get Domain Info](#get-domain-info)
+  - [Get Domain Alias Info](#get-domain-alias-info)
+  - [Delete a Domain](#delete-a-domain)
+  - [Delete a Domain Alias](#delete-a-domain-alias)
 - [Mobile Devices](#mobile-devices)
   - [Perform Wipe, Account Wipe, Approve and Other Actions on Mobile Devices](#perform-wipe-approve-and-other-actions-on-mobile-devices)
   - [Get Info on a Mobile Device](#get-info-on-a-mobile-device)
@@ -595,6 +603,117 @@ info@acme.com is an alias
 ```
 ---
 
+# Domains
+## Add a Domain
+### Syntax
+```
+gam create domain <domain>
+```
+Adds the given domain as a secondary Google Apps domain.
+
+### Example
+This example adds secondary.com as a secondary domain.
+```
+gam create domain secondary.com
+```
+---
+## Add a Domain Alias
+### Syntax
+```
+gam create domainalias <domainalias> <parentdomain>
+```
+Adds a given domain as an alias of another given parent domain. The parent domain must be an existing primary or secondary domain (yes, alias domains can now point at secondary domains).
+
+### Example
+This example adds alias.com as an alias of primary.com
+```
+gam create domainalias alias.com primary.com
+```
+This example adds g.secondary.com as an alias of secondary.com
+```
+gam create domainalias g.secondary.com secondary.com
+```
+---
+
+## Changing the Primary Domain
+### Syntax
+```
+gam update domain <domain> primary
+```
+Makes the given domain the new primary domain. The given domain must already exist as a verified secondary domain. At the same time the domain is promoted to primary, the old primary domain will become a secondary domain. Alias domains that point at the current or new primary domains will continue to point at the same domain. Users, groups and aliases with addresses in either domain will not have their address changed.
+
+### Example
+This example makes istanbul.com the new primary domain. constantinople.com which was the primary domain will become a secondary domain.
+```
+gam update domain istanbul.com primary
+```
+---
+
+## Get Domain Info
+### Syntax
+```
+gam info domain <domain>
+```
+Get information about a given domain. The domain must be a primary or secondary domain.
+
+### Example
+This example shows information about example.com
+```
+gam info domain example.com
+verified: True
+domainName: example.com
+creationTime: 2014-12-19 10:05:24
+isPrimary: True
+```
+---
+
+## Get Domain Alias Info
+### Syntax
+```
+gam info domainalias <domainalias>
+```
+Gets information about a given domain alias.
+
+### Example
+This example shows information about alias.com.
+```
+gam info domainalias alias.com
+verified: False
+creationTime: 2015-09-12 11:08:55
+domainAliasName: alias.com
+parentDomainName: primary.com
+```
+---
+
+## Delete a Domain
+### Syntax
+```
+gam delete domain <domain>
+```
+Deletes a given domain.
+```
+
+### Example
+This example deletes the secondary domain secondary.example.com.
+```
+gam delete domain secondary.example.com
+```
+---
+
+## Delete a Domain Alias
+### Syntax
+```
+gam delete domainalias <domainalias>
+```
+Deletes a given domain alias.
+
+### Example
+This example deletes the domain alias g.example.com.
+```
+gam delete domainalias g.example.com
+```
+---
+
 # Mobile Devices
 ## Perform Wipe, Approve and Other Actions on Mobile Devices
 ### Syntax
@@ -602,7 +721,6 @@ info@acme.com is an alias
 gam update mobile <mobile id>
  action wipe|account_wipe|approve|block|cancel_remote_wipe_then_activate|cancel_remote_wipe_then_block
 ```
-
 Perform the given action on a mobile device. The mobile id must be specified and can be found by listing all mobile devices. wipe will tell the mobile device to perform a full data reset on next sync. account_wipe will only remove the user's Google account and associated data from the device. approve will allow the device to sync with Google Apps. block will block sync attempts from the device. cancel\_remote\_wipe\_then\_activate and cancel\_remote\_wipe\_then\_block will cancel a remote wipe and then set the status to approved or blocked accordingly.
 
 ### Example
