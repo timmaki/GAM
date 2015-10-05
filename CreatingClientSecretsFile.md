@@ -1,7 +1,7 @@
 # Creating the client\_secrets.json and oauth2service.json files for GAM
 To use GAM, you need to create your own client\_secrets.json and oauth2service.json files. These give you your own personal quota of API requests.
 
-See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the process: https://goo.gl/slo06E
+See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the process of creating the credentials and authorizing the required API scopes.
 
 # Steps
 
