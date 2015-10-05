@@ -691,7 +691,6 @@ parentDomainName: primary.com
 gam delete domain <domain>
 ```
 Deletes a given domain.
-```
 
 ### Example
 This example deletes the secondary domain secondary.example.com.
