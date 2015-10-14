@@ -29,8 +29,6 @@ update an organization unit. The required argument name is the organization unit
 
 **Important:** Users can only exist in one organization unit at a time. When you add them to an organization unit with this command, they will be removed from their previous organization unit.
 
-**Important:** You can not use this command to move an existing sub-org to the root level (/).  You must use the Admin Console to do that.
-
 
 ## Example
 This example updates the organization unit's parameters without adding any users
