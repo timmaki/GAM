@@ -61,7 +61,7 @@ Update the given user's rights to the given calendar. The user should already ha
 **Note:** the special users domain and default can be used instead of an actual user email address to modify public sharing of the calendar. domain applies to all users in the Google Apps organization. default applies to anyone with a Google account (even @gmail.com) and is limited to read or freebusy. Note that your Calendar control panel settings may prevent read sharing of calendars outside the domain in which case you'll get an error trying to set default to read.
 
 ### Example
-This example upgrades Bog to be owner of Joe's Calendar:
+This example upgrades Bob to be owner of Joe's Calendar:
 ```
 gam calendar joe@acme.com update owner bob@acme.com
 ```
