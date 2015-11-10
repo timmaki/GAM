@@ -43,3 +43,6 @@ you'll need to be logged in to a Google Account. The account does not need to be
 ![nimbus-image-1435849866247](https://cloud.githubusercontent.com/assets/4623536/8480848/0cc1b67a-20ae-11e5-8365-aadd319217b8.png)  
 1. You will be prompted to save another file. Name the file "oauth2service.json" and save it to the same folder as gam.exe or gam.py.  
 ![nimbus-image-1435850026256](https://cloud.githubusercontent.com/assets/4623536/8480846/0cb85eb8-20ae-11e5-9dac-0b11d8703b0f.png)  
+1. Retrieve the 2nd client_id, and go to the Security on the CPanel Google Apps, "More elements" > "Advanced settings" > "Manage API Client access". Enter the Client Id in the Client Name input and add the scope: 
+
+    `https://www.googleapis.com/auth/calendar`
