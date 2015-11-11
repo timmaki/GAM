@@ -28,7 +28,8 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
         1. in the next screen, click on `Enable API` ![gam08](https://cloud.githubusercontent.com/assets/1683475/11096310/07a599a4-885f-11e5-9896-23364582e79a.png)
         1. when the screen confirms that the API is enabled, click the arrow to return to the list of all Google APIs
         1. repeat for each API listed below 
-    1. near the top of the window, click on `Enabled APIs` again and verify that you have enabled all of the required APIs ![gam09](https://cloud.githubusercontent.com/assets/1683475/11096313/07a72ae4-885f-11e5-8041-861e48f60af0.png)
+    1. near the top of the window, click on `Enabled APIs` again and verify that you have enabled all of the required APIs 
+![gam09](https://cloud.githubusercontent.com/assets/1683475/11096313/07a72ae4-885f-11e5-8041-861e48f60af0.png)
     1. Required APIs:
         * Admin SDK
         * Apps Activity API
