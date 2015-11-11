@@ -42,17 +42,22 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
 1. Create the Credentials files
     1. create client_secrets.json
         1. in the left side menu, click on `Credentials`
-        1. in the center of the screen, click on `Add credentials` and choose OAuth 2.0 client ID ![gam12](https://cloud.githubusercontent.com/assets/1683475/11096315/07b0ce00-885f-11e5-86dc-b84d3c2e94c5.png)
+        1. in the center of the screen, click on `Add credentials` and choose OAuth 2.0 client ID  
+![gam12](https://cloud.githubusercontent.com/assets/1683475/11096315/07b0ce00-885f-11e5-86dc-b84d3c2e94c5.png)
         1. you will be prompted to enter a product name on the consent screen.  Click the `Configure consent screen` button ![gam-35](https://cloud.githubusercontent.com/assets/1683475/11098100/51467d40-8868-11e5-8511-62086b45ac1c.png)
-        1. enter a _Product name_.  It can be the same project name that you used previously ![gam11](https://cloud.githubusercontent.com/assets/1683475/11096312/07a61654-885f-11e5-9697-cb581fe094fe.png)
+        1. enter a _Product name_.  It can be the same project name that you used previously  
+![gam11](https://cloud.githubusercontent.com/assets/1683475/11096312/07a61654-885f-11e5-9697-cb581fe094fe.png)
         1. at the bottom of the screen, click `Save` 
-        1. on the next screen, choose `Application type Other`, enter a name, and click `Create`. ![gam-36](https://cloud.githubusercontent.com/assets/1683475/11098096/5134ff2a-8868-11e5-9f20-1c36b8720bf1.png) 
-        1. in the next window, enter a name for the client.  You can use the same name as the project. ![gam-37](https://cloud.githubusercontent.com/assets/1683475/11098095/5133dc44-8868-11e5-9025-deb568d793db.png)
+        1. on the next screen, choose `Application type Other`, enter a name, and click `Create`.  
+![gam-36](https://cloud.githubusercontent.com/assets/1683475/11098096/5134ff2a-8868-11e5-9f20-1c36b8720bf1.png) 
+        1. in the next window, enter a name for the client.  You can use the same name as the project.  
+![gam-37](https://cloud.githubusercontent.com/assets/1683475/11098095/5133dc44-8868-11e5-9025-deb568d793db.png)
         1. click the `Save` button.
         1. in the pop-up confirmation window, click `OK`.  You do not need to record the client ID or client secret
         1. on the next screen, click the name of the project ![gam13](https://cloud.githubusercontent.com/assets/1683475/11096316/07b12562-885f-11e5-9d9a-d6c7721f1b2d.png)
         1. on the next screen, near the top of the page click on `Download JSON`
-        1. save the file to the same folder as GAM.exe or GAM.py and rename the file to *`client_secrets.json`* ![gam15](https://cloud.githubusercontent.com/assets/1683475/11096317/07b2dac4-885f-11e5-9283-bd7cc7141aff.png)
+        1. save the file to the same folder as GAM.exe or GAM.py and rename the file to *`client_secrets.json`*  
+![gam15](https://cloud.githubusercontent.com/assets/1683475/11096317/07b2dac4-885f-11e5-9283-bd7cc7141aff.png)
         1. at the top of the screen, click the arrow button to return to the `Credentials` screen
     1. create oauth2service.json
         1. click `Add credentials` and select `Service account` ![gam17](https://cloud.githubusercontent.com/assets/1683475/11096318/07b2f450-885f-11e5-9597-c71cdcf13ecf.png)
@@ -62,9 +67,11 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
 1. Run GAM to authorize the configuration
     1. open a command line window and navigate to the folder that contains gam.exe or gam.py
     1. run the command `gam info domain`
-    1. the configuration options will be displayed.  All API scopes will be selected by default. Choose the last option in the list (`Continue`): type its option number and press `Enter`. ![gam20](https://cloud.githubusercontent.com/assets/1683475/11096320/07ba411a-885f-11e5-9b68-2956e3b44475.png)
+    1. the configuration options will be displayed.  All API scopes will be selected by default. Choose the last option in the list (`Continue`): type its option number and press `Enter`.  
+![gam20](https://cloud.githubusercontent.com/assets/1683475/11096320/07ba411a-885f-11e5-9b68-2956e3b44475.png)
     1. a browser window will open to display the confirmation screen.  
-        1. if the computer that you are running GAM on does not have a web browser, you can use a browser on another computer to complete this step.  On the other computer, enter the goo.gl short URL that is displayed in the command line window ![gam22](https://cloud.githubusercontent.com/assets/1683475/11096324/07c046f0-885f-11e5-9ece-2cc76b4bb59d.png)
+        1. if the computer that you are running GAM on does not have a web browser, you can use a browser on another computer to complete this step.  On the other computer, enter the goo.gl short URL that is displayed in the command line window  
+![gam22](https://cloud.githubusercontent.com/assets/1683475/11096324/07c046f0-885f-11e5-9ece-2cc76b4bb59d.png)
     1. scroll to the bottom of the list of permissions and click `Allow` ![gam21](https://cloud.githubusercontent.com/assets/1683475/11096323/07be2bc2-885f-11e5-9822-35a6cd35b8e9.png)
     1. the web page will report that the authentication flow has completed.
     1. in the command line window, the GAM command will complete, and you will see information about the Google Apps domain
