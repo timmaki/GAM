@@ -112,7 +112,7 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
 ![gam-41](https://cloud.githubusercontent.com/assets/1683475/11100312/12fcd54e-8876-11e5-8252-6d721f9eb28e.png)
         1. in the next screen, click and drag to select the Service Account's client ID and copy it (Control/Command-C).  The client ID is a long string of long string of numbers and/or letters (but may not the same client ID as the OAuth client ID)
 ![gam-42](https://cloud.githubusercontent.com/assets/1683475/11100313/12ff4c02-8876-11e5-8a30-124985678a3d.png)
-        1. switch to the Admin Console and paste the client ID into the field labeld `Client Name`
+        1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
         1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
         1. click the `Authorize` button 
 
