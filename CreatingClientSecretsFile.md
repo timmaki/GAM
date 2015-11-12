@@ -93,7 +93,7 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
     1. Authorize scopes for OAuth2
         1. in the Developer’s console [console.developers.google.com](http://console.developers.google.com), in the left side menu click on `Credentials`
         1. select to the project you just created
-        1. in the `OAuth 2 client IDs` section, click and drag to select the `Client ID` and copy it (Control/Command-C).  The Client ID is a long string that ends in `.googleusercontent.com` 
+        1. in the `OAuth 2 client IDs` section, click and drag to select the `Client ID` and copy it (Control/Command-C).  The Client ID is a long string of numbers and/or letters. 
 ![gam-40](https://cloud.githubusercontent.com/assets/1683475/11100314/130210ae-8876-11e5-9659-a902e4d929cf.png)
         1. in another browser window or tab, log into Google Apps using a domain super-admin account
         1. go to the [Gogle Apps Admin Console](http://admin.google.com)
