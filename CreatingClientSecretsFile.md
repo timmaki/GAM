@@ -115,7 +115,7 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
         1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
         1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
         1. click the `Authorize` button
-    1. Enable API use in the domain
+    1. Enable API access to the domain
         1. in the Admin Console, go to the `Security` section, then click on `API reference`
 ![gam-30](https://cloud.githubusercontent.com/assets/1683475/11548007/02d69214-991e-11e5-8595-3ea6083776ab.png)
         1. if API access is not already enabled
