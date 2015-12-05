@@ -1,3 +1,4 @@
+
 ## Creating the client\_secrets.json and oauth2service.json files for GAM
 To use GAM, you need to create your own client\_secrets.json and oauth2service.json files. These give you your own personal quota of API requests.
 
@@ -5,6 +6,13 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
 
 ## Steps
 
+1. Enable API access to the domain
+    1. This step requires a domain super-admin account or an account with delegated Security rights
+        1. in the domain's Admin Console, go to the `Security` section, then click on `API reference`
+![gam-30](https://cloud.githubusercontent.com/assets/1683475/11548007/02d69214-991e-11e5-8595-3ea6083776ab.png)
+        1. if API access is not already enabled
+            1. click to check the box for `Enable API access`
+            1. click the `Save` button
 1. Log into Google Apps. The account does not need to be in your Google Apps domain or have any special rights.
 1. Create a Google API Project 
     1. point your web browser to [console.developers.google.com](http://console.developers.google.com)
@@ -90,6 +98,7 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
     1. the web page will report that the authentication flow has completed.
     1. in the command line window, the GAM command will complete, and you will see information about the Google Apps domain
 1. Authorize the API scopes for use with GAM in the Admin Console
+    1. In this step, you will switch between the Developer's console and the domain's Admin console.  To access the Admin console, you must use an account with domain super-admin account or an account with delegated Security rights.  The Developer's console window must be logged into the account in which the project was created.  These can be the same account or different accounts.
     1. Authorize scopes for OAuth2
         1. in the Developer’s console [console.developers.google.com](http://console.developers.google.com), in the left side menu click on `Credentials`
         1. select to the project you just created
@@ -115,12 +124,6 @@ See these [YouTube videos](https://goo.gl/slo06E) for a demonstration of the pro
         1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
         1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
         1. click the `Authorize` button
-    1. Enable API access to the domain
-        1. in the Admin Console, go to the `Security` section, then click on `API reference`
-![gam-30](https://cloud.githubusercontent.com/assets/1683475/11548007/02d69214-991e-11e5-8595-3ea6083776ab.png)
-        1. if API access is not already enabled
-            1. click to check the box for `Enable API access`
-            1. click the `Save` button
 
 
 
