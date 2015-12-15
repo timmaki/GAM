@@ -11,7 +11,9 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. if API access is not already enabled
             1. click to check the box for `Enable API access`
             1. click the `Save` button
+
 1. Log into Google Apps. The account does not need to be in your Google Apps domain or have any special rights.
+
 1. Create a Google API Project 
     1. point your web browser to [console.developers.google.com](http://console.developers.google.com)
         * these instructions are for the newest version of the Developer's console.  In some domains, it may still be the "beta" version
@@ -22,6 +24,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
     1. if required, select an email preference and check the box to agree to the terms 
     1. click the `Create` button
     1. within a few second, your project will be created and the web page will switch to that project
+
 1. Authorize specific APIs to work with GAM
     1. in the center of the screen, click on `Enable and manage APIs` 
 ![gam-33](https://cloud.githubusercontent.com/assets/1683475/11098098/5136c472-8868-11e5-9f11-31af28aafb16.png)
@@ -56,52 +59,53 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 1. Create the Credentials files
     1. create client_secrets.json
         1. in the left side menu, click on `Credentials`
-        1. in the center of the screen, click on `Add credentials` and choose OAuth 2.0 client ID  
-![gam12](https://cloud.githubusercontent.com/assets/1683475/11096315/07b0ce00-885f-11e5-86dc-b84d3c2e94c5.png)
-        1. you will be prompted to enter a product name on the consent screen.  Click the `Configure consent screen` button 
-![gam-35](https://cloud.githubusercontent.com/assets/1683475/11098100/51467d40-8868-11e5-8511-62086b45ac1c.png)
+        1. in the top menu, click on `OAuth consent screen`
+![gam-50](https://cloud.githubusercontent.com/assets/1683475/11798257/d2af222a-a28e-11e5-90dd-67e3dbbe3123.png)
         1. enter a _Product name_.  It can be the same project name that you used previously  
 ![gam11](https://cloud.githubusercontent.com/assets/1683475/11096312/07a61654-885f-11e5-9697-cb581fe094fe.png)
         1. at the bottom of the screen, click `Save` 
+        1. on the next screen, in the center of the screen, click on `New credentials` and choose `OAuth client ID`
+![gam-51](https://cloud.githubusercontent.com/assets/1683475/11798260/d2b8b9b6-a28e-11e5-8228-9812fe53ac95.png)     
         1. on the next screen, choose `Application type Other`, enter a name, and click `Create`.  
 ![gam-36](https://cloud.githubusercontent.com/assets/1683475/11098096/5134ff2a-8868-11e5-9f20-1c36b8720bf1.png) 
         1. in the next window, enter a name for the client.  You can use the same name as the project.  
 ![gam-37](https://cloud.githubusercontent.com/assets/1683475/11098095/5133dc44-8868-11e5-9025-deb568d793db.png)
         1. click the `Save` button.
         1. in the pop-up confirmation window, click `OK`.  You do not need to record the client ID or client secret
-        1. on the next screen, click the name of the project 
-![gam13](https://cloud.githubusercontent.com/assets/1683475/11096316/07b12562-885f-11e5-9d9a-d6c7721f1b2d.png)
-        1. on the next screen, near the top of the page click on `Download JSON`
-        1. save the file to the same folder as GAM.exe or GAM.py and rename the file to *`client_secrets.json`*  
+        1. on the next screen, you will see a section labeled `OAuth 2.0 client IDs`.  The client you just created will be listed. The `Type` column will say `Other`.
+![gam-52](https://cloud.githubusercontent.com/assets/1683475/11798262/d2bd882e-a28e-11e5-9c4d-6e258263c2c9.png)
+        1. at the far right of the line, click the download button. 
+        1. save the file to the same folder as GAM.exe or GAM.py and rename the file to *`client_secrets.json`*.  
 ![gam15](https://cloud.githubusercontent.com/assets/1683475/11096317/07b2dac4-885f-11e5-9283-bd7cc7141aff.png)
-        1. at the top of the screen, click the arrow button to return to the `Credentials` screen
     1. create oauth2service.json
-        1. click `Add credentials` and select `Service account` 
-![gam17](https://cloud.githubusercontent.com/assets/1683475/11096318/07b2f450-885f-11e5-9597-c71cdcf13ecf.png)
-        1. select the `JSON` key type and click `Create` 
-![gam18](https://cloud.githubusercontent.com/assets/1683475/11096319/07b390a4-885f-11e5-859a-b96e8b4376dc.png)
+        1. in the top left corner of the console, click the "hamburger menu" button
+![gam-53](https://cloud.githubusercontent.com/assets/1683475/11798264/d2c1e23e-a28e-11e5-9a98-54cd78ed420d.png)
+        1. in the slde-out menu, choose `Permissions`
+![gam-54](https://cloud.githubusercontent.com/assets/1683475/11798261/d2bd37ca-a28e-11e5-95b6-4704771c3558.png)
+        1. in the top menu on the Permissions page, click on `Service accounts`.
+![gam-55](https://cloud.githubusercontent.com/assets/1683475/11798263/d2bde0b2-a28e-11e5-82e8-de330e7f7f27.png)
+        1. on the next page, click `Create service account` 
+![gam-56](https://cloud.githubusercontent.com/assets/1683475/11798254/d2ab70e4-a28e-11e5-8467-b88b2939eccf.png)
+        1. enter a name for the service account.  It can be the same name as the project.
+        1. check the box to furnish a new private key
+        1. select the `JSON` key type 
+        1. check the box to enable domain-wide delegation
+        1. click the `Create` button
+![gam-57](https://cloud.githubusercontent.com/assets/1683475/11798258/d2afd224-a28e-11e5-9d0e-64466ef3348f.png)
         1. a file download will start automatically.  Save the file to the same folder as GAM.exe or GAM.py and rename the file to *`oauth2service.json`* 
 ![gam19](https://cloud.githubusercontent.com/assets/1683475/11096321/07bd277c-885f-11e5-9aeb-07df368265e2.png)
         1. in the pop-up dialog, click `Close`
-1. Run GAM to authorize the configuration
-    1. open a command line window and navigate to the folder that contains gam.exe or gam.py
-    1. run the command `gam info domain`
-    1. the configuration options will be displayed.  All API scopes will be selected by default. Choose the last option in the list (`Continue`): type its option number and press `Enter`.  
-![gam20](https://cloud.githubusercontent.com/assets/1683475/11096320/07ba411a-885f-11e5-9b68-2956e3b44475.png)
-    1. a browser window will open to display the confirmation screen.  
-        1. if the computer that you are running GAM on does not have a web browser, you can use a browser on another computer to complete this step.  On the other computer, enter the goo.gl short URL that is displayed in the command line window  
-![gam22](https://cloud.githubusercontent.com/assets/1683475/11096324/07c046f0-885f-11e5-9ece-2cc76b4bb59d.png)
-    1. scroll to the bottom of the list of permissions and click `Allow` 
-![gam21](https://cloud.githubusercontent.com/assets/1683475/11096323/07be2bc2-885f-11e5-9822-35a6cd35b8e9.png)
-    1. the web page will report that the authentication flow has completed.
-    1. in the command line window, the GAM command will complete, and you will see information about the Google Apps domain
+
 1. Authorize the API scopes for use with GAM in the Admin Console
     1. In this step, you will switch between the Developer's console and the domain's Admin console.  To access the Admin console, you must use an account with domain super-admin account or an account with delegated Security rights.  The Developer's console window must be logged into the account in which the project was created.  These can be the same account or different accounts.
     1. Authorize scopes for OAuth2
-        1. in the Developer’s console [console.developers.google.com](http://console.developers.google.com), in the left side menu click on `Credentials`
-        1. select to the project you just created
-        1. in the `OAuth 2 client IDs` section, click and drag to select the `Client ID` and copy it (Control/Command-C).  The Client ID is a long string of numbers and/or letters. 
-![gam-40](https://cloud.githubusercontent.com/assets/1683475/11100314/130210ae-8876-11e5-9659-a902e4d929cf.png)
+        1. in the Developer’s console [console.developers.google.com](http://console.developers.google.com), click on the `hamburger` menu in the top left corner. In the slide-out menu click on `API Manager`
+![gam-58](https://cloud.githubusercontent.com/assets/1683475/11798255/d2ae9468-a28e-11e5-8f6f-b7b492cbc19b.png)
+        1. the page now lists to IDs in the `OAuth 2.0 Client IDs` section
+            1. the OAuth client - type `Other`
+            1. the Service account - type `Service account client`
+        1. click and drag to select the `Client ID` for the OAuth client (type `Other`) and copy it (Control/Command-C).
+![gam-60](https://cloud.githubusercontent.com/assets/1683475/11798259/d2b077ce-a28e-11e5-992c-4d3e044ac610.png)
         1. in another browser window or tab, log into Google Apps using a domain super-admin account
         1. go to the [Google Apps Admin Console](http://admin.google.com)
         1. click the `Security` icon  
@@ -115,15 +119,24 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam27](https://cloud.githubusercontent.com/assets/1683475/11096328/07c8fe30-885f-11e5-8db3-62cdd06bd626.png)
     1. Authorize scopes for the service account
         1. in the Developer's Console, return to the screen with the project's credentials listed
-        1. in the Service Account section, click on the service account
-![gam-41](https://cloud.githubusercontent.com/assets/1683475/11100312/12fcd54e-8876-11e5-8252-6d721f9eb28e.png)
-        1. in the next screen, click and drag to select the Service Account's client ID and copy it (Control/Command-C).  The client ID is a long string of long string of numbers and/or letters (but may not the same client ID as the OAuth client ID)
-![gam-42](https://cloud.githubusercontent.com/assets/1683475/11100313/12ff4c02-8876-11e5-8a30-124985678a3d.png)
+        1. in the `OAuth 2.0 Client IDs` section, click and drag to select the Service Account's client ID and copy it (Control/Command-C).  The client ID is a long string of long string of numbers and/or letters (but is not the same client ID as the OAuth client ID)
+![gam-60]
         1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
         1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
         1. click the `Authorize` button
 
-
+1. Run GAM to authorize the configuration
+    1. open a command line window and navigate to the folder that contains gam.exe or gam.py
+    1. run the command `gam info domain`
+    1. the configuration options will be displayed.  All API scopes will be selected by default. Choose the last option in the list (`Continue`): type its option number and press `Enter`.  
+![gam20](https://cloud.githubusercontent.com/assets/1683475/11096320/07ba411a-885f-11e5-9b68-2956e3b44475.png)
+    1. a browser window will open to display the confirmation screen.  
+        1. if the computer that you are running GAM on does not have a web browser, you can use a browser on another computer to complete this step.  On the other computer, enter the goo.gl short URL that is displayed in the command line window  
+![gam22](https://cloud.githubusercontent.com/assets/1683475/11096324/07c046f0-885f-11e5-9ece-2cc76b4bb59d.png)
+    1. scroll to the bottom of the list of permissions and click `Allow` 
+![gam21](https://cloud.githubusercontent.com/assets/1683475/11096323/07be2bc2-885f-11e5-9822-35a6cd35b8e9.png)
+    1. the web page will report that the authentication flow has completed.
+    1. in the command line window, the GAM command will complete, and you will see information about the Google Apps domain
 
 
 GAM is now ready for use.
