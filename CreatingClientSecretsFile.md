@@ -65,11 +65,10 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam11](https://cloud.githubusercontent.com/assets/1683475/11096312/07a61654-885f-11e5-9697-cb581fe094fe.png)
         1. at the bottom of the screen, click `Save` 
         1. on the next screen, in the center of the screen, click on `New credentials` and choose `OAuth client ID`
+
 ![gam-51](https://cloud.githubusercontent.com/assets/1683475/11798260/d2b8b9b6-a28e-11e5-8228-9812fe53ac95.png)     
-        1. on the next screen, choose `Application type Other`, enter a name, and click `Create`.  
+        1. on the next screen, choose `Application type` `Other`, enter a name, and click `Create`.  
 ![gam-36](https://cloud.githubusercontent.com/assets/1683475/11098096/5134ff2a-8868-11e5-9f20-1c36b8720bf1.png) 
-        1. in the next window, enter a name for the client.  You can use the same name as the project.  
-![gam-37](https://cloud.githubusercontent.com/assets/1683475/11098095/5133dc44-8868-11e5-9025-deb568d793db.png)
         1. click the `Save` button.
         1. in the pop-up confirmation window, click `OK`.  You do not need to record the client ID or client secret
         1. on the next screen, you will see a section labeled `OAuth 2.0 client IDs`.  The client you just created will be listed. The `Type` column will say `Other`.
@@ -80,7 +79,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
     1. create oauth2service.json
         1. in the top left corner of the console, click the "hamburger menu" button
 ![gam-53](https://cloud.githubusercontent.com/assets/1683475/11798264/d2c1e23e-a28e-11e5-9a98-54cd78ed420d.png)
-        1. in the slde-out menu, choose `Permissions`
+        1. in the slide-out menu, choose `Permissions`
 ![gam-54](https://cloud.githubusercontent.com/assets/1683475/11798261/d2bd37ca-a28e-11e5-95b6-4704771c3558.png)
         1. in the top menu on the Permissions page, click on `Service accounts`.
 ![gam-55](https://cloud.githubusercontent.com/assets/1683475/11798263/d2bde0b2-a28e-11e5-82e8-de330e7f7f27.png)
@@ -91,8 +90,10 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. select the `JSON` key type 
         1. check the box to enable domain-wide delegation
         1. click the `Create` button
+
 ![gam-57](https://cloud.githubusercontent.com/assets/1683475/11798258/d2afd224-a28e-11e5-9d0e-64466ef3348f.png)
         1. a file download will start automatically.  Save the file to the same folder as GAM.exe or GAM.py and rename the file to *`oauth2service.json`* 
+
 ![gam19](https://cloud.githubusercontent.com/assets/1683475/11096321/07bd277c-885f-11e5-9aeb-07df368265e2.png)
         1. in the pop-up dialog, click `Close`
 
