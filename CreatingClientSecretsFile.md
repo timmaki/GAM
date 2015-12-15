@@ -73,7 +73,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. save the file to the same folder as GAM.exe or GAM.py and rename the file to *`client_secrets.json`*.  
 ![gam15](https://cloud.githubusercontent.com/assets/1683475/11096317/07b2dac4-885f-11e5-9283-bd7cc7141aff.png)
     1. create oauth2service.json
-        1. in the top left corner of the console, click the "hamburger menu" button
+        1. in the top left corner of the console, click the "card-stack menu" button
 ![gam-53](https://cloud.githubusercontent.com/assets/1683475/11798264/d2c1e23e-a28e-11e5-9a98-54cd78ed420d.png)
         1. in the slide-out menu, choose `Permissions`
 ![gam-54](https://cloud.githubusercontent.com/assets/1683475/11798261/d2bd37ca-a28e-11e5-95b6-4704771c3558.png)
@@ -93,7 +93,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 1. Authorize the API scopes for use with GAM in the Admin Console
     1. In this step, you will switch between the Developer's console and the domain's Admin console.  To access the Admin console, you must use an account with domain super-admin account or an account with delegated Security rights.  The Developer's console window must be logged into the account in which the project was created.  These can be the same account or different accounts.
     1. Authorize scopes for OAuth2
-        1. in the Developer’s console [console.developers.google.com](http://console.developers.google.com), click on the `hamburger` menu in the top left corner. In the slide-out menu click on `API Manager`
+        1. in the Developer’s console [console.developers.google.com](http://console.developers.google.com), click on the "card-stack menu" button in the top left corner. In the slide-out menu click on `API Manager`
 ![gam-58](https://cloud.githubusercontent.com/assets/1683475/11798255/d2ae9468-a28e-11e5-8f6f-b7b492cbc19b.png)
         1. in the left side-menu, click on `Credentials`
         1. the page now lists to IDs in the `OAuth 2.0 Client IDs` section
