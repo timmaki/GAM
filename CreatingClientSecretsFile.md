@@ -95,6 +95,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
     1. Authorize scopes for OAuth2
         1. in the Developer’s console [console.developers.google.com](http://console.developers.google.com), click on the `hamburger` menu in the top left corner. In the slide-out menu click on `API Manager`
 ![gam-58](https://cloud.githubusercontent.com/assets/1683475/11798255/d2ae9468-a28e-11e5-8f6f-b7b492cbc19b.png)
+        1. in the left side-menu, click on Credentials
         1. the page now lists to IDs in the `OAuth 2.0 Client IDs` section
             1. the OAuth client - type `Other`
             1. the Service account - type `Service account client`
