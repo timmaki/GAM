@@ -152,7 +152,8 @@ https://www.googleapis.com/auth/classroom.profile.emails,
 https://www.googleapis.com/auth/classroom.profile.photos, 
 https://www.googleapis.com/auth/admin.datatransfer, 
 https://www.googleapis.com/auth/admin.directory.customer, 
-https://www.googleapis.com/auth/admin.directory.domain
+https://www.googleapis.com/auth/admin.directory.domain,
+https://www.googleapis.com/auth/admin.directory.resource.calendar
 ````
 
 API scopes - Service Account:
