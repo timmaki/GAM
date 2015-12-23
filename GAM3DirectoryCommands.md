@@ -642,6 +642,7 @@ gam update domain <domain> primary
 ```
 Makes the given domain the new primary domain. The given domain must already exist as a verified secondary domain. At the same time the domain is promoted to primary, the old primary domain will become a secondary domain. Alias domains that point at the current or new primary domains will continue to point at the same domain. Users, groups and aliases with addresses in either domain will not have their address changed.
 
+**Note:** please read [Google's help article](https://support.google.com/a/answer/6301932?hl=en) for further considerations when changing your primary domain.
 ### Example
 This example makes istanbul.com the new primary domain. constantinople.com which was the primary domain will become a secondary domain.
 ```
