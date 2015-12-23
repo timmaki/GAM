@@ -89,14 +89,14 @@ gam print orgs name description parent inherit > orgs.csv
 # Print All Resource Calendars
 ### Syntax
 ```
-gam print resources [id] [description] [email] [todrive]
+gam print resources [description] [type] [allfields] [todrive]
 ```
-prints a CSV file of all resource calendars in the Google Apps account. The CSV output can be redirected to a file using the operating system's pipe command (such as "> resources.csv") see examples below. By default, the only column output is "Name"The optional arguments id, description and email add the respective additonal column to the CSV output. Only 1 call to Google's servers is done no matter which arguments are specified so the optional arguments should not significantly increase the time it takes for the command to complete. The optional todrive argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
+prints a CSV file of all resource calendars in the Google Apps account. The CSV output can be redirected to a file using the operating system's pipe command (such as "> resources.csv") see examples below. The optional arguments description and type add the respective additional column to the CSV output. The optional argument allfields will add all returned fields (including description and type) to the output. The optional todrive argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
 
 ### Example
 this example will output all resource calendars to the file resources.csv including all optional columns
 ```
-gam print resources id description email > resources.csv
+gam print resources allfields > resources.csv
 ```
 ---
 
