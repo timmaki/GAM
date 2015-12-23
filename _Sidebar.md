@@ -12,6 +12,7 @@
  * [Managing Classroom](Managing-Google-Classroom)
  * [Calendar Settings](CalendarExamples)
  * [Google Drive Management](GoogleDriveManagement)
+ * [Managing Admins](Managing-Admins)
  * [Domain Settings](DomainSettingsExamples)
  * [Domain Verification](DomainVerification)
  * [Auditing User Accounts](ExamplesAccountAuditing)
