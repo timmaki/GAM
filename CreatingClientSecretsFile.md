@@ -110,7 +110,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. select the entire list of _API scopes - OAuth2_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
         1. click the `Authorize` button 
 ![gam26](https://cloud.githubusercontent.com/assets/1683475/11096329/07c82474-885f-11e5-9741-90121987b508.png)
-        1. in the list of projects and scopes, the Client ID will appear in the left column and the list of API scopes will appear in the right column 
+        1. in the list of projects and scopes, the OAuth2 Client ID will appear in the left column and the list of API scopes will appear in the right column 
 ![gam-61](https://cloud.githubusercontent.com/assets/1683475/11919919/2953b4de-a725-11e5-9c00-dd8cc49d2d4c.png)
     1. Authorize scopes for the service account
         1. in the Developer's Console, return to the screen with the project's credentials listed
@@ -118,6 +118,8 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
         1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
         1. click the `Authorize` button
+        1. in the list of projects and scopes, the Service Account ID will appear in the left column and the list of API scopes will appear in the right column 
+![gam-62](https://cloud.githubusercontent.com/assets/1683475/12075487/fda9ef9c-b147-11e5-8d7c-a2a417078f64.png)
 1. Run GAM to authorize the configuration
     1. open a command line window and navigate to the folder that contains gam.exe or gam.py
     1. run the command `gam info domain`
