@@ -9,6 +9,7 @@
   - [Adding permissions to a file/folder for a user](#adding-permissions-to-a-filefolder-for-a-user)
   - [Updating permissions to a file/folder for a user](#updating-permissions-to-a-filefolder-for-a-user)
   - [Removing permissions to a file/folder for a user](#removing-permissions-to-a-filefolder-for-a-user)
+- [Add Resources Folder in My Drive for Users - EDU](#add-resources-folder-in-my-drive-for-users)
 
 GAM now supports Google Drive Management with the ability to add, update, view and delete Drive files and folders for users as well as adding, updating, viewing and deleting file and folder permissions.
 
@@ -243,4 +244,13 @@ Removes the give permission from the file. The permisson id parameter can be an 
 This example removes Sally's access to Tim's file
 ```
 gam user tim@acme.org delete drivefileacl 0B8aCWH-xLi2NckxXOEp5REUtNEE sally@acme.org
+```
+
+#Add Resources Folder in My Drive for Users - EDU
+Adds a shared drive folder to a user's "My Drive" (root). This is helpful for EDU when administration would like to share Files, Docs, etc. in a central place for the user. 
+
+### Example
+This example adds a shared folder to a user's My Drive.
+```
+gam user targetUser@domain.org update drivefile id  0B8aCWH-xLi2NckxXOEp5REUtNEE parentid root
 ```
