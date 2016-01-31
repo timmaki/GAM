@@ -9,7 +9,7 @@
   - [Adding permissions to a file/folder for a user](#adding-permissions-to-a-filefolder-for-a-user)
   - [Updating permissions to a file/folder for a user](#updating-permissions-to-a-filefolder-for-a-user)
   - [Removing permissions to a file/folder for a user](#removing-permissions-to-a-filefolder-for-a-user)
-- [Add Resources Folder in My Drive for Users - EDU](#add-resources-folder-in-my-drive-for-users)
+- [Add Resources Folder in My Drive for Users - EDU](#add-resources-folder-in-my-drive-for-users---edu)
 
 GAM now supports Google Drive Management with the ability to add, update, view and delete Drive files and folders for users as well as adding, updating, viewing and deleting file and folder permissions.
 
