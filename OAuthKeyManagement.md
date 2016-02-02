@@ -3,10 +3,11 @@
   - [Display Info About the Current OAuth Token](#display-info-about-the-current-oauth-token)
   - [Revoking an OAuth Token](#revoking-an-oauth-token)
 
-Note that this file must be in the same directory as gam.py, it is not an absolute pathname. 
 
 # OAuth Key Management
 ## Selecting Which OAuth Key File to Use
+
+
 ### Syntax
 ```
 Windows DOS Shell:
@@ -18,7 +19,9 @@ $env:OAUTHFILE="oauth.txt-mydomain.com"
 Linux / OSX:
 export OAUTHFILE=oauth.txt-mydomain.com
 ```
-By default, GAM saves OAuth credentials to a file named oauth.txt. This works fine if you only have one Google Apps instance to admin but if you have multiple, juggling this file can get complicated. If the environment variable OAUTHFILE is set, GAM will use that filename instead of oauth.txt for creating and reading OAuth authentication. Note that the file name can be whatever you prefer and is stored in the same location as gam.exe or gam.py.
+By default, GAM saves OAuth credentials to a file named oauth.txt. This works fine if you only have one Google Apps instance to admin but if you have multiple, juggling this file can get complicated. If the environment variable OAUTHFILE is set, GAM will use that filename instead of oauth.txt for creating and reading OAuth authentication.
+
+Note that the file name can be whatever you prefer, and the file *must* be stored in the same location as gam.exe or gam.py.
 
 ### Example
 This DOS shell example switches between OAuth files for multi GAM runs.
