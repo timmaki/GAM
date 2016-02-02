@@ -3,6 +3,8 @@
   - [Display Info About the Current OAuth Token](#display-info-about-the-current-oauth-token)
   - [Revoking an OAuth Token](#revoking-an-oauth-token)
 
+Note that this file must be in the same directory as gam.py, it is not an absolute pathname. 
+
 # OAuth Key Management
 ## Selecting Which OAuth Key File to Use
 ### Syntax
