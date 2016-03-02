@@ -122,7 +122,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam-62](https://cloud.githubusercontent.com/assets/1683475/12075487/fda9ef9c-b147-11e5-8d7c-a2a417078f64.png)
 1. Run GAM to authorize the configuration
     1. open a command line window and navigate to the folder that contains gam.exe or gam.py
-    1. run the command `gam info domain`
+    1. run the command `gam oauth create`
     1. the configuration options will be displayed.  Most API scopes will be selected by default. 
         1. There is a limit to the number of API scopes that a project can have active.  If you need the services provided by one of the unselected APIs you must disable one of the other APIs (type its number and press `Enter`) and then selecting the required API (type its number and press `Enter`).
         1. Choose the last option in the list (`Continue`): type its option number and press `Enter`.  
