@@ -114,7 +114,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam-61](https://cloud.githubusercontent.com/assets/1683475/11919919/2953b4de-a725-11e5-9c00-dd8cc49d2d4c.png)
     1. Authorize scopes for the service account
         1. in the Developer's Console, return to the screen with the project's credentials listed
-        1. in the `OAuth 2.0 Client IDs` section, click and drag to select the Service Account's client ID and copy it (Control/Command-C).  The client ID is a long string of long string of numbers and/or letters (but is not the same client ID as the OAuth client ID)
+        1. in the `OAuth 2.0 Client IDs` section, click and drag to select the Service Account's client ID and copy it (Control/Command-C).  The client ID is a long string of numbers and/or letters (but is not the same client ID as the OAuth client ID)
         1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
         1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
         1. click the `Authorize` button
