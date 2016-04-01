@@ -129,8 +129,8 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam20](https://cloud.githubusercontent.com/assets/1683475/11096320/07ba411a-885f-11e5-9b68-2956e3b44475.png)
     1. a browser window will open to display the confirmation screen.  
         1. if the computer that you are running GAM on does not have a web browser, you can use a browser on another computer to complete this step.  On the other computer, enter the goo.gl short URL that is displayed in the command line window  
-            1. if you are replacing existing client_secrets.json and oauth2service.json files, it may be necessary to remove or rename your existing oauth2.txt file for the goo.gl short URL to be displayed
 ![gam22](https://cloud.githubusercontent.com/assets/1683475/11096324/07c046f0-885f-11e5-9ece-2cc76b4bb59d.png)
+            * if you are replacing existing client_secrets.json and oauth2service.json files, it may be necessary to remove or rename your existing oauth2.txt file for the goo.gl short URL to be displayed
     1. scroll to the bottom of the list of permissions and click `Allow` 
 ![gam21](https://cloud.githubusercontent.com/assets/1683475/11096323/07be2bc2-885f-11e5-9822-35a6cd35b8e9.png)
     1. the web page will report that the authentication flow has completed.
