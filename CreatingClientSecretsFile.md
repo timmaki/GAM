@@ -12,35 +12,11 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
             1. click the `Save` button
 1. Log into a Google account. The account does not need to be in your Google Apps domain or have any special rights.
 1. Create a Google API Project 
-    1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing" target="_blank">this link</a> to start.
-    1. click on the drop-down menu near the top right of the screen.  Depending on your previous activity in the Developer's console, the choices may 
-read `Go to project`, `Create a project`, or it may show the name of a recently accessed project.
-![gam-70](https://cloud.githubusercontent.com/assets/1683475/14229300/1c69ca88-f8f6-11e5-8e95-eefca3665b76.png)
-    1. in the menu, choose `Create a project...`
-    1. enter a project name.  Make the name distinctive and easily identifiable as a GAM project.  The name must be between 4 and 30 characters<br />
-![gam-71](https://cloud.githubusercontent.com/assets/1683475/14229301/1c77db96-f8f6-11e5-9dc3-a710576b1e0a.png)
-    1. click the `Create` button
-    1. within a few second, your project will be created and the web page will switch to that project
-1. Authorize specific APIs to work with GAM
-    1. near the top of the next screen, click on `Enabled APIs`<br />
-![gam04](https://cloud.githubusercontent.com/assets/1683475/11096332/07cf5492-885f-11e5-9793-3fc0651a0e31.png)
-    1. some APIs are enabled for all projects by default.  GAM does not use any of them, so disable them
-        1. at the far right of each listed API, click the `Disable` button<br /> 
-![gam05](https://cloud.githubusercontent.com/assets/1683475/11096333/07d4dcc8-885f-11e5-974e-80e374e98fc2.png)
-        1. in the pop-up dialog, click `Disable` to confirm<br />
-![gam06](https://cloud.githubusercontent.com/assets/1683475/11096311/07a59c42-885f-11e5-802a-08beea16ffa3.png)
-        1. repeat for all listed APIs
-        1. wait for all of the APIs to be disabled
-    1. near the top of the page, click on `Google APIs` 
-    1. enable the APIs listed below
-        1. in the search box, start typing the the first few letters of the name of an API, then click on that API<br />
-![gam07](https://cloud.githubusercontent.com/assets/1683475/11096309/07a487f8-885f-11e5-99ef-487cdfdeb496.png)
-        1. in the next screen, click on `Enable API`<br />
-![gam08](https://cloud.githubusercontent.com/assets/1683475/11096310/07a599a4-885f-11e5-9896-23364582e79a.png)
-        1. when the screen confirms that the API is enabled, click the arrow to return to the list of all Google APIs
-        1. repeat for each API listed below 
-    1. near the top of the window, click on `Enabled APIs` again and verify that you have enabled all of the required APIs  
-![gam09](https://cloud.githubusercontent.com/assets/1683475/11096313/07a72ae4-885f-11e5-8041-861e48f60af0.png)
+    1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing" target="_blank">**this link**</a> to start.  This link will begin the project creation process, and specifies the APIs that must be included in the project.<br />
+![gam-101](https://cloud.githubusercontent.com/assets/1683475/14234019/b7cfce9e-f99d-11e5-8ee0-9022f71c0301.png)
+    1. Verify that `Create a new project` is selected
+    1. click the `Continue` button
+    1. within a few second, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs are included.  (Other APIs may also be enabled.  You may ignore them.)
     1. Required APIs:
         * Admin SDK
         * Apps Activity API
@@ -50,6 +26,16 @@ read `Go to project`, `Create a project`, or it may show the name of a recently 
         * Gmail API
         * Google Classroom API (Google for Education domains only)
         * Groups Settings API
+    1. Click on `Go to credentials`.<br />
+![gam-103](https://cloud.githubusercontent.com/assets/1683475/14234014/b7c827d4-f99d-11e5-9fd9-75f9f08566a0.png)
+1. Rename the project.
+    1. by default, the new project will be named `My Project` or something similar.  The project should be renamed so that you will know that it is a GAM project.
+    1. near the top right of the screen, click on the project selection menu. (The menu may be labeled `Go to project` or may be the name of a specific project.)<br />
+![gam-104](https://cloud.githubusercontent.com/assets/1683475/14234015/b7cef2a8-f99d-11e5-8020-f56ca86ffa80.png)
+    1. a list of all active projects will be displayed.  Find the line for the project just created.  At the far right of that line, click on the pencil icon to re-name the project.
+![gam-105](https://cloud.githubusercontent.com/assets/1683475/14234017/b7cf53f6-f99d-11e5-8aff-3dcde1ae89eb.png)
+    1. choose a name that is meaningful to you and identifies the project as a GAM project.
+![gam-107](https://cloud.githubusercontent.com/assets/1683475/14234018/b7cf7700-f99d-11e5-8488-b357eaef8b00.png)
 1. Create the Credentials files
     1. create client_secrets.json
         1. in the left side menu, click on `Credentials`
