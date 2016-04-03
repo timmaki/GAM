@@ -4,7 +4,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 
 ## Steps
 
-1. Enable API access to the domain
+1. Enable API access for Google Apps.
     1. This step requires a domain super-admin account or an account with delegated Security rights
         1. in the domain's Admin Console, go to the `Security` section, then click on `API reference`
 ![gam-30](https://cloud.githubusercontent.com/assets/1683475/11548007/02d69214-991e-11e5-8595-3ea6083776ab.png)
