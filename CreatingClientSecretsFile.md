@@ -11,7 +11,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. if API access is not already enabled
             1. click to check the box for `Enable API access`
             1. click the `Save` button
-1. Log into Google Apps. The account does not need to be in your Google Apps domain or have any special rights.
+1. Log into a Google account. The account does not need to be in your Google Apps domain or have any special rights.
 1. Create a Google API Project 
     1. point your web browser to [console.developers.google.com](http://console.developers.google.com)
     1. click on the drop-down menu near the top right of the screen.  Depending on your previous activity in the Developer's console, the selector may 
