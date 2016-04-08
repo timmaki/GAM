@@ -12,7 +12,7 @@
 
 Sometimes you want to make changes to many accounts all at once.  Commands that relate to user's email settings support bulk operations.  So you can run:
 
-gam update all users imap on
+gam all users imap on
 
 to turn on IMAP for all users.  However, other commands deal with the specifics of a user's account, you probably don't want to update all of users with the same password.  You can use CSV files along with some command line magic to get GAM to perform bulk operations.
 
