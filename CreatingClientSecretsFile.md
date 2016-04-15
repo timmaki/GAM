@@ -119,6 +119,15 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
     1. the web page will report that the authentication flow has completed.
     1. in the command line window, the GAM command will complete, and you will see information about the Google Apps domain
 
+If you access the web via a Proxy is may be necessary to set a Proxy in GAM, to do so:
+
+set http_proxy=http://1.2.3.4:8080
+set https_proxy=http://1.2.3.4:8080
+
+Obviously you need to set your proxy to the correct IP address that you use.  The above 1.2.3.4 and port 8080 is for example purposes.  
+
+gam oauth request
+
 
 GAM is now ready for use.
 
