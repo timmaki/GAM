@@ -124,7 +124,7 @@ If you access the web via a Proxy is may be necessary to set a Proxy in GAM, to 
 set http_proxy=http://1.2.3.4:8080
 set https_proxy=http://1.2.3.4:8080
 
-Obviously you need to set your proxy to the correct IP address that you use.  The above 1.2.3.4 and port 8080 is for example purposes.  
+Obviously you need to set your proxy to the correct IP address that you use.  The above 1.2.3.4 and port 8080 is for example purposes.  Credit for this to Craig Box
 
 gam oauth request
 
