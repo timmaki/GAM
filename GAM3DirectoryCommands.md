@@ -77,7 +77,9 @@ gam create user jsmith gal off changepassword on
 ```
 gam update user <email address>
  [firstname <First Name>] [lastname <Last Name>]
- [password <Password>] [email <New Email>]
+ [password <Password>]
+ [username <New Username>]
+ [email <New Email>]
  [gal on|off] [admin on|off] [suspended on|off]
  [sha] [md5] [crypt] [nohash]
  [changepassword on|off] [org <Org Name>]
