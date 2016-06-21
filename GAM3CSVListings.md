@@ -187,7 +187,7 @@ This command will pull the most recently available users report and upload to dr
 gam report users todrive
 ```
 
-This command will pull a list of users who have not logged in since the begging of the year.
+This command will pull a list of users who have not logged in since the beginning of the year.
 ```
 gam report users filter 'accounts:last_login_time<2013-01-01T00:00:00.000Z'
 ```
