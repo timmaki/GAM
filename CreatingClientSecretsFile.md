@@ -157,6 +157,10 @@ https://www.googleapis.com/auth/admin.directory.resource.calendar
 API scopes - Service Account:
 
 ````
+https://sites.google.com/feeds,
+https://www.google.com/m8/feeds/contacts,
+https://www.googleapis.com/auth/gmail.settings.basic,
+https://www.googleapis.com/auth/gmail.settings.sharing,
 https://mail.google.com/,
 https://www.googleapis.com/auth/activity,
 https://www.googleapis.com/auth/calendar,
