@@ -136,22 +136,22 @@ GAM is now ready for use.
 API scopes - OAuth2:
 
 ````
-https://www.googleapis.com/auth/calendar, 
-https://mail.google.com/, 
-https://www.googleapis.com/auth/activity, 
-https://www.googleapis.com/auth/drive, 
-https://www.googleapis.com/auth/plus.login, 
-https://www.googleapis.com/auth/plus.me, 
-https://www.googleapis.com/auth/siteverification, 
-https://www.googleapis.com/auth/cloudprint, 
-https://www.googleapis.com/auth/classroom.rosters, 
-https://www.googleapis.com/auth/classroom.courses, 
-https://www.googleapis.com/auth/classroom.profile.emails, 
-https://www.googleapis.com/auth/classroom.profile.photos, 
-https://www.googleapis.com/auth/admin.datatransfer, 
-https://www.googleapis.com/auth/admin.directory.customer, 
+https://mail.google.com/,
+https://www.googleapis.com/auth/activity,
+https://www.googleapis.com/auth/admin.datatransfer,
+https://www.googleapis.com/auth/admin.directory.customer,
 https://www.googleapis.com/auth/admin.directory.domain,
-https://www.googleapis.com/auth/admin.directory.resource.calendar
+https://www.googleapis.com/auth/admin.directory.resource.calendar,
+https://www.googleapis.com/auth/calendar,
+https://www.googleapis.com/auth/classroom.courses,
+https://www.googleapis.com/auth/classroom.profile.emails,
+https://www.googleapis.com/auth/classroom.profile.photos,
+https://www.googleapis.com/auth/classroom.rosters,
+https://www.googleapis.com/auth/cloudprint,
+https://www.googleapis.com/auth/drive,
+https://www.googleapis.com/auth/plus.login,
+https://www.googleapis.com/auth/plus.me,
+https://www.googleapis.com/auth/siteverification
 ````
 
 API scopes - Service Account:
