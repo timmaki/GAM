@@ -157,18 +157,18 @@ https://www.googleapis.com/auth/siteverification
 API scopes - Service Account:
 
 ````
+https://mail.google.com/,
 https://sites.google.com/feeds,
 https://www.google.com/m8/feeds/contacts,
-https://www.googleapis.com/auth/gmail.settings.basic,
-https://www.googleapis.com/auth/gmail.settings.sharing,
-https://mail.google.com/,
 https://www.googleapis.com/auth/activity,
 https://www.googleapis.com/auth/calendar,
-https://www.googleapis.com/auth/plus.me,
+https://www.googleapis.com/auth/drive,
+https://www.googleapis.com/auth/gmail.settings.basic,
+https://www.googleapis.com/auth/gmail.settings.sharing,
 https://www.googleapis.com/auth/plus.login,
+https://www.googleapis.com/auth/plus.me,
 https://www.googleapis.com/auth/userinfo.email,
-https://www.googleapis.com/auth/userinfo.profile,
-https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/userinfo.profile
 ````
 
 
