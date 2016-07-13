@@ -137,6 +137,7 @@ API scopes - OAuth2:
 
 ````
 https://mail.google.com/,
+https://sites.google.com/feeds,
 https://www.googleapis.com/auth/activity,
 https://www.googleapis.com/auth/admin.datatransfer,
 https://www.googleapis.com/auth/admin.directory.customer,
@@ -151,7 +152,8 @@ https://www.googleapis.com/auth/cloudprint,
 https://www.googleapis.com/auth/drive,
 https://www.googleapis.com/auth/plus.login,
 https://www.googleapis.com/auth/plus.me,
-https://www.googleapis.com/auth/siteverification
+https://www.googleapis.com/auth/siteverification,
+https://www.google.com/m8/feeds/contacts
 ````
 
 API scopes - Service Account:
