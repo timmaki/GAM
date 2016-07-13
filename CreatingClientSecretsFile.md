@@ -21,6 +21,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         * Admin SDK
         * Apps Activity API
         * Calendar API
+        * Contacts API
         * Drive API
         * Enterprise License Manager API
         * Gmail API
