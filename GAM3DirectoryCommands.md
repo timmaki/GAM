@@ -6,6 +6,7 @@
   - [Get User Info](#get-user-info)
   - [Delete a User](#delete-a-user)
   - [Undelete a User](#undelete-a-user)
+  - [Transfer Drive Documents](#transfer-drive-documents)
 - [Groups](#groups)
   - [Create a Group](#create-a-group)
   - [Update and Rename a Group](#update-and-rename-a-group)
@@ -322,6 +323,21 @@ gam undelete user <email address>
 ```
 Undeletes a user account deleted in the last 5 days. In order to undelete a user, there must not be any other users or groups with conflicting primary or alias email addresses. See Google's [Restore a recently deleted user](http://support.google.com/a/bin/answer.py?hl=en&answer=1397578) documentation for more help.
 
+---
+
+## Transfer Drive Documents
+### Syntax
+```
+gam user <email address> transfer drive <email address>
+```
+Transfer the ownership of all of a user's drive documents and folders (preserving folder hierarchy). A folder is created in the target user's drive in the format `orig.owner@domain old files`.  This is particularly useful to ensure that shared drive documents and folders are preserved prior to deleting a user account.
+
+### Example
+This example transfers all of the drive files from jane.doe@example.com to archived.accounts@example.com
+```
+gam user jane.doe@example.com transfer drive archived.accounts@example.com
+```
+---
 # Groups
 ## Create a Group
 ### Syntax
