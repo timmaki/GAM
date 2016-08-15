@@ -148,9 +148,9 @@ gam update group <group> show_in_group_directory false
 ## Who Can Invite
 ### Syntax
 ```
-gam update group <group> who_can_invite all_managers_can_invite|all_members_can_invite
+gam update group <group> who_can_invite ALL_MEMBERS_CAN_INVITE|ALL_MANAGERS_CAN_INVITE|NONE_CAN_INVITE
 ```
-Determine who is allowed to invite new members to the group. all\_members\_can\_invite allows anyone who is already a member of the group to invite others to join. all\_managers\_can\_invite allows only group managers and owners to invite others.
+Determine who is allowed to invite new members to the group.  ALL\_MEMBERS\_CAN\_INVITE allows anyone who is already a member of the group to invite others to join. ALL\_MANAGERS\_CAN\_INVITE allows only group managers and owners to invite others. NONE\_CAN\_INVITE prevents anyone from inviting new members to the group via the web UI, requiring all members to be added via the API (or GAM).
 
 ### Example
 This example allows any existing member of engineers@acme.com to invite others to join the group.
@@ -166,7 +166,7 @@ gam update group engineers@acme.com who_can_invite all_members_can_invite
 ```
 gam update group <group> who_can_join all_in_domain_can_join|anyone_can_join|can_request_to_join|invited_can_join
 ```
-Determines who is allowed to become a member of the group. all\_in\_domain\_can\_join allows any domain members to directly join the group. anyone\_can\_join allows any logged in Google Account to join the group. can\_request\_to\_join allows anyone to request membership to join. invited\_can\_join allows only those members who have received invitations to join the group (disable request to join).
+Determines who is allowed to become a member of the group. all\_in\_domain\_can\_join allows any domain members to directly join the group. anyone\_can\_join allows any logged in Google Account to join the group. can\_request\_to\_join allows anyone to request membership to join. invited\_can\_join allows only those members who have received invitations to join the group (disable request to join). invited\_can\_join can be used with setting [Who Can Invite](#who-can-invite) to NONE_CAN_INVITE to prevent the addition of new members via the Web UI.
 
 ### Example
 This example allows anyone on the Internet to potentially join the deals@acme.com group.
@@ -419,9 +419,9 @@ gam update group topsecret@newwidgets.com include_in_global_address_list false
 ## Who Can Leave Group
 ### Syntax
 ```
-gam update group <group> who_can_leave_group ALL_MEMBERS_CAN_LEAVE|ALL_MANAGERS_CAN_LEAVE
+gam update group <group> who_can_leave_group NONE_CAN_LEAVE|ALL_MEMBERS_CAN_LEAVE|ALL_MANAGERS_CAN_LEAVE
 ```
-Determines if regular users are allowed to leave a group. Setting this to ALL\_MANAGERS\_CAN\_LEAVE prevents regular members from unsubscribing to the group via the Web UI or email. Note that forcing a user to remain in a group increases the odds that they'll report your group mail as spam so it's strongly recommended to only use this setting for groups containing internal users only.
+Determines if regular users are allowed to leave a group. Setting this to ALL\_MANAGERS\_CAN\_LEAVE prevents regular members from unsubscribing to the group via the Web UI or email. Setting this to NONE\_CAN\_LEAVE prevents all members, including managers and owners, from unsubscribing to the group via the Web UI or email. Note that forcing a user to remain in a group increases the odds that they'll report your group mail as spam so it's strongly recommended to only use this setting for groups containing internal users only.
 
 ### Example
 This example prevents regular users from leaving the everyone@acme.com group.
