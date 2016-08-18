@@ -186,6 +186,19 @@ This example invites moma.smith@hotmail.com as a guardian of johnny.smith@acme.e
 ```
 gam create guardianinvite moma.smith@hotmail.com johnny.smith@acme.edu
 ```
+Assuming you have a csv file named parents.csv that looks like:
+```
+student-email,parent-email
+johnny.smith@acme.edu,jonathan.t.smith@widgets.com
+jane.smith@acme.edu,jonathan.t.smith@widgets.com
+johnny.smith@acme.edu,judy.r.smith@gizmos.com
+jane.smith@acme.edu,judy.r.smith@gizmos.com
+george.johnson@acme.edu,johnson.fam.5@yahoo.com
+```
+this example bulk invites parents as guardians for their students.
+```
+gam csv parents.csv gam create guardianinvite ~parent-email ~student-email
+```
 ----
 
 ## Delete a Guardian
