@@ -10,6 +10,10 @@
   - [Adding Students And Teachers To A Course](#adding-students-and-teachers-to-a-course)
   - [Syncing Students And Teachers To A Course](#syncing-students-and-teachers-to-a-course)
   - [Removing Students And Teachers From A Course](#removing-students-and-teachers-from-a-course)
+- [Managing Guardians](#managing-guardians)
+  - [Inviting a guardian](#inviting-a-guardian)
+  - [Deleting a guardian](#deleting-a-guardian)
+  - [Printing Guardians](#printing-guardians)
 - [Course And Course Participant Reports](#course-and-course-participant-reports)
   - [Printing Courses](#printing-courses)
   - [Printing Course Participants](#printing-course-participants)
@@ -164,6 +168,59 @@ removes the given email address from the course as a student or teacher.
 This example removes John from the course.
 ```
 gam update course the-republic-s01 remove student john@athens.edu
+```
+----
+
+# Managing Guardians
+## Inviting a Guardian
+### Syntax
+```
+gam create gaurdianinvite <guardian email> <student email>
+```
+Sends an email to the specified guardian email address inviting them to receive notifications for Classroom activities of given student email. The guardian email address can be any valid recipient but in order to accept the invitation the guardian must login or create a Google account. The guardian Google account does not need to be directly associated to the guardian email address.
+
+Because this command sends out email notifications externally, it is recommended that plenty of internal testing is done with guardian invites before bulk inviting real guardians.
+
+### Examples
+This example invites moma.smith@hotmail.com as a guardian of johnny.smith@acme.edu
+```
+gam create guardianinvite moma.smith@hotmail.com johnny.smith@acme.edu
+```
+----
+
+## Delete a Guardian
+### Syntax
+```
+gam delete guardian <guardian email> <student email>
+```
+Removes the given guardian as a guardian of the given student if guardian has accepted invitation and also cancels any pending invitations. The guardian will receive email notification that they have been removed as a guardian of the student.
+
+### Examples
+This example removes legal.guardian@yahoo.com as a guardian of johnny.smith@acme.edu or cancels any PENDING invitations
+```
+gam delete guardian legal.guardian@yahoo.com johnny.smith@acme.edu
+```
+----
+
+## Printing Guardians
+### Syntax
+```
+gam print guardians [invitations] [student <email>] [invitedguardian <email>] [user <username>|group <email>|ou <ouname>|all users] [states <COMPLETE,PENDING,GUARDIAN_INVITATION_STATE_UNSPECIFIED>] [todrive] [nocsv]
+```
+Prints a report of guardians. Currently you must specify a student or list of users for which to pull guardians. The optional argument invitations pulls information on guardian invitations instead of actual guardians who have been invited and accepted. Guardian invitations with a state of COMPLETE are no longer valid either because they've been accepted or rejected by the guardian, an admin has cancelled the invitation or the invitation has expired. The optional parameter student specifies the email address of a single student whose guardians or guardian invites should be pulled. The optional parameters user <email>, group <email>, ou <ouname> and all users specify a grouping of users whose guardians or guardian invites should be pulled. The optional argument states specifies a comma separated list of guardian invites that should be pulled based on their current state. The optional parameter todrive outputs the results to a Google Sheet instead of CSV. The optional parameter nocsv prints the guardians to the screen in a format that's human-eye friendly.
+
+### Examples
+This example creates a Google Sheet for all existing guardians. It makes one API call per user in the domain so may be very slow for large domains.
+```
+gam print guardians all users todrive
+```
+This example prints all guardian invitations that are still in a pending state for the /Students OU.
+```
+gam print guardians invitations state PENDING ou "/Students"
+```
+This example shows all of johnny.smith@acme.edu's current guardians.
+```
+gam print guardians student johnny.smith@acme.edu
 ```
 ----
 
