@@ -175,7 +175,7 @@ gam update course the-republic-s01 remove student john@athens.edu
 ## Inviting a Guardian
 ### Syntax
 ```
-gam create gaurdianinvite <guardian email> <student email>
+gam create guardianinvite <guardian email> <student email>
 ```
 Sends an email to the specified guardian email address inviting them to receive notifications for Classroom activities of given student email. The guardian email address can be any valid recipient but in order to accept the invitation the guardian must login or create a Google account. The guardian Google account does not need to be directly associated to the guardian email address.
 
