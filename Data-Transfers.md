@@ -13,11 +13,11 @@ Creates a data transfer request. Old owner is the source user whose data will be
 ## Example
 This example transfers all Drive files for oldguy@acme.com to newguy@acme.com
 ```
-gam create datatransfer oldguy@acme.com drive newguy@acme.com privacy_level shared,private
+gam create datatransfer oldguy@acme.com gdrive newguy@acme.com privacy_level shared,private
 ```
 This example transfers only Drive files shared by terminated@acme.com to manager@acme.com
 ```
-gam create datatransfer terminated@acme.com drive manager@acme.com privacy_level shared
+gam create datatransfer terminated@acme.com gdrive manager@acme.com privacy_level shared
 ```
 This example transfers the Google+ pages for sarah@acme.com to announce@acme.com
 ```
