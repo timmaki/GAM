@@ -6,7 +6,7 @@
 # Request a Data Transfer
 ## Syntax
 ```
-gam create datatransfer <old owner> <app> <new owner> (<parameter> <value>*
+gam create datatransfer <old owner> <app> <new owner> (<parameter> <value>)*
 ```
 Creates a data transfer request. Old owner is the source user whose data will be transferred. App is the name of the application data to transfer. New owner is the target user that will receive the data. Depending on the app, optional parameters can be specified which determine the scope of data to be transferred.
 
