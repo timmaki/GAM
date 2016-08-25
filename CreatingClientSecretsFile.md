@@ -134,7 +134,7 @@ gam oauth request
 GAM is now ready for use.
 
 
-API scopes - OAuth2:
+### OAuth 2.0 Scopes
 
 ````
 https://mail.google.com/,
@@ -158,7 +158,7 @@ https://www.googleapis.com/auth/siteverification,
 https://www.google.com/m8/feeds/contacts
 ````
 
-API scopes - Service Account:
+### Service Account API scopes
 
 ````
 https://mail.google.com/,
