@@ -20,14 +20,15 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
     1. Required APIs:
         * Admin SDK
         * Apps Activity API
-        * Calendar API
         * Contacts API
-        * Drive API
         * Enterprise License Manager API
         * Gmail API
+        * Google Calendar API
         * Google Classroom API (Google for Education domains only)
-        * Groups Settings API
+        * Google Drive API
         * Google+ API
+        * Groups Settings API
+
     1. Click on `Go to credentials`.<br />
 ![gam-103](https://cloud.githubusercontent.com/assets/1683475/14234014/b7c827d4-f99d-11e5-9fd9-75f9f08566a0.png)
 1. Rename the project.
