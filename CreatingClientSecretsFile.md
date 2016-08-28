@@ -67,6 +67,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. select the `JSON` key type 
         1. click the `Create` button<br />
 ![gam-82a](https://cloud.githubusercontent.com/assets/1683475/14229633/ad94f22e-f8fd-11e5-9e9e-2c2724baa41a.png)
+        1. when it says your service account has no role, just click "Create without a role".
         1. a file download will start automatically.  Save the file to the same folder as GAM.exe or GAM.py and rename the file to *`oauth2service.json`*<br />
 ![gam19](https://cloud.githubusercontent.com/assets/1683475/11096321/07bd277c-885f-11e5-9aeb-07df368265e2.png)
         1. in the pop-up dialog, click `Close`
