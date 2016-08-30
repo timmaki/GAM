@@ -136,9 +136,9 @@ gam print mobile query "email:jsmith@acme.org"
 # Print Chrome OS Devices
 ### Syntax
 ```
-gam print cros [query <query>] [orderby location|user|lastsync|serialnumber|supportenddate] [ascending|descending] [todrive]
+gam print cros [query <query>] [orderby location|user|lastsync|serialnumber|supportenddate] [ascending|descending] [todrive] [allfields|full|basic]
 ```
-Print all Chrome OS devices enrolled in the Google Apps instance. All fields are included in CSV output. Optional parameter query specifies a query to perform, limiting the results to matching devices. The query format is described in Google's [help article](http://support.google.com/chrome/a/bin/answer.py?hl=en&answer=1698333). orderby and ascending/descending parameters determine sorting of CSV output. The optional todrive argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
+Print all Chrome OS devices enrolled in the Google Apps instance. By default, the only column printed is the deviceId. The optional arguments allfields/full add all fields to the output; the optional argument basic adds some essential fields to the output. Optional parameter query specifies a query to perform, limiting the results to matching devices. The query format is described in Google's [help article](http://support.google.com/chrome/a/bin/answer.py?hl=en&answer=1698333). orderby and ascending/descending parameters determine sorting of CSV output. The optional todrive argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
 
 ### Example
 This example prints all Chrome OS Devices enrolled in the domain.
