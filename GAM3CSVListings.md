@@ -136,15 +136,17 @@ gam print mobile query "email:jsmith@acme.org"
 # Print Chrome OS Devices
 ### Syntax
 ```
-gam print cros [query <query>] [orderby location|user|lastsync|serialnumber|supportenddate] [ascending|descending] [todrive] [allfields|full|basic]
+gam print cros [query <query>] [orderby location|user|lastsync|serialnumber|supportenddate] [ascending|descending] [todrive] [allfields|full|basic] [nolists|([recentusers] [activetimeranges])] [listlimit <Number>]
 ```
-Print all Chrome OS devices enrolled in the Google Apps instance. By default, the only column printed is the deviceId. The optional arguments allfields/full add all fields to the output; the optional argument basic adds some essential fields to the output. Optional parameter query specifies a query to perform, limiting the results to matching devices. The query format is described in Google's [help article](http://support.google.com/chrome/a/bin/answer.py?hl=en&answer=1698333). orderby and ascending/descending parameters determine sorting of CSV output. The optional todrive argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
+Print all Chrome OS devices enrolled in the Google Apps instance. By default, the only column printed is the deviceId. The optional arguments `allfields/full` adds all fields to the output; the optional argument `basic` adds some essential fields to the output. The optional parameter `query` specifies a query to perform, limiting the results to matching devices. The query format is described in Google's [help article](http://support.google.com/chrome/a/bin/answer.py?hl=en&answer=1698333). The `orderby` and `ascending/descending` parameters determine sorting of CSV output. The optional `todrive` argument will upload the CSV data to a Google Docs Spreadsheet file in the Administrators Google Drive rather than displaying it locally.
+
+The full data for a Chrome OS device includes two repeating fields, recentUsers and activeTimeRanges, with two columns each that makes for a large number of columns in the CSV output. Use the `listlimit <Number>` argument to limit each of the repeating fields to `<Number>` entries of two columns each. The `nolists` argument eliminates these two fields from the output. Specifying either or both of the `recentusers` or `activetimeranges` arguments includes the fields in the output, but there are only two columns per field per row; multiple rows are written to the CSV output to include all of the values. The `listlimit <Number>` argument limits the rows written to `<Number>`.
 
 ### Example
-This example prints all Chrome OS Devices enrolled in the domain.
+This example prints basic data for all Chrome OS Devices enrolled in the domain.
 
 ```
-gam print cros
+gam print cros basic
 ```
 
 This example prints all Chrome OS devices annotated as belonging to jsmith@acme.org
