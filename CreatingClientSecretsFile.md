@@ -12,23 +12,24 @@ This step requires a domain super-admin account or an account with delegated Sec
     1. click to check the box for `Enable API access`
     1. click the `Save` button
     1. Login to a Google account. The account does not need to be in your Google Apps domain or have any special rights.
+
 ### Create a Google API Project. ### 
-1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing,plus,contacts" target="_blank">**this link**</a> to start.  This link will begin the project creation process, and specifies the APIs that must be included in the project.<br />
+  1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing,plus,contacts" target="_blank">**this link**</a> to start.  This link will begin the project creation process, and specifies the APIs that must be included in the project.<br />
 ![gam-101](https://cloud.githubusercontent.com/assets/1683475/14234019/b7cfce9e-f99d-11e5-8ee0-9022f71c0301.png)
-  1. Verify that `Create a new project` is selected
-  1. click the `Continue` button
-  1. within a few seconds, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs listed below are included.  (Other APIs may also be enabled.  You may ignore them.)
-  1. Required APIs:
-        * Admin SDK
-        * Apps Activity API
-        * Contacts API
-        * Enterprise License Manager API
-        * Gmail API
-        * Google Calendar API
-        * Google Classroom API (Google for Education domains only)
-        * Google Drive API
-        * Google+ API
-        * Groups Settings API
+    1. Verify that `Create a new project` is selected
+    1. click the `Continue` button
+    1. within a few seconds, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs listed below are included.  (Other APIs may also be enabled.  You may ignore them.)
+    1. Required APIs:
+      * Admin SDK
+      * Apps Activity API
+      * Contacts API
+      * Enterprise License Manager API
+      * Gmail API
+      * Google Calendar API
+      * Google Classroom API (Google for Education domains only)
+      * Google Drive API
+      * Google+ API
+      * Groups Settings API
 
     1. Click on `Go to credentials`.<br />
 ![gam-103](https://cloud.githubusercontent.com/assets/1683475/14234014/b7c827d4-f99d-11e5-9fd9-75f9f08566a0.png)
