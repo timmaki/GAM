@@ -74,53 +74,54 @@ This step requires a domain super-admin account or an account with delegated Sec
       1. when it says your service account has no role, just click "Create without a role".
       1. a file download will start automatically.  Save the file to the same folder as GAM.exe or GAM.py and rename the file to *`oauth2service.json`*<br />
 ![gam19](https://cloud.githubusercontent.com/assets/1683475/11096321/07bd277c-885f-11e5-9aeb-07df368265e2.png)
-        1. in the pop-up dialog, click `Close`
-    1. There are now two sections in the screen - `OAuth 2.0 client IDs` and `Service account keys`.  At the far right of the `Service account keys` section, click on `Manage service accounts`.
+      1. in the pop-up dialog, click `Close`
+  1. There are now two sections in the screen - `OAuth 2.0 client IDs` and `Service account keys`.  At the far right of the `Service account keys` section, click on `Manage service accounts`.
 ![gam-83](https://cloud.githubusercontent.com/assets/1683475/14229293/1c131454-f8f6-11e5-917f-2fa47ad47ffd.png)
-        1. on the next screen, find the line with the name of the service account you just created.  At the far right of that line, click on the 3-dots button and select `Edit`.
+      1. on the next screen, find the line with the name of the service account you just created.  At the far right of that line, click on the 3-dots button and select `Edit`.
 ![gam-84](https://cloud.githubusercontent.com/assets/1683475/14229294/1c1ebc3c-f8f6-11e5-9aab-8d9e6a9095c2.png)
-        1. in the pop-up dialog, check the box to `Enable Google Apps Domain-wide Delegation` and then click `Save`.<br />
+      1. in the pop-up dialog, check the box to `Enable Google Apps Domain-wide Delegation` and then click `Save`.<br />
 ![gam-85](https://cloud.githubusercontent.com/assets/1683475/14229295/1c2b2396-f8f6-11e5-83d1-bd66b5ef703c.png)
-        1. in the top left corner of the screen, click on the card-stack menu button, then click on `API Manager`, then click on `Credentials`.<br />
+      1. in the top left corner of the screen, click on the card-stack menu button, then click on `API Manager`, then click on `Credentials`.<br />
 ![gam-89](https://cloud.githubusercontent.com/assets/1683475/14229296/1c36a98c-f8f6-11e5-8380-7db03a84c370.png)<br />
 ![gam-90](https://cloud.githubusercontent.com/assets/1683475/14229297/1c4364ba-f8f6-11e5-82c5-dc9f84855b65.png)<br />
 ![gam-91](https://cloud.githubusercontent.com/assets/1683475/14229298/1c4faf9a-f8f6-11e5-8340-79159289bce2.png)<br />
-            1.  in the main part of the screen, the section labeled `OAuth 2.0 client IDs` now has two lines: one for the OAuth2 client (`Other`) and one for the `Service account client`.  The column to the far right lsts the Client ID for each client.  These Client IDs will be used in the next step. 
+        1.  in the main part of the screen, the section labeled `OAuth 2.0 client IDs` now has two lines: one for the OAuth2 client (`Other`) and one for the `Service account client`.  The column to the far right lists the Client ID for each client.  These Client IDs will be used in the next step. 
 ![gam-92](https://cloud.githubusercontent.com/assets/1683475/14229299/1c5cbdde-f8f6-11e5-862d-afbd2f3f132f.png)
 
 ### Authorize the API scopes for use with GAM in the Admin Console
-    1. In this step, you will switch between the Developer's console and the domain's Admin console.  To access the Admin console, you must use an account with domain super-admin account or an account with delegated Security rights.  The Developer's console window must be logged in to the account in which the project was created.  These can be the same account or different accounts.
-    1. Authorize scopes for OAuth2
-        1. select the `Client ID` for the OAuth client (type `Other`) and copy it (Control/Command-C).<br />
+  1. In this step, you will switch between the Developer's console and the domain's Admin console.  To access the Admin console, you must use an account with domain super-admin account or an account with delegated Security rights.  The Developer's console window must be logged in to the account in which the project was created.  These can be the same account or different accounts.
+  1. Authorize scopes for OAuth2
+    1. select the `Client ID` for the OAuth client (type `Other`) and copy it (Control/Command-C).<br />
 ![gam-60](https://cloud.githubusercontent.com/assets/1683475/11798259/d2b077ce-a28e-11e5-992c-4d3e044ac610.png)
-        1. in another browser window or tab, login to Google Apps using a domain super-admin account
-        1. go to the [Google Apps Admin Console](http://admin.google.com)
-        1. click the `Security` icon  
+    1. in another browser window or tab, login to Google Apps using a domain super-admin account
+      1. go to the [Google Apps Admin Console](http://admin.google.com)
+      1. click the `Security` icon  
 ![gam23](https://cloud.githubusercontent.com/assets/1683475/11096322/07bd8492-885f-11e5-9365-55a2dead8455.png)
-        1. in the Admin Console, go to the Security section, click on `Show more`, then `Advanced settings`, then `Manage API client access`
-        1. near the top of the screen, paste the Client ID into the field labeled `Client Name`
-        1. select the entire list of _API scopes - OAuth2_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
-        1. click the `Authorize` button 
+    1. in the Admin Console, go to the Security section, click on `Show more`, then `Advanced settings`, then `Manage API client access`
+      1. near the top of the screen, paste the Client ID into the field labeled `Client Name`
+      1. select the entire list of _API scopes - OAuth2_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
+      1. click the `Authorize` button 
 ![gam26](https://cloud.githubusercontent.com/assets/1683475/11096329/07c82474-885f-11e5-9741-90121987b508.png)
-        1. in the list of projects and scopes, the OAuth2 Client ID will appear in the left column and the list of API scopes will appear in the right column<br />
+      1. in the list of projects and scopes, the OAuth2 Client ID will appear in the left column and the list of API scopes will appear in the right column<br />
 ![gam-61](https://cloud.githubusercontent.com/assets/1683475/11919919/2953b4de-a725-11e5-9c00-dd8cc49d2d4c.png)
-    1. Authorize scopes for the service account
-        1. in the Developer's Console, return to the screen with the project's credentials listed
-        1. in the `OAuth 2.0 Client IDs` section, click and drag to select the Service Account's client ID and copy it (Control/Command-C).  The client ID is a long string of numbers and/or letters (but is not the same client ID as the OAuth client ID)
-        1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
-        1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
-        1. click the `Authorize` button
-        1. in the list of projects and scopes, the Service Account ID will appear in the left column and the list of API scopes will appear in the right column<br />
+  1. Authorize scopes for the service account
+    1. in the Developer's Console, return to the screen with the project's credentials listed
+      1. in the `OAuth 2.0 Client IDs` section, click and drag to select the Service Account's client ID and copy it (Control/Command-C).  The client ID is a long string of numbers and/or letters (but is not the same client ID as the OAuth client ID)
+      1. switch to the Admin Console and paste the client ID into the field labeled `Client Name`
+      1. select the entire list of _API scopes - Service Account_ below, copy it (Control/Command-C) and paste it into the field labeled `One or More API Scopes` on the Admin Console screen
+      1. click the `Authorize` button
+      1. in the list of projects and scopes, the Service Account ID will appear in the left column and the list of API scopes will appear in the right column<br />
 ![gam-62](https://cloud.githubusercontent.com/assets/1683475/12075487/fda9ef9c-b147-11e5-8d7c-a2a417078f64.png)
 ### Run GAM to authorize the configuration
-    1. open a command line window and navigate to the file gam.exe or gam.py
-    1. run the command `gam oauth create`
-    1. the configuration options will be displayed.  Most API scopes will be selected by default. 
-        1. There is a limit to the number of API scopes that a project can have active.  If you need the services provided by one of the unselected APIs you must disable one of the other APIs (type its number and press `Enter`) and then selecting the required API (type its number and press `Enter`).
-        1. Choose the last option in the list (`Continue`): type its option number and press `Enter`.<br />
+
+  1. open a command line window and navigate to the file gam.exe or gam.py
+  1. run the command `gam oauth create`
+  1. the configuration options will be displayed.  Most API scopes will be selected by default. 
+    1. There is a limit to the number of API scopes that a project can have active.  If you need the services provided by one of the unselected APIs you must disable one of the other APIs (type its number and press `Enter`) and then selecting the required API (type its number and press `Enter`).
+    1. Choose the last option in the list (`Continue`): type its option number and press `Enter`.<br />
 ![gam-95](https://cloud.githubusercontent.com/assets/1683475/14229585/7fd2e9e6-f8fc-11e5-80c1-c117b2f2eb15.png)
-    1. a browser window will open to display the confirmation screen.  
-        1. if the computer that you are running GAM on does not have a web browser, you can use a browser on another computer to complete this step.  On the other computer, enter the goo.gl short URL that is displayed in the command line window  
+  1. a browser window will open to display the confirmation screen.  
+    1. if the computer that you are running GAM on does not have a web browser, you can use a browser on another computer to complete this step.  On the other computer, enter the goo.gl short URL that is displayed in the command line window  
 ![gam22](https://cloud.githubusercontent.com/assets/1683475/11096324/07c046f0-885f-11e5-9ece-2cc76b4bb59d.png)
             * if you are replacing existing client_secrets.json and oauth2service.json files, it may be necessary to remove or rename your existing oauth2.txt file for the goo.gl short URL to be displayed
     1. scroll to the bottom of the list of permissions and click `Allow`<br />
