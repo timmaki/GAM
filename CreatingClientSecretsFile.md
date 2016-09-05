@@ -5,15 +5,17 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ## Steps
 
 ### Enable API access for Google Apps and Login.
+
 This step requires a domain super-admin account or an account with delegated Security rights
-  1. in the domain's Admin Console, go to the `Security` section, then click on `API reference`
+  1. In the domain's Admin Console, go to the `Security` section, then click on `API reference`<br>
 ![gam-30](https://cloud.githubusercontent.com/assets/1683475/11548007/02d69214-991e-11e5-8595-3ea6083776ab.png)
-  1. if API access is not already enabled:
+  1. If API access is not already enabled:
     1. click to check the box for `Enable API access`
     1. click the `Save` button
-    1. Login to a Google account. The account does not need to be in your Google Apps domain or have any special rights.
+  1. Login to a Google account. The account does not need to be in your Google Apps domain or have any special rights.
 
 ### Create a Google API Project. 
+
   1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing,plus,contacts" target="_blank">**this link**</a> to start.  This link will begin the project creation process, and specifies the APIs that must be included in the project.<br />
 ![gam-101](https://cloud.githubusercontent.com/assets/1683475/14234019/b7cfce9e-f99d-11e5-8ee0-9022f71c0301.png)
     1. Verify that `Create a new project` is selected
