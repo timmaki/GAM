@@ -4,7 +4,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 
 ## Steps
 
-### Enable API access for Google Apps and Login. ###
+### Enable API access for Google Apps and Login.
 This step requires a domain super-admin account or an account with delegated Security rights
   1. in the domain's Admin Console, go to the `Security` section, then click on `API reference`
 ![gam-30](https://cloud.githubusercontent.com/assets/1683475/11548007/02d69214-991e-11e5-8595-3ea6083776ab.png)
@@ -13,7 +13,7 @@ This step requires a domain super-admin account or an account with delegated Sec
     1. click the `Save` button
     1. Login to a Google account. The account does not need to be in your Google Apps domain or have any special rights.
 
-### Create a Google API Project. ### 
+### Create a Google API Project. 
   1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing,plus,contacts" target="_blank">**this link**</a> to start.  This link will begin the project creation process, and specifies the APIs that must be included in the project.<br />
 ![gam-101](https://cloud.githubusercontent.com/assets/1683475/14234019/b7cfce9e-f99d-11e5-8ee0-9022f71c0301.png)
     1. Verify that `Create a new project` is selected
@@ -33,16 +33,17 @@ This step requires a domain super-admin account or an account with delegated Sec
 
     1. Click on `Go to credentials`.<br />
 ![gam-103](https://cloud.githubusercontent.com/assets/1683475/14234014/b7c827d4-f99d-11e5-9fd9-75f9f08566a0.png)
-### Rename the project. ###
-    1. by default, the new project will be named `My Project` or something similar.  The project should be renamed so that you will know that it is a GAM project.
-    1. near the top right of the screen, click on the project selection menu. (The menu may be labeled `Go to project` or may be the name of a specific project.)<br />
+
+### Rename the project.
+  1. by default, the new project will be named `My Project` or something similar.  The project should be renamed so that you will know that it is a GAM project.
+  1. near the top right of the screen, click on the project selection menu. (The menu may be labeled `Go to project` or may be the name of a specific project.)<br />
 ![gam-104](https://cloud.githubusercontent.com/assets/1683475/14234015/b7cef2a8-f99d-11e5-8020-f56ca86ffa80.png)
-    1. a list of all active projects will be displayed.  Find the line for the project just created.  At the far right of that line, click on the pencil icon to re-name the project.
+  1. a list of all active projects will be displayed.  Find the line for the project just created.  At the far right of that line, click on the pencil icon to re-name the project.
 ![gam-105](https://cloud.githubusercontent.com/assets/1683475/14234017/b7cf53f6-f99d-11e5-8aff-3dcde1ae89eb.png)
-    1. choose a name that is meaningful to you and identifies the project as a GAM project.
+  1. choose a name that is meaningful to you and identifies the project as a GAM project.
 ![gam-107](https://cloud.githubusercontent.com/assets/1683475/14234018/b7cf7700-f99d-11e5-8488-b357eaef8b00.png)
 
-### Create the Credentials files ###
+### Create the Credentials files
     1. create client_secrets.json
         1. in the left side menu, click on `Credentials`
         1. in the top menu, click on `OAuth consent screen`
