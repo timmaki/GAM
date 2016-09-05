@@ -16,7 +16,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam-101](https://cloud.githubusercontent.com/assets/1683475/14234019/b7cfce9e-f99d-11e5-8ee0-9022f71c0301.png)
     1. Verify that `Create a new project` is selected
     1. click the `Continue` button
-    1. within a few second, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs are included.  (Other APIs may also be enabled.  You may ignore them.)
+    1. within a few second, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs listed below are included.  (Other APIs may also be enabled.  You may ignore them.)
     1. Required APIs:
         * Admin SDK
         * Apps Activity API
