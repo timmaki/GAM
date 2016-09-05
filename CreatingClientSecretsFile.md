@@ -112,6 +112,7 @@ This step requires a domain super-admin account or an account with delegated Sec
       1. click the `Authorize` button
       1. in the list of projects and scopes, the Service Account ID will appear in the left column and the list of API scopes will appear in the right column<br />
 ![gam-62](https://cloud.githubusercontent.com/assets/1683475/12075487/fda9ef9c-b147-11e5-8d7c-a2a417078f64.png)
+
 ### Run GAM to authorize the configuration
 
   1. open a command line window and navigate to the file gam.exe or gam.py
