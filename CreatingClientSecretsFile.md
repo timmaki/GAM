@@ -44,35 +44,35 @@ This step requires a domain super-admin account or an account with delegated Sec
 ![gam-107](https://cloud.githubusercontent.com/assets/1683475/14234018/b7cf7700-f99d-11e5-8488-b357eaef8b00.png)
 
 ### Create the Credentials files
-    1. create client_secrets.json
-        1. in the left side menu, click on `Credentials`
-        1. in the top menu, click on `OAuth consent screen`
+  1. create client_secrets.json
+    1. in the left side menu, click on `Credentials`
+    1. in the top menu, click on `OAuth consent screen`
 ![gam-50](https://cloud.githubusercontent.com/assets/1683475/11798257/d2af222a-a28e-11e5-90dd-67e3dbbe3123.png)
-        1. enter a _Product name_.  It can be the same project name that you used previously  
+    1. enter a _Product name_.  It can be the same project name that you used previously  
 ![gam-74](https://cloud.githubusercontent.com/assets/1683475/14229406/c501aa6a-f8f8-11e5-84ae-0f6aabfe056c.png)
-        1. at the bottom of the screen, click `Save` 
-        1. on the next screen, in the center of the screen, click on `Create credentials` and choose `OAuth client ID`<br />
+    1. at the bottom of the screen, click `Save` 
+  1. on the next screen, in the center of the screen, click on `Create credentials` and choose `OAuth client ID`<br />
 ![gam-75](https://cloud.githubusercontent.com/assets/1683475/14229405/c5013c2e-f8f8-11e5-84f5-3351968ec5e3.png)     
-        1. on the next screen, change the `Application type` to `Other`, enter a name, and click `Create`.  
+    1. on the next screen, change the `Application type` to `Other`, enter a name, and click `Create`.  
 ![gam-36](https://cloud.githubusercontent.com/assets/1683475/11098096/5134ff2a-8868-11e5-9f20-1c36b8720bf1.png) 
-        1. click the `Save` button.
-        1. in the pop-up confirmation window, click `OK`.  You do not need to record the client ID or client secret
-        1. on the next screen, you will see a section labeled `OAuth 2.0 client IDs`.  The client you just created will be listed. The `Type` column will say `Other`.
+    1. click the `Save` button.
+      1. in the pop-up confirmation window, click `OK`.  You do not need to record the client ID or client secret
+      1. on the next screen, you will see a section labeled `OAuth 2.0 client IDs`.  The client you just created will be listed. The `Type` column will say `Other`.
 ![gam-52](https://cloud.githubusercontent.com/assets/1683475/11798262/d2bd882e-a28e-11e5-9c4d-6e258263c2c9.png)
-        1. at the far right of the line, click the download button. 
-        1. save the file to the same folder as GAM.exe or GAM.py and rename the file to *`client_secrets.json`*.  
+      1. at the far right of the line, click the download button. 
+      1. save the file to the same folder as GAM.exe or GAM.py and rename the file to *`client_secrets.json`*.  
 ![gam15](https://cloud.githubusercontent.com/assets/1683475/11096317/07b2dac4-885f-11e5-9283-bd7cc7141aff.png)
     1. create oauth2service.json
-        1. near the top left of the screen, click on the `Create credentials` button and select `Service account key`<br />
+      1. near the top left of the screen, click on the `Create credentials` button and select `Service account key`<br />
 ![gam-78](https://cloud.githubusercontent.com/assets/1683475/14229302/1c89eb56-f8f6-11e5-82ba-fae6633212cd.png)
-        1. under the label `Service account`, click the menu and select `New service account`.
+      1. under the label `Service account`, click the menu and select `New service account`.
 ![gam-81](https://cloud.githubusercontent.com/assets/1683475/14229303/1c9bef68-f8f6-11e5-8c58-9ec5f40aed00.png)
-        1. enter a name for the service account.  It can be the same name as the project.
-        1. select the `JSON` key type 
-        1. click the `Create` button<br />
+      1. enter a name for the service account.  It can be the same name as the project.
+      1. select the `JSON` key type 
+      1. click the `Create` button<br />
 ![gam-82a](https://cloud.githubusercontent.com/assets/1683475/14229633/ad94f22e-f8fd-11e5-9e9e-2c2724baa41a.png)
-        1. when it says your service account has no role, just click "Create without a role".
-        1. a file download will start automatically.  Save the file to the same folder as GAM.exe or GAM.py and rename the file to *`oauth2service.json`*<br />
+      1. when it says your service account has no role, just click "Create without a role".
+      1. a file download will start automatically.  Save the file to the same folder as GAM.exe or GAM.py and rename the file to *`oauth2service.json`*<br />
 ![gam19](https://cloud.githubusercontent.com/assets/1683475/11096321/07bd277c-885f-11e5-9aeb-07df368265e2.png)
         1. in the pop-up dialog, click `Close`
     1. There are now two sections in the screen - `OAuth 2.0 client IDs` and `Service account keys`.  At the far right of the `Service account keys` section, click on `Manage service accounts`.
