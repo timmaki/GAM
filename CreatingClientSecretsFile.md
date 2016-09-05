@@ -21,7 +21,7 @@ This step requires a domain super-admin account or an account with delegated Sec
     1. Verify that `Create a new project` is selected
     1. click the `Continue` button
     1. within a few seconds, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs listed below are included.  (Other APIs may also be enabled.  You may ignore them.)
-    1. Required APIs:
+    Required APIs:
       * Admin SDK
       * Apps Activity API
       * Contacts API
