@@ -4,20 +4,21 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 
 ## Steps
 
-1. Enable API access for Google Apps. This step requires a domain super-admin account or an account with delegated Security rights
-    1. in the domain's Admin Console, go to the `Security` section, then click on `API reference`
+### 1. Enable API access for Google Apps and Login. ###
+This step requires a domain super-admin account or an account with delegated Security rights
+1. in the domain's Admin Console, go to the `Security` section, then click on `API reference`
 ![gam-30](https://cloud.githubusercontent.com/assets/1683475/11548007/02d69214-991e-11e5-8595-3ea6083776ab.png)
-    1. if API access is not already enabled:
-            1. click to check the box for `Enable API access`
-            1. click the `Save` button
+   1. if API access is not already enabled:
+          1. click to check the box for `Enable API access`
+          1. click the `Save` button
 1. Login to a Google account. The account does not need to be in your Google Apps domain or have any special rights.
-1. Create a Google API Project 
-    1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing,plus,contacts" target="_blank">**this link**</a> to start.  This link will begin the project creation process, and specifies the APIs that must be included in the project.<br />
+### 2. Create a Google API Project. ### 
+1. Go to <a href="https://console.developers.google.com/flows/enableapi?apiid=admin,appsactivity,calendar,classroom,drive,gmail,groupssettings,licensing,plus,contacts" target="_blank">**this link**</a> to start.  This link will begin the project creation process, and specifies the APIs that must be included in the project.<br />
 ![gam-101](https://cloud.githubusercontent.com/assets/1683475/14234019/b7cfce9e-f99d-11e5-8ee0-9022f71c0301.png)
-    1. Verify that `Create a new project` is selected
-    1. click the `Continue` button
-    1. within a few second, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs listed below are included.  (Other APIs may also be enabled.  You may ignore them.)
-    1. Required APIs:
+  1. Verify that `Create a new project` is selected
+  1. click the `Continue` button
+  1. within a few seconds, your project will be created and the screen will display a confirmation message. On the confirmation screen, verify that all of the required APIs listed below are included.  (Other APIs may also be enabled.  You may ignore them.)
+  1. Required APIs:
         * Admin SDK
         * Apps Activity API
         * Contacts API
@@ -31,7 +32,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 
     1. Click on `Go to credentials`.<br />
 ![gam-103](https://cloud.githubusercontent.com/assets/1683475/14234014/b7c827d4-f99d-11e5-9fd9-75f9f08566a0.png)
-1. Rename the project.
+### 3. Rename the project. ###
     1. by default, the new project will be named `My Project` or something similar.  The project should be renamed so that you will know that it is a GAM project.
     1. near the top right of the screen, click on the project selection menu. (The menu may be labeled `Go to project` or may be the name of a specific project.)<br />
 ![gam-104](https://cloud.githubusercontent.com/assets/1683475/14234015/b7cef2a8-f99d-11e5-8020-f56ca86ffa80.png)
@@ -39,7 +40,8 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam-105](https://cloud.githubusercontent.com/assets/1683475/14234017/b7cf53f6-f99d-11e5-8aff-3dcde1ae89eb.png)
     1. choose a name that is meaningful to you and identifies the project as a GAM project.
 ![gam-107](https://cloud.githubusercontent.com/assets/1683475/14234018/b7cf7700-f99d-11e5-8488-b357eaef8b00.png)
-1. Create the Credentials files
+
+### 4. Create the Credentials files ###
     1. create client_secrets.json
         1. in the left side menu, click on `Credentials`
         1. in the top menu, click on `OAuth consent screen`
@@ -83,7 +85,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
 ![gam-91](https://cloud.githubusercontent.com/assets/1683475/14229298/1c4faf9a-f8f6-11e5-8340-79159289bce2.png)<br />
             1.  in the main part of the screen, the section labeled `OAuth 2.0 client IDs` now has two lines: one for the OAuth2 client (`Other`) and one for the `Service account client`.  The column to the far right lsts the Client ID for each client.  These Client IDs will be used in the next step. 
 ![gam-92](https://cloud.githubusercontent.com/assets/1683475/14229299/1c5cbdde-f8f6-11e5-862d-afbd2f3f132f.png)
-1. Authorize the API scopes for use with GAM in the Admin Console
+### 5. Authorize the API scopes for use with GAM in the Admin Console ###
     1. In this step, you will switch between the Developer's console and the domain's Admin console.  To access the Admin console, you must use an account with domain super-admin account or an account with delegated Security rights.  The Developer's console window must be logged in to the account in which the project was created.  These can be the same account or different accounts.
     1. Authorize scopes for OAuth2
         1. select the `Client ID` for the OAuth client (type `Other`) and copy it (Control/Command-C).<br />
@@ -107,7 +109,7 @@ To use GAM, you need to create your own client\_secrets.json and oauth2service.j
         1. click the `Authorize` button
         1. in the list of projects and scopes, the Service Account ID will appear in the left column and the list of API scopes will appear in the right column<br />
 ![gam-62](https://cloud.githubusercontent.com/assets/1683475/12075487/fda9ef9c-b147-11e5-8d7c-a2a417078f64.png)
-1. Run GAM to authorize the configuration
+### 6. Run GAM to authorize the configuration ###
     1. open a command line window and navigate to the file gam.exe or gam.py
     1. run the command `gam oauth create`
     1. the configuration options will be displayed.  Most API scopes will be selected by default. 
