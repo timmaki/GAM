@@ -87,7 +87,8 @@ This step requires a domain super-admin account or an account with delegated Sec
 ![gam-91](https://cloud.githubusercontent.com/assets/1683475/14229298/1c4faf9a-f8f6-11e5-8340-79159289bce2.png)<br />
             1.  in the main part of the screen, the section labeled `OAuth 2.0 client IDs` now has two lines: one for the OAuth2 client (`Other`) and one for the `Service account client`.  The column to the far right lsts the Client ID for each client.  These Client IDs will be used in the next step. 
 ![gam-92](https://cloud.githubusercontent.com/assets/1683475/14229299/1c5cbdde-f8f6-11e5-862d-afbd2f3f132f.png)
-### Authorize the API scopes for use with GAM in the Admin Console ###
+
+### Authorize the API scopes for use with GAM in the Admin Console
     1. In this step, you will switch between the Developer's console and the domain's Admin console.  To access the Admin console, you must use an account with domain super-admin account or an account with delegated Security rights.  The Developer's console window must be logged in to the account in which the project was created.  These can be the same account or different accounts.
     1. Authorize scopes for OAuth2
         1. select the `Client ID` for the OAuth client (type `Other`) and copy it (Control/Command-C).<br />
@@ -111,7 +112,7 @@ This step requires a domain super-admin account or an account with delegated Sec
         1. click the `Authorize` button
         1. in the list of projects and scopes, the Service Account ID will appear in the left column and the list of API scopes will appear in the right column<br />
 ![gam-62](https://cloud.githubusercontent.com/assets/1683475/12075487/fda9ef9c-b147-11e5-8d7c-a2a417078f64.png)
-### Run GAM to authorize the configuration ###
+### Run GAM to authorize the configuration
     1. open a command line window and navigate to the file gam.exe or gam.py
     1. run the command `gam oauth create`
     1. the configuration options will be displayed.  Most API scopes will be selected by default. 
