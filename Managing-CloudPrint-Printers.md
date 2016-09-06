@@ -199,9 +199,9 @@ gam printjob 21fc3546-8fbc-f185-acea-2b28e3ffaba3 delete
 ## Reporting Print Jobs
 ### Syntax
 ```
-gam print printjobs [older_than <number><m|h|d>] [newer_than <number><m|h|d>] [query <query>] [status <status>] [printer <printer id>]  [owner <user email>] [todrive]
+gam print printjobs [older_than <number><m|h|d>] [newer_than <number><m|h|d>] [query <query>] [status <status>] [printer <printer id>]  [owner <user email>] [limit <Number>] [todrive]
 ```
-provides a CSV output of all print jobs. The optional parameters older_than and newer_than limit results to print jobs created in the given time. The optional query parameter limits results to jobs whose title or tags match the given query. The optional status parameter limits the results to jobs whose status is provided. The optional printer parameter limits results to jobs sent to the given printer id. The optional owner parameter limits results to jobs sent by the given user. The optional todrive parameter creates a Google Drive Spreadsheet of the results rather than sending CSV output to the console.
+Provides a CSV output of all print jobs. The optional arguments `older_than` and `newer_than` limit results to print jobs created in the given time. The optional `query` argument limits results to jobs whose title or tags match the given query. The optional `status` argument limits the results to jobs whose status is provided. The optional `printer` argument limits results to jobs sent to the given printer id. The optional `owner` argument limits results to jobs sent by the given user. The optional `limit <Number>` argument limits the number of jobs output to `<Number>`; the default value for `<Number>` is 25, set `<Number>` to 0 for no limit. The optional `todrive` argument creates a Google Drive Spreadsheet of the results rather than sending CSV output to the console.
 
 ### Examples
 This example prints all print jobs owned by the GAM admin or sent to a printer owned by the GAM admin.
