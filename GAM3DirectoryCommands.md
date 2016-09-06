@@ -470,9 +470,9 @@ gam update group membersclub@acme.org remove group membersclub@acme.org
 ## Get Group Info
 ### Syntax
 ```
-gam info group <group email>
+gam info group <group email> [noaliases] [groups]
 ```
-retrieve information about a given group.
+Retrieve information about a given group. The `noaliases` argument suppresses showing any aliases for the group. The `groups` argument shows the groups of which this group is a member.
 
 ### Example
 This example will provide information about the group
