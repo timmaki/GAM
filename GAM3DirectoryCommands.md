@@ -14,6 +14,7 @@
   - [Update Members/Owners/Managers in a Group](#update-membersownersmanagers-in-a-group)
   - [Sync owners/members/managers to a Group](#sync-ownersmembersmanagers-to-a-group)
   - [Remove Users from a Group](#remove-users-from-a-group)
+  - [Remove Users from a Group by Role](#remove-users-from-group-by-role)
   - [Get Group Info](#get-group-info)
   - [Delete a Group](#delete-a-group)
 - [Email Aliases](#email-aliases)
@@ -464,6 +465,26 @@ gam update group students remove user grad@school.edu
 this example removes all current members from a group
 ```
 gam update group membersclub@acme.org remove group membersclub@acme.org
+```
+---
+
+## Remove Users from a Group by Role
+### Syntax
+```
+gam update group <group email> clear [owner] [manager] [member]
+```
+Remove users from the given group that have any of the specified roles. If no roles are specified, all members are removed, owners and managers are unaffected.
+
+### Example
+This command removes all managers from a group.
+
+```
+gam update group students clear manager
+```
+
+This example removes all current members from a group, owners and managers are unaffected
+```
+gam update group membersclub@acme.org clear
 ```
 ---
 
