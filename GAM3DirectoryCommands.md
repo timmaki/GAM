@@ -479,10 +479,10 @@ Remove users from the given group that have any of the specified roles. If no ro
 This command removes all managers from a group.
 
 ```
-gam update group students clear manager
+gam update group students@school.org clear manager
 ```
 
-This example removes all current members from a group, owners and managers are unaffected
+This command removes all current members from a group, owners and managers are unaffected.
 ```
 gam update group membersclub@acme.org clear
 ```
