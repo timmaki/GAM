@@ -183,7 +183,7 @@ gam user bob@example.com signature file bobs-html-sig.txt
 ### Syntax
 ```
 gam
- user <username> | group <groupname>| ou <ouname> | all users  show signature [format]
+ user <username> | group <groupname>| ou <ouname> | all users show signature [format]
 ```
 Shows the email signature for the given users. By default, the raw HTML of the signature is shown, the optional argument `format` causes the HTML to be interpreted.
 
@@ -206,7 +206,7 @@ gam
  startdate <YYYY-MM-DD> enddate <YYYY-MM-DD>
  [contactsonly] [domainonly]
 ```
-enable or disable a vacation/away message for the given users. subject will be the away message subject. message will be the message text. Use quotes around subject and message text if they contain spaces (which they probably will). If file is specified instead of message, the message will be read from the given text file. In the message text, \n will be replaced with a new line. The optional startdate and enddate arguments set a start and end date for the vacation message to be enabld. The optional argument contactsonly will only send away messages to persons in the user's Contacts. The optional argument domainonly will prevent vacation messages from going to users outside the Google Apps domain.
+enable or disable a vacation/away message for the given users. subject will be the away message subject. message will be the message text. Use quotes around subject and message text if they contain spaces (which they probably will). If file is specified instead of message, the message will be read from the given text file. In the message text, \n will be replaced with a new line. The optional startdate and enddate arguments set a start and end date for the vacation message to be enabled. The optional argument contactsonly will only send away messages to persons in the user's Contacts. The optional argument domainonly will prevent vacation messages from going to users outside the Google Apps domain.
 
 ### Example
 This example sets the away message for the user
@@ -225,10 +225,9 @@ gam user bob@example.com vacation on subject "I am away" file bobs-away-message.
 ### Syntax
 ```
 gam
- user <username> | group <groupname> |ou <ouname> | all users
- show vacation
+ user <username> | group <groupname> |ou <ouname> | all users show vacation [format]
 ```
-show the given user's vacation message and settings.
+Show the given user's vacation message and settings. By default, the plain text or raw HTML of the vacation message is shown, the optional argument `format` causes the HTML to be interpreted.
 
 ## Example
 This example shows the vacation settings for jsmith
