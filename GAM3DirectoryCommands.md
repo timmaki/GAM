@@ -14,7 +14,7 @@
   - [Update Members/Owners/Managers in a Group](#update-membersownersmanagers-in-a-group)
   - [Sync owners/members/managers to a Group](#sync-ownersmembersmanagers-to-a-group)
   - [Remove Users from a Group](#remove-users-from-a-group)
-  - [Remove Users from a Group by Role](#remove-users-from-group-by-role)
+  - [Remove Members/Owners/Managers from a Group by Role](#remove-mbrownmgr-from-group-by-role)
   - [Get Group Info](#get-group-info)
   - [Delete a Group](#delete-a-group)
 - [Email Aliases](#email-aliases)
@@ -468,7 +468,7 @@ gam update group membersclub@acme.org remove group membersclub@acme.org
 ```
 ---
 
-## Remove Users from a Group by Role
+## Remove Members/Owners/Managers from a Group by Role
 ### Syntax
 ```
 gam update group <group email> clear [owner] [manager] [member]
