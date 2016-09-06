@@ -183,10 +183,9 @@ gam user bob@example.com signature file bobs-html-sig.txt
 ### Syntax
 ```
 gam
- user <username> | group <groupname>| ou <ouname> | all users
- show signature<br>
+ user <username> | group <groupname>| ou <ouname> | all users  show signature [format]
 ```
-gets the email signature for the given users.
+Shows the email signature for the given users. By default, the raw HTML of the signature is shown, the optional argument `format` causes the HTML to be interpreted.
 
 ### Example
 This example shows all user's signature
