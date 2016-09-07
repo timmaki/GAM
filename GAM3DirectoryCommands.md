@@ -388,7 +388,7 @@ gam update group beatles
 ```
 ---
 
-## Add Members/Owners/Managers to a Group
+## Add Members, Managers, Owners to a Group
 ### Syntax
 ```
 gam update group <group email>
@@ -409,7 +409,7 @@ gam update group everyone add member all users
 ```
 ---
 
-## Update Members/Owners/Managers in a Group
+## Update Members, Managers, Owners in a Group
 ### Syntax
 ```
 gam update group <group email>
@@ -425,7 +425,7 @@ gam update group beatles update owner user rstarr@beatles.com
 ```
 ---
 
-## Sync owners/members/managers to a Group
+## Sync Members, Managers, Owners to a Group
 ### Syntax
 ```
 gam update group <group email>
@@ -467,7 +467,7 @@ gam update group membersclub@acme.org remove group membersclub@acme.org
 ```
 ---
 
-## Remove Members/Owners/Managers from a Group by Role
+## Remove Members, Managers, Owners from a Group by Role
 ### Syntax
 ```
 gam update group <group email> clear [owner] [manager] [member]
