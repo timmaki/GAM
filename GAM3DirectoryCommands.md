@@ -14,7 +14,6 @@
   - [Update Members/Owners/Managers in a Group](#update-membersownersmanagers-in-a-group)
   - [Sync owners/members/managers to a Group](#sync-ownersmembersmanagers-to-a-group)
   - [Remove Users from a Group](#remove-users-from-a-group)
-  - [Remove Members/Owners/Managers from a Group by Role](#remove-mbrownmgr-from-group-by-role)
   - [Get Group Info](#get-group-info)
   - [Delete a Group](#delete-a-group)
 - [Email Aliases](#email-aliases)
